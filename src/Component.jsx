@@ -12,7 +12,7 @@ export default function Component() {
       <input type="text" value={Text} onChange={TextOnChange}/>
       <button onClick={ButtonOnClick}> Actualizar </button>
       <p>Input {Text}</p>
-      <p>Actualizado {Update}</p>
+      <p>Actualizadosss {Update}</p>
     </div>
   )
 }
