@@ -2,7 +2,7 @@
   "name": "annavehi",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://daniabajo.github.io/annavehinutricio",
+  "homepage" : "https://annavehi.com",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -13,7 +13,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && echo annavehi.com > ./build/CNAME",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
