@@ -7,9 +7,6 @@
   pointer-events: none;
   background-color: #31464e;
 }
-.font-link {
-font-family: 'Josefin Sans', sans-serif;
-}
 .App-header {
   background-color: #31464e;
   min-height: 100vh;
@@ -17,37 +14,16 @@ font-family: 'Josefin Sans', sans-serif;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(200px + 2vmin);
+  font-size: calc(50px + 2vmin);
   font-style:normal;
-  font-family: 'Coax', sans-serif;
-  font-weight: 2∫00;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
   line-height: 1;
   letter-spacing: 10000;
   color: #cfbfae;
 }
-
-.App-header2 {
-  background-color: #31464e;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(100px + 2vmin);
-  font-style:italic;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 100;
-  line-height: 1;
-  letter-spacing: 6;
-  color: #cfbfae;
-}
-
 .App-link {
   color: #cfb051;
-}
-
-.font-face-gm {
-  font-family: "Coax";
 }
 
 
