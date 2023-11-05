@@ -5,24 +5,11 @@ import Component from './Component';
 function App() {
   return (
     <div className="App">
-      style={{
-        backgroundColor: 'red',
-        width: '100px',
-        height: '100px'
-      }}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Anna Vehi
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
-        <Component />
       </header>
     </div>
   );
