@@ -5,6 +5,11 @@ import Component from './Component';
 function App() {
   return (
     <div className="App">
+      style={{
+        backgroundColor: 'red',
+        width: '100px',
+        height: '100px'
+      }}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
