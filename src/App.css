@@ -14,7 +14,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(50px + 2vmin);
+  font-size: calc(100px + 2vmin);
   font-style:normal;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 200;
@@ -26,4 +26,8 @@
   color: #cfb051;
 }
 
-
+@media (300px <= width <= 900px){
+  .App-header {
+    font-size: calc(30px + 2vmin);
+  }
+}
