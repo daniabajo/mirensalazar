@@ -7,6 +7,14 @@
   pointer-events: none;
 }
 
+.font-link {
+font-family: 'Josefin Sans', sans-serif;
+}
+
+.font-link2 {
+  font-family: 'Hanalei Fill', cursive;
+  }
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -21,7 +29,9 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #e2dcd9;
+  font-style: italic;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #CFB051;
 }
 
 .App-link {
