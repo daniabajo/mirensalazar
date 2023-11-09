@@ -5,7 +5,7 @@ import Navbar from './Navbar.jsx';
 
 function App() {
   return (
-    <div className="AppClasss">
+    <div className="AppClass">
       <img src={Logo} className="LogoClass" alt="logo" />
       <Navbar />
       <header className="HeaderClass">  <p> PRÓXIMAMENTE...</p> </header>
