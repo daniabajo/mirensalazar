@@ -1,16 +1,14 @@
-import logo from './logo.png';
+
 import './App.css';
-import Component from './Component';
+import Logo from './Logo.png';
+import Navbar from './Navbar.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <img src={logo} className="App-logo" alt="logo" />
-      <header className="App-header">
-        <p>
-          PRÓXIMAMENTE...
-        </p>
-      </header>
+    <div className="AppClass">
+      <img src={Logo} className="LogoClass" alt="logo" />
+      <Navbar />
+      <header className="HeaderClass">  <p> PRÓXIMAMENTE...</p> </header>
     </div>
   );
 }

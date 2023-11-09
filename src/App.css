@@ -1,14 +1,15 @@
-.App {
+.AppClass {
   text-align: center;
   background-color: #31464e;
+  font-size: calc(40px + 2vmin);
+  color: #cfbfae;
+  padding: 0 1rem;
 }
-.App-logo {
+.LogoClass{
   height: 20vmin;
   pointer-events: none;
-  background-color: #31464e;
 }
-.App-header {
-  background-color: #31464e;
+.HeaderClass {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -20,14 +21,51 @@
   font-weight: 200;
   line-height: 1;
   letter-spacing: 10000;
-  color: #cfbfae;
 }
-.App-link {
-  color: #cfb051;
-}
-
 @media (300px <= width <= 900px){
-  .App-header {
+  .HeaderClass {
     font-size: calc(30px + 2vmin);
   }
 }
+.LinkClass {
+  color: #cfb051;
+}
+.AppClass nav{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(40px + 2vmin);
+  font-style:normal;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  line-height: 1;
+  color: #cfbfae;
+}
+.AppClass ul{
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.NavTitleClass{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(40px + 2vmin);
+  font-style:normal;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  line-height: 1;
+  color: #cfbfae;
+}
+
+
+
+
