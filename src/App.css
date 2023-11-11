@@ -7,15 +7,28 @@
   min-height: 100vh;
   font-family: 'Josefin Sans', sans-serif;
 }
-.LogoClass{
-  height: 30vmin;
+.LogoClassMain{
+  height: 0vmin;
   pointer-events: none;
-  scale: 0.7;
+  width: 0%;
+}
+@media (300px <= width <= 900px){
+  .LogoClassMain {
+    height: 20vmin;
+    width: 60%;
+  }
 }
 
+.LogoClass{
+  scale: 0.7;
+  height: 30vmin;
+  pointer-events: none;
+}
 @media (300px <= width <= 900px){
   .LogoClass {
     scale: 0.5;
+    width: 100%;
+
   }
 }
 
