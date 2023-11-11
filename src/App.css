@@ -1,14 +1,24 @@
 .AppClass {
-  text-align: center;
   background-color: #31464e;
+  text-align: center;
   font-size: calc(40px + 2vmin);
   color: #cfbfae;
   padding: 0 1rem;
+  min-height: 100vh;
+  font-family: 'Josefin Sans', sans-serif;
 }
 .LogoClass{
-  height: 20vmin;
+  height: 30vmin;
   pointer-events: none;
+  scale: 0.7;
 }
+
+@media (300px <= width <= 900px){
+  .LogoClass {
+    scale: 0.5;
+  }
+}
+
 .HeaderClass {
   min-height: 100vh;
   display: flex;
@@ -17,7 +27,6 @@
   justify-content: center;
   font-size: calc(100px + 2vmin);
   font-style:normal;
-  font-family: 'Josefin Sans', sans-serif;
   font-weight: 200;
   line-height: 1;
   letter-spacing: 10000;
@@ -27,45 +36,57 @@
     font-size: calc(30px + 2vmin);
   }
 }
-.LinkClass {
-  color: #cfb051;
-}
 .AppClass nav{
-  min-height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  font-size: calc(40px + 2vmin);
+  justify-content:space-between;
+  font-size: calc(20px + 2vmin);
   font-style:normal;
-  font-family: 'Josefin Sans', sans-serif;
   font-weight: 200;
   line-height: 1;
-  color: #cfbfae;
 }
+@media (300px <= width <= 900px){
+  .AppClass nav {
+    font-size: calc(5px + 2vmin);
+  }
+}
+.AppClass nav a{
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display:flex;
+  align-items: center;
+  padding: 1.5rem;
+
+}
+@media (300px <= width <= 900px){
+  .AppClass nav a{
+    font-size: calc(8px + 2vmin);
+    padding: 0.35rem;
+  }
+}
+.AppClass nav li.active{
+  background-color: black;
+}
+.AppClass nav li:hoover{
+  background-color: black;
+}
+
 .AppClass ul{
   padding: 0;
   margin: 0;
   flex-direction: row;
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
-.NavTitleClass{
-  min-height: 100vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  font-size: calc(40px + 2vmin);
-  font-style:normal;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 200;
-  line-height: 1;
-  color: #cfbfae;
+@media (300px <= width <= 900px){
+  .AppClass ul {
+    gap: 0rem;
+  }
 }
-
 
 
 
