@@ -3,7 +3,7 @@ import './App.css';
 import Logo from './Logo.png';
 import Navbar from './Navbar';
 import Home from './pages/Home';
-import SobreMi from './SobreMi';
+import Sobremi from './sobremi';
 import Servicios from './pages/Servicios';
 import Reserva from './pages/Reserva';
 import Contacto from './pages/Contacto';
@@ -20,7 +20,7 @@ function App() {
       break
     case "/home": Page = <Home />
       break
-    case "/sobremi": Page = <SobreMi />
+    case "/sobremi": Page = <Sobremi />
       break
     case "/servicios": Page = <Servicios />
       break
