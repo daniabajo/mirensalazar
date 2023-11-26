@@ -2,7 +2,7 @@
 import './App.css';
 import Logo from './Logo.png';
 import Navbar from './Navbar';
-import Home from './pages/Home';
+import Homes from './pages/Home';
 import Sobremi from './sobremi';
 import Servicios from './pages/Servicios';
 import Reserva from './pages/Reserva';
@@ -16,9 +16,9 @@ const mapURL = `https:/maps.googleapis.com/maps/api/js?v=3.exp&key=${credentials
 function App() {
   let Page
   switch (window.location.pathname) {
-    case "/": Page = <Home />
+    case "/": Page = <Homes />
       break
-    case "/home": Page = <Home />
+    case "/home": Page = <Homes />
       break
     case "/sobremi": Page = <Sobremi />
       break
