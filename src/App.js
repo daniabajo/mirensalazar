@@ -35,6 +35,7 @@ function App() {
     <div className="AppClass">
       <img src={Logo} className="LogoClassMain" alt="logo" />
       <Navbar />
+      <Servicios />
       {Page}
       {/*<Map  
       //googleMapURL= {mapURL}
