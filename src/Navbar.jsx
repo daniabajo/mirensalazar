@@ -5,10 +5,7 @@ export default function Navbar() {
     <nav ClassName="NavClass">
       <ul>
         <li>
-          <a href="/home" >Home</a>
-        </li>
-        <li>
-          <a href="/about" >About</a>
+          <a href="/about" >Sobre mí</a>
         </li>
         <li>
           <a href="/servicios" >Servicios</a>
@@ -17,13 +14,10 @@ export default function Navbar() {
           <img src={Logo} className="LogoClass" alt="logo" />
         </li>
         <li>
-          <a href="/filosofia" >Filosofia</a>
+          <a href="/reserva" >Contacto</a>
         </li>
         <li>
-          <a href="/reserva" >Reserva</a>
-        </li>
-        <li>
-          <a href="/contacto" >Contacto</a>
+          <a href="/contacto" >Reserva cita</a>
         </li>
       </ul>
     </nav>

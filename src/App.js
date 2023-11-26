@@ -3,9 +3,8 @@ import './App.css';
 import Logo from './Logo.png';
 import Navbar from './Navbar';
 import Home from './pages/Home';
-import About from './pages/About';
+import SobreMi from './pages/SobreMi';
 import Servicios from './pages/Servicios';
-import Filosofia from './pages/Filosofia';
 import Reserva from './pages/Reserva';
 import Contacto from './pages/Contacto';
 //import Map from './Map';
@@ -21,11 +20,9 @@ function App() {
       break
     case "/home": Page = <Home />
       break
-    case "/about": Page = <About />
+    case "/SobreMi": Page = <SobreMi />
       break
     case "/servicios": Page = <Servicios />
-      break
-    case "/filosofia": Page = <Filosofia />
       break
     case "/contacto": Page = <Contacto />
       break
