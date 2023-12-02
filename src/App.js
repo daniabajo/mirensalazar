@@ -2,10 +2,9 @@
 import './App.css';
 import Logo from './Logo.png';
 import Navbar from './Navbar';
-import Home from './pages/Home';
-import About from './pages/About';
+import Homes from './pages/Home';
+import Sobremi from './sobremi';
 import Servicios from './pages/Servicios';
-import Filosofia from './pages/Filosofia';
 import Reserva from './pages/Reserva';
 import Contacto from './pages/Contacto';
 //import Map from './Map';
@@ -17,21 +16,20 @@ const mapURL = `https:/maps.googleapis.com/maps/api/js?v=3.exp&key=${credentials
 function App() {
   let Page
   switch (window.location.pathname) {
-    case "/": Page = <Home />
+    case "/": Page = <Homes />
       break
-    case "/home": Page = <Home />
+    case "/home": Page = <Homes />
       break
-    case "/about": Page = <About />
+    case "/sobremi": Page = <Sobremi />
       break
     case "/servicios": Page = <Servicios />
       break
-    case "/filosofia": Page = <Filosofia />
-      break
     case "/contacto": Page = <Contacto />
       break
-    case "/reserva": Page = <Reserva />
+    case "/reservacita": Page = <Reserva />
       break
-
+    default:
+        Page = <Contacto />
   }
 
   return (

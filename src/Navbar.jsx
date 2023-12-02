@@ -1,14 +1,12 @@
-import Logo from './Logo.png';
+import Logo from './Logo.png'
+/*import {Link} from 'react-router-dom';*/
 
 export default function Navbar() {
   return (
     <nav ClassName="NavClass">
       <ul>
         <li>
-          <a href="/home" >Home</a>
-        </li>
-        <li>
-          <a href="/about" >About</a>
+          <a href="/sobremi" > Sobre mío</a>
         </li>
         <li>
           <a href="/servicios" >Servicios</a>
@@ -17,13 +15,10 @@ export default function Navbar() {
           <img src={Logo} className="LogoClass" alt="logo" />
         </li>
         <li>
-          <a href="/filosofia" >Filosofia</a>
-        </li>
-        <li>
-          <a href="/reserva" >Reserva</a>
-        </li>
-        <li>
           <a href="/contacto" >Contacto</a>
+        </li>
+        <li>
+          <a href="/reservacita" >Reserva cita</a>
         </li>
       </ul>
     </nav>
