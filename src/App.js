@@ -28,14 +28,14 @@ function App() {
       break
     case "/reservacita": Page = <Reserva />
       break
-
+    default:
+        Page = <Contacto />
   }
 
   return (
     <div className="AppClass">
       <img src={Logo} className="LogoClassMain" alt="logo" />
       <Navbar />
-      <Servicios />
       {Page}
       {/*<Map  
       //googleMapURL= {mapURL}
