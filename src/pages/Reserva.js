@@ -6,7 +6,7 @@ export default function Reserva() {
         <div className="ReservaCita">
             <img src={Consulta} className="ImageTransversal" alt="Consulta" />
             <h className="TituloClaro"> <p> Reserva tu cita</p> </h>
-            <InlineWidget  url="https://calendly.com/annavehi/primera_visita_presencial"  />
+            <InlineWidget  url="https://calendly.com/annavehi/primera_visita_presencial" styles={{ height: '800px'}}  />
         </div>
     )
 }

@@ -1,12 +1,14 @@
 import { useForm } from 'react-hook-form';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { Link, useMatch, useResolvedPath } from 'react-router-dom';
+
 const Formulario = () => {
     const form = useRef();
     const { register, formState: { errors }, handleSubmit,watch } = useForm();
     const sendEmail = (e) => {
         e.preventDefault();
-
+        /*emailjs.sendForm('service_ukvacln', 'template_wzrelji', form.current, 'QmE0uEOoCqxBr68I4')  .then(*/
         emailjs.sendForm('service_n364x7p', 'template_t8qrrpl', form.current, 'rnnXAMH44fAkT7iCB')  .then(
             (result) => { console.log(result.text);console.log("message sent") }, 
             (error) => {console.log(error.text);});
@@ -24,7 +26,7 @@ const Formulario = () => {
             </div>
             <div className="FormularioInputs" >
                 <input style={{ width: "370px", fontSize: "20px", fontFamily:"Josefin Sans" }} type="text" {...register('nombre',{ required: true })} name="nombre" required placeholder='Nombre*'/>
-                <input style={{ width: "370px", fontSize: "20px", fontFamily:"Josefin Sans" }} type="text" {...register('apellidos')} name="apellidos" placeholder='Apellidos' />
+                <input style={{ width: "370px", fontSize: "20px", fontFamily:"Josefin Sans" }} type="text" {...register('apellidos',{ required: true })} name="apellidos" required placeholder='Apellidos' />
             </div>
             <div className="FormularioEtiquetas">
                 <label> Email* </label>
@@ -44,11 +46,19 @@ const Formulario = () => {
 
             </div >
             <div className="FormularioEnviar">
-                <input style={{ width: "140px", height: "25px", justifyContent: "end" }} type="submit" value="ENVIAR" />
+            <div className="FormularioEnviar"> 
+            <input style={{ width: "140px", height: "35px", justifyContent: "end" }} type="checkbox" {...register('acepto',{ required: true })} name="acepto" required />
+            <Link to="/politicaprivacidad"> Acepto la política privacidad </Link>
+            </div>
+                <input style={{ width: "140px", height: "35px", justifyContent: "end" }} type="submit" value="ENVIAR" />
                 {errors.nombre?.type === 'required' && <span className="FormularioValidacion">*Nombre Requerido</span>}
                 {errors.email?.type === 'required' && <span className="FormularioValidacion">*Email Requerido</span>}
                 {errors.email?.type === 'pattern' && <span className="FormularioValidacion">*Email incorrecto</span>}
+                {errors.acepto?.type === 'required' && <span className="FormularioValidacion">*Debe aceptar política</span>}
             </div>
+            <pre>
+                {/*{JSON.stringify(watch(),null,2)}*/}
+            </pre>
         </form>
     </div>
 }
