@@ -48,7 +48,7 @@ const Formulario = () => {
             <div className="FormularioEnviar">
             <div className="FormularioEnviar"> 
             <input style={{ width: "140px", height: "35px", justifyContent: "end" }} type="checkbox" {...register('acepto',{ required: true })} name="acepto" required />
-            <Link to="/politicaprivacidad"> Acepto la política privacidad </Link>
+            <Link to="/politicaprivacidad" className="AceptoPolitica" fontSize="200px"> Acepto la política privacidad </Link>
             </div>
                 <input style={{ width: "140px", height: "35px", justifyContent: "end" }} type="submit" value="ENVIAR" />
                 {errors.nombre?.type === 'required' && <span className="FormularioValidacion">*Nombre Requerido</span>}

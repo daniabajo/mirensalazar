@@ -91,15 +91,14 @@
   float:left;
   align-items: center;
   display: block;
-  margin-left: 15%;
+  margin-left: 20%;
 }.DondeEstamosR{
   float:right;
   align-items: center;
   justify-content: center;
   display: block;
-  margin-right: 10%;
-  scale:50%;
-  margin-top:0%;
+  margin-right: 20%;
+  margin-top:5%;
   padding-top: 0%;
 }
 .DondeEstamosIcono{
@@ -153,6 +152,11 @@
     font-size: calc(30px + 2vmin);
   }
 }
+.AceptoPolitica {
+  font-size: calc(25px );
+
+}
+
 .FormularioEntero {
   background-color: #b69f8e;
   min-height: 10vh;
