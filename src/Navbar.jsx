@@ -1,15 +1,16 @@
-import Logo from './Logo.png'
+import Logo from './images/Logo.svg'
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
-
+/*        
+*/
 export default function Navbar() {
   return (
-    <nav ClassName="NavClass">
+    <nav>
       <ul>
-        <CustomLink to="/sobremi">Sobre mí</CustomLink>
-        <CustomLink to="/servicios">Servicios</CustomLink>
+        <CustomLink to="/sobremi">SOBRE MÍ</CustomLink>
+        <CustomLink to="/servicios">SERVICIOS</CustomLink>
         <li><img src={Logo} className="LogoClass" alt="logo" /></li>
-        <CustomLink to="/contacto">Contacto</CustomLink>
-        <CustomLink to="/reservacita">Reserva cita</CustomLink>
+        <CustomLink to="/contacto">CONTACTO</CustomLink>
+        <CustomLink to="/reservacita">RESERVA CITA</CustomLink>
       </ul>
     </nav>
   )

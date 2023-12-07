@@ -1,14 +1,25 @@
 .AppClass {
-  background-color: #31464e;
+  background-color: #e2dcd9;
   text-align: center;
   font-size: calc(40px + 2vmin);
-  color: #cfbfae;
-  padding: 0 1rem;
+  color: black;
   min-height: 100vh;
   font-family: 'Josefin Sans', sans-serif;
   justify-content: 'center';
-
+  padding-bottom: 0%;
 }
+
+.ReservaCita {
+  background-color: #e2dcd9;
+  text-align: center;
+  font-size: calc(40px + 2vmin);
+  color: black;
+  min-height: 100vh;
+  font-family: 'Josefin Sans', sans-serif;
+  justify-content: 'center';
+  padding-bottom: 10%;
+}
+
 .LogoClassMain{
   display: none;
 }
@@ -30,52 +41,205 @@
     display: none;
   }
 }
-.HeaderClass {
-  min-height: 100vh;
+.ImageTransversal {
+  align-items: left;
+  margin: 0;
+  scale:1 ;
+  width: 100%;
+}
+.TituloClaro {
+  min-height: 3vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(100px + 2vmin);
+  font-size: calc(70px);
   font-style:normal;
   font-weight: 200;
   line-height: 1;
-  letter-spacing: 10000;
+  color: #a78b6c;
+  font-family: 'coax';
 }
 @media (300px <= width <= 900px){
-  .HeaderClass {
+  .TituloClaro {
+    font-size: calc(30px);
+  }
+}
+.TituloOscuro {
+  background-color: #b69f8e;
+  height:fit-content;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(70px);
+  font-style:normal;
+  font-weight: 200;
+  line-height: 1;
+  color: #e2dcd9;
+  font-family: 'coax';
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  margin-top: 35%;
+}
+@media (300px <= width <= 900px){
+  .TituloOscuro {
     font-size: calc(30px + 2vmin);
   }
 }
-.AppClass nav{
+.DondeEstamosL{
+  float:left;
+  align-items: center;
+  display: block;
+  margin-left: 15%;
+}.DondeEstamosR{
+  float:right;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  margin-right: 10%;
+  scale:50%;
+  margin-top:0%;
+  padding-top: 0%;
+}
+.DondeEstamosIcono{
+  align-items:left;
+  display:table-column;
+  margin:0;
+  scale:0.5;
+  width:15%;
+  margin:5%;
+}
+
+.container {
+  display:flex;
+  align-items:center;
+  margin: 0;
+}
+.DondeEstamosTexto {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  font-size: 20px;
+}
+
+.TextoBasico {
+  min-height: 1vh;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content:space-between;
-  font-size: calc(20px + 2vmin);
+  font-size: calc(10px + 2vmin);
   font-style:normal;
-  font-weight: 200;
-  line-height: 1;
-  padding-left: 7%;
+  font-weight: 300;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.TextoBasicoFondoOscuro {
+  background-color: #b69f8e;
+  min-height: 1vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-between;
+  font-size: calc(10px + 2vmin);
+  font-style:normal;
+  font-weight: 300;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
 }
 @media (300px <= width <= 900px){
-  .AppClass nav {
-    font-size: calc(5px + 3vmin);
-    padding-left: 5%;
+  .TextoBasicoFondoOscuro {
+    font-size: calc(30px + 2vmin);
   }
 }
+.FormularioEntero {
+  background-color: #b69f8e;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(8px + 2vmin);
+  font-style:normal;
+  font-weight: 300;
+  font-family: 'Josefin Sans', sans-serif;
+  color: black;
+  width:100%;
+  min-width:fit-content;
+  padding-bottom: 3%;
+}
+.FormularioEtiquetas {
+  min-height: 4vh;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+  padding-bottom: 0%;
+  padding-top: 2%;
+}
+.FormularioEtiquetaCuentanos {
+  min-height: 5vh;
+  min-width:10vh;
+  padding-top: 2%;
+  display: none;
+  align-items: left;
+  justify-content: space-between;
+  width:100%;
+}
+
+.FormularioInputs {
+  justify-content: space-between;
+  min-height: 5vh;
+  min-width:20vh;
+  font-size: calc(1000px + 2vmin);
+  display: flex;
+  gap:2rem;
+  padding-bottom: 2%;
+}
+.FormularioEnviar {
+  justify-content:end;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.FormularioValidacion {
+  background-color: #b69f8e;
+  min-height: 1vh;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: right;
+  font-size: calc(10px + 1vmin);
+  font-style:normal;
+  font-weight: 300;
+  font-family: 'Josefin Sans', sans-serif;
+  color: red;
+  width:100%;
+}
+
+.AppClass nav{
+  display: flex;
+  justify-content:center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(20px + 2vmin);
+}
+@media (300px <= width <=   1000px){
+  .AppClass nav {
+    font-size: calc(2px + 1vmin);
+  }
+}
+
 .AppClass nav a{
+  display:flex;
   align-items: center;
   color: inherit;
   text-decoration: none;
-  height: 100%;
-  display:flex;
-  align-items: center;
-  padding: 1.5rem;
+  padding: 6rem;
 }
 @media (300px <= width <= 900px){
   .AppClass nav a{
-    font-size: calc(8px + 2vmin);
+    font-size: calc(4px + 2vmin);
     padding: 1rem;
   }
 }
@@ -92,16 +256,4 @@ font-weight: 1000;}
   flex-direction: row;
   list-style: none;
   display: flex;
-  gap: 2rem;
 }
-
-@media (300px <= width <= 900px){
-  .AppClass ul {
-    gap: 0rem;
-  }
-}
-
-
-
-
-
