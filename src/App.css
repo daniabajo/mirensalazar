@@ -6,7 +6,20 @@
   min-height: 100vh;
   font-family: 'Josefin Sans', sans-serif;
   justify-content: 'center';
+  padding-bottom: 0%;
 }
+
+.ReservaCita {
+  background-color: #e2dcd9;
+  text-align: center;
+  font-size: calc(40px + 2vmin);
+  color: black;
+  min-height: 100vh;
+  font-family: 'Josefin Sans', sans-serif;
+  justify-content: 'center';
+  padding-bottom: 10%;
+}
+
 .LogoClassMain{
   display: none;
 }
@@ -28,74 +41,168 @@
     display: none;
   }
 }
-
 .ImageTransversal {
   align-items: left;
   margin: 0;
   scale:1 ;
   width: 100%;
 }
-
-.HeaderClass {
-  min-height: 1vh;
+.TituloClaro {
+  min-height: 3vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(100px + 2vmin);
+  font-size: calc(70px);
   font-style:normal;
   font-weight: 200;
   line-height: 1;
   color: #a78b6c;
   font-family: 'coax';
-
 }
 @media (300px <= width <= 900px){
-  .HeaderClass {
-    font-size: calc(30px + 2vmin);
+  .TituloClaro {
+    font-size: calc(30px);
   }
 }
-
-.HeaderClass2 {
+.TituloOscuro {
   background-color: #b69f8e;
-  min-height: 1vh;
-  display: flex;
+  height:fit-content;
+  display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(100px + 2vmin);
+  font-size: calc(70px);
   font-style:normal;
   font-weight: 200;
   line-height: 1;
   color: #e2dcd9;
   font-family: 'coax';
-
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  margin-top: 35%;
 }
 @media (300px <= width <= 900px){
-  .HeaderClass2 {
+  .TituloOscuro {
     font-size: calc(30px + 2vmin);
   }
 }
-.HeaderClass3 {
+.DondeEstamosL{
+  float:left;
+  align-items: center;
+  display: block;
+  margin-left: 15%;
+}.DondeEstamosR{
+  float:right;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  margin-right: 10%;
+  scale:50%;
+  margin-top:0%;
+  padding-top: 0%;
+}
+.DondeEstamosIcono{
+  align-items: left;
+  display: table-column;
+  margin: 0;
+  scale:0.5 ;
+  width: 15%;
+  margin:5%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.DondeEstamosTexto {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 20px;
+}
+
+.TextoBasico {
   background-color: #b69f8e;
   min-height: 1vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(30px + 2vmin);
+  justify-content:space-between;
+  font-size: calc(10px + 2vmin);
   font-style:normal;
-  font-weight: 200;
-  line-height: 1;
+  font-weight: 300;
   color: black;
-  font-family: 'coax';
-
+  font-family: 'Josefin Sans', sans-serif;
 }
 @media (300px <= width <= 900px){
-  .HeaderClass3 {
+  .TextoBasico {
     font-size: calc(30px + 2vmin);
   }
 }
+.FormularioEntero {
+  background-color: #b69f8e;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(8px + 2vmin);
+  font-style:normal;
+  font-weight: 300;
+  font-family: 'Josefin Sans', sans-serif;
+  color: black;
+  width:100%;
+  min-width:fit-content;
+  padding-bottom: 3%;
+}
+.FormularioEtiquetas {
+  min-height: 4vh;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+  padding-bottom: 0%;
+  padding-top: 2%;
+}
+.FormularioEtiquetaCuentanos {
+  min-height: 5vh;
+  min-width:10vh;
+  padding-top: 2%;
+  display: none;
+  align-items: left;
+  justify-content: space-between;
+  width:100%;
+}
+
+.FormularioInputs {
+  justify-content: space-between;
+  min-height: 5vh;
+  min-width:20vh;
+  font-size: calc(1000px + 2vmin);
+  display: flex;
+  gap:2rem;
+  padding-bottom: 2%;
+}
+.FormularioEnviar {
+  justify-content:end;
+}
+.FormularioValidacion {
+  background-color: #b69f8e;
+  min-height: 1vh;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: right;
+  font-size: calc(10px + 1vmin);
+  font-style:normal;
+  font-weight: 300;
+  font-family: 'Josefin Sans', sans-serif;
+  color: red;
+  width:100%;
+}
+
 .AppClass nav{
   display: flex;
   justify-content:center;
