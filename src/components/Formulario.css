@@ -1,0 +1,119 @@
+.FormularioBase {
+    background-color: #b69f8e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Sans';
+    color: black;
+    border: none;
+}
+
+@media (width <=1100px) {
+    .FormularioBase {
+        font-size: calc(30px + 2vmin);
+    }
+}
+
+.FormularioTitulo {
+    font-size: calc(70px);
+    color: #e2dcd9;
+    font-family: 'coax';
+    margin-top:3%;
+    border: inherit;
+}
+
+@media (width <=1100px) {
+    .FormularioTitulo {
+        font-size: calc(30px + 2vmin);
+    }
+}
+
+.FormularioTexto {
+    font-size: calc(5px + 2vmin);
+    font-family: 'Josefin Sans';
+    border: inherit;
+}
+
+.FormularioInputs {
+    display: flex;
+    flex-direction: column;
+    border: inherit;
+    margin-bottom:5%;
+    width:60%;
+    padding:0;
+    gap:2rem;
+}
+
+.InputsDivision {
+    display: flex;
+    justify-content: space-between;
+    border: inherit;
+    margin-top: 2%;
+}
+
+.InputsTexto {
+    font-family: 'Josefin Sans';
+    justify-content: space-between;
+    font-size: calc(10px + 1vmin);
+    border: 2px solid black;
+    width: 42%;
+    min-height: 40px;
+}
+.ExplicacionDivision {
+    display: flex;
+    justify-content: space-between;
+    border: inherit;
+    margin-top: 2%;
+}
+
+.ExplicacionTexto {
+    font-family: 'Josefin Sans';
+    justify-content: space-between;
+    font-size: calc(10px + 1vmin);
+    min-height: 180px;
+    border: 2px solid black;
+    width: 100%;
+}
+.EnvioDivision {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+.EnvioBoton {
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Sans';
+    font-size: 16px;
+    margin-left: 90%;
+    width: 10%;
+    min-height: 40px;
+    margin-top: 2%;
+    border: inherit;
+}
+@media (width <=1100px) {
+    .EnvioBoton {
+        font-size: calc(10px);
+        width: 30%;
+        margin-left: 70%;
+    }
+}
+.EnvioTextoPolitica {
+    font-size: calc(20px);
+    border: inherit;
+}
+
+@media (width <=1100px) {
+    .EnvioTextoPolitica {
+        font-size: calc(10px);
+    }
+}
+
+.InputsEtiquetas {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2%;
+    border: inherit;
+}
+

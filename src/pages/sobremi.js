@@ -2,7 +2,7 @@
 export default function Sobremi() {
     return (
         <div className="AppClass">
-            <h className="TituloClaro">  <p> Sobre mí en construcción...</p> </h>
+            <h className="TituloDorado">  <a> Sobre mí en construcción...</a> </h>
         </div>
     )
 }
