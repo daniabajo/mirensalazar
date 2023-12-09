@@ -1,6 +1,8 @@
 
-export default function Home() {
+export default function PoliticaPrivacidad() {
     return (
-        <h className="TextoBasico">  <p> Política de privacidad en desarrollo...</p> </h>
+        <div className="AppClass">
+            <h className="TituloDorado">  <a> Política de privacidad en desarrollo...</a> </h>
+        </div>
     )
 }

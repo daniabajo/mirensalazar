@@ -1,6 +1,8 @@
 
 export default function Home() {
     return (
-        <h className="TituloClaro">  <p> Home en construcción...</p> </h>
+        <div className="AppClass">
+            <h className="TituloDorado">  <a> Home en construcción...</a> </h>
+        </div>
     )
 }
