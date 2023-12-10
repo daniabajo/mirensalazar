@@ -1,43 +1,47 @@
 import "./Footer.css"
-import Direccion from './../images/Direccion.svg';
-import Horario from './../images/Horario.svg';
-import Telefono from './../images/Telefono.svg';
+import LeadMagnet from './../images/LeadMagnet.png';
 import { PopupButton } from "react-calendly";
 import { Link } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons'
 
 
-
 const Footer = () => {
+    function DescargaButton() { window.scrollTo(0, 0); }
     return (
         <div className="Footer">
             <div className="FooterMain">
                 <div className="FooterMainDescarga">
                     <div >
-                    <img className="FooterMainDescargaImagen"  src={Direccion}  alt="Direccion" />
+                        <img className="FooterMainDescargaImagen" src={LeadMagnet} alt="Direccion" />
                     </div>
                     <div className="FooterMainDescargaTexto">
-                        <a className="FooterMainDescargaTextoGrande"> Las 10 claves del éxito a largo plazo. </a>
-                        <a className="FooterMainDescargaTextoLargo"> ¡Descubre los consejos que te llevarán a obtener resultados permanentes de una vez por todas! </a>
-                        <button className="FooterMainDescargaBoton"> DESCARGA </button>
+                        <a className="FooterMainDescargaTextoTitulo"> Las 10 claves del éxito a largo plazo. </a>
+                        <a className="FooterMainDescargaTextoTexto"> ¡Descubre los consejos que te llevarán a obtener resultados permanentes de una vez por todas! </a>
+                        <button className="FooterMainDescargaBoton" onClick={DescargaButton} > <Link to="/descargas" className="LinkBoton" style={{textDecoration:"none", width:'100%'}}> DESCARGA</Link> </button>
                     </div>
                 </div>
                 <div className="FooterMainSiguenos">
-                    <a className="FooterMainSiguenosTextoGrande"> Síguenos </a>
+                    <a className="FooterMainSiguenosTextoTitulo"> Síguenos </a>
                     <div className="FooterMainSiguenosIcono">
-                    <SocialIcon className="FooterMainSiguenosIconoIcono" network="instagram" url="https://instagram.com" bgColor="#b69f8e" fgColor="#e2dcd9"/> 
-                    <SocialIcon className="FooterMainSiguenosIconoIcono" network="facebook" url="https://facebook.com"  bgColor="#b69f8e" fgColor="#e2dcd9"/> 
+                        <SocialIcon className="FooterMainSiguenosIconoIcono" network="instagram" url="https://instagram.com/annavehi.nutricionista/" bgColor="#b69f8e" fgColor="#e2dcd9" />
+                        <SocialIcon className="FooterMainSiguenosIconoIcono" network="facebook" url="https://facebook.com/annavehi.nutricionista/" bgColor="#b69f8e" fgColor="#e2dcd9" />
                     </div>
-                    <a className="FooterMainSiguenosTextoPeque"> info@annavehi.com </a>
-                    <a className="FooterMainSiguenosTextoPeque"> +34 623003020 </a>
+                    <a className="FooterMainSiguenosTextoTexto"> info@annavehi.com </a>
+                    <a className="FooterMainSiguenosTextoTexto"> +34 623003020 </a>
+                    <PopupButton className="FooterBotonReservar" url="https://calendly.com/annavehi/primera_visita_presencial" rootElement={document.getElementById("root")} text="RESERVA CITA" />
                 </div>
             </div>
             <div className="FooterCreacion">
-                <a > Anna Vehi . Centre de nutrició 2023 </a>
+                <a > Anna Vehí . Centre de nutrició 2023 </a>
             </div>
-            <div className="FooterLegalidad">
-                <a><Link className="FooterLegalidadTexto"  to="/avisolegal"> Aviso Legal </Link> | <Link className="FooterLegalidadTexto" to="/politicaprivacidad"> Política de privacidad </Link> |
-                 <Link className="FooterLegalidadTexto"  to="/politicacookies"> Política de cookies</Link> | <Link  className="FooterLegalidadTexto" to="/politicacookies"> Condiciones generales de contratación</Link> </a>
+            <div className="FooterLegalidad" >
+                <div className="FooterLegalidad">
+                    <a><
+                        Link className="FooterLegalidadTexto" to="/avisolegal"> Aviso Legal </Link> | <Link className="FooterLegalidadTexto" to="/politicaprivacidad"> Política de privacidad </Link> |
+                        <Link className="FooterLegalidadTexto" to="/politicacookies"> Política de cookies</Link> | <Link className="FooterLegalidadTexto" to="/condicionescontratacion"> Condiciones de contratación</Link>
+                    </a>
+                </div>
+                <button className="FooterLegalidadBotonArriba" onClick={DescargaButton}>Volver arriba</button>
             </div>
         </div>
     )

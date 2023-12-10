@@ -23,7 +23,7 @@ const Formulario = () => {
             <div className="InputsEtiquetas"> <label> Nombre* </label> <label> Apellidos </label> </div>
             <div className="InputsDivision" >
                 <input className="InputsTexto"  type="text" {...register('nombre', { required: true })} name="nombre" required placeholder='Nombre*' />
-                <input  className="InputsTexto" type="text" {...register('apellidos', { required: true })} name="apellidos" required placeholder='Apellidos' />
+                <input  className="InputsTexto" type="text" {...register('apellidos', { required: false })} name="apellidos"  placeholder='Apellidos' />
             </div>
             <div className="InputsEtiquetas"> <label> Email* </label> <label> Teléfono </label> </div>
             <div className="InputsDivision">

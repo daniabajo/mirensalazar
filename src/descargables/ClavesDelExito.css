@@ -1,0 +1,125 @@
+/* Base */
+.DescargableBase {
+    background-color: #e2dcd9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+    font-family: 'Josefin Sans';
+    border: none;
+    gap: 0rem;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top:3%;
+
+}
+
+/* Imagen */
+
+.DescargableImagen {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border: inherit;
+    padding-right: 5%;
+    width: 40%;
+    height: 100%;
+}
+
+/* Texto */
+.DescargableTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+    width: 60%;
+    gap: 3rem;
+}
+
+.DescargableTextoTitulo {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 300;
+    border: none;
+}
+
+@media (width <=1000px) {
+    .DescargableTextoTitulo {
+        font-size: 20px;
+    }
+}
+
+.DescargableTextoTexto {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    border: none;
+}
+
+@media (width <=1000px) {
+    .DescargableTextoTexto {
+        font-size: 15px;
+    }
+}
+
+/* Form */
+.DescargableForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border: none;
+    gap: 1rem;
+
+
+}
+
+/* Inputs */
+.DescargableInputs {
+    background-color: #f2edec;
+    font-family: 'Josefin Sans';
+    justify-content: space-between;
+    font-size: calc(10px + 1vmin);
+    border:2px solid black;
+    min-height: 40px;
+}
+
+/* Texto politica */
+.DescargablePolitica{
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.DescargableTextoPolitica {
+    font-size: 15px;
+    border: inherit;
+}
+
+@media (width <=1100px) {
+    .DescargableTextoPolitica {
+        font-size: 13px;
+    }
+}
+
+/* Boton */
+.DescargableBoton {
+    background-color: #31464e;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #e2dcd9;
+    margin-left: 40%;
+    width: 20%;
+    min-height: 40px;
+    margin-top: 2%;
+    border: inherit;
+}
+
+@media (width <=1100px) {
+    .DescargableBoton {
+        font-size: calc(10px);
+    }
+}

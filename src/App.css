@@ -30,6 +30,7 @@
   font-size: calc(70px);
   font-family: 'coax';
   border: inherit;
+  align-items: center;
   margin-top: 3%;
   padding: 0;
 }
@@ -56,4 +57,19 @@
   color: white;
   font-family: 'Josefin Sans';
   font-size: 16px;
+}
+
+.TextoLegal{
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Josefin Sans';
+  justify-content: 'left';
+  font-size: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5%;;
+  padding: 3%;
+  margin-top: 2%;
 }
