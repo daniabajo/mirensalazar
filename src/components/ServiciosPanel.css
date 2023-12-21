@@ -1,0 +1,112 @@
+.ServiciosFila {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    font-family: 'Josefin Sans';
+    justify-content: space-between;
+    color: black;
+    width: 70%;
+    gap: 1rem;
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
+@media (900px <=width <=1400px) {
+    .ServiciosFila {
+        margin-left: 10%;
+        width: 80%;
+        font-size: 20px;
+    }
+}
+@media (width <=900px) {
+    .ServiciosFila {
+        margin-left: 5%;
+        width: 90%;
+        flex-direction: column;
+    }
+}
+
+
+.ServiciosColumna {
+    display: flex;
+    flex-direction: column;
+    border: inherit;
+    width: 100%;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.ServiciosItem {
+    display: flex;
+    flex-direction: column;
+    border: 2px #cfb051 solid;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: 300;
+    padding-top:2%;
+
+}
+
+.ServiciosTitulo {
+    display:flex;
+    justify-content: left;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+
+@media (900px <=width <=1400px) {
+    .ServiciosTitulo {
+        font-size: 15px;
+    }
+}
+@media (width <=900px) {
+    .ServiciosTitulo {
+        font-size: 15px;
+    }
+}
+
+
+.ServiciosLista{
+    font-family: 'Josefin Sans';
+    gap:1rem;
+    padding:5%
+}
+ul.ServiciosLista{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    padding:0;
+    align-items: start;
+    border: none;
+    justify-content: left;
+    font-size: 25px;
+    padding:2%;
+    padding-left: 8%;
+
+
+}
+
+.ServiciosListaItem{
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+
+}
+
+
+/* Boton reserva */
+.ServiciosBotonReservar {
+    background-color: #31464e;
+    color: #e2dcd9;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    text-decoration: "none";
+    margin-left: 40%;
+    width: 20%;
+  }
+  
+  @media (width <=900px) {
+    .ServiciosBotonReservar {
+      font-size: 5px;
+    }
+  }

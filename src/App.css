@@ -8,8 +8,46 @@
   min-height: 100vh;
   font-family: 'Josefin Sans';
   justify-content: 'center';
-  padding-bottom: 0%;
+  padding-bottom: 3%;
+  border: none;
 }
+
+.AppClassOscuro {
+  display: flex;
+  flex-direction: column;
+  background-color: #e2dcd9;
+  text-align: center;
+  font-size: calc(40px + 2vmin);
+  color: black;
+  min-height: 100vh;
+  font-family: 'Josefin Sans';
+  justify-content: 'center';
+  padding-bottom: 0%;
+  border: none;
+}
+
+.Descargas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2dcd9;
+  border: inherit;
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 5%;
+
+}
+
+.LogoMan {
+  display: flex;
+  width: 40%;
+  margin-left: 30%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
 .LogoMain {
   display: none;
   width: 40%;
@@ -18,11 +56,13 @@
   align-items: center;
   justify-content: center;
 }
+
 @media (width <=1100px) {
   .LogoMain {
     display: flex;
   }
 }
+
 .TituloDorado {
   color: #a78b6c;
   display: flex;
@@ -31,15 +71,20 @@
   font-family: 'coax';
   border: inherit;
   align-items: center;
-  margin-top: 3%;
+  margin-top: 6%;
+  margin-bottom: 3%;
   padding: 0;
+  border: none;
+
 }
+
 @media (width <=1100px) {
   .TituloDorado {
     font-size: calc(30px);
     min-height: 60px;
   }
 }
+
 .TextoBasico {
   color: black;
   display: flex;
@@ -48,28 +93,52 @@
   align-items: center;
   font-size: 30px;
 }
+
 .ImageTransversal {
   align-items: left;
   margin: 0;
   width: 100%;
 }
+
 .TextoLinkConsentCookies {
-  color: white;
+  color: #f2edec;
   font-family: 'Josefin Sans';
   font-size: 16px;
 }
 
-.TextoLegal{
-  background-color: white;
-  color: black;
+
+.LegalContainer {
   display: flex;
   flex-direction: column;
-  font-family: 'Josefin Sans';
+  font-family: 'Josefin Sans', sans-serif;
+  margin-left: 25%;
+  margin-bottom: 5%;
+  padding-top: 2%;
+  width: 50%;
+
+}
+
+.LegalTitulo {
+  justify-content: 'left';
+  font-size: 40px;
+}
+
+.LegalTexto {
+  display: flex;
+  flex-direction: column;
   justify-content: 'left';
   font-size: 20px;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 5%;;
   padding: 3%;
-  margin-top: 2%;
+}
+
+.LegalNegrita {
+  font-weight: 400;
+  font-size: 18px;
+  padding-top: 5%;
+  padding-bottom: 0%;
+}
+
+.LegalExplicacion {
+  font-weight: 300;
+  font-size: 18px;
 }

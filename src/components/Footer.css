@@ -1,3 +1,4 @@
+/* Main */
 .Footer {
   display: flex;
   flex-direction: column;
@@ -6,47 +7,57 @@
   border: none;
   color: black;
   font-family: 'Josefin Sans';
+  font-weight:300;
 }
 
 .FooterMain {
   background-color: #cfbfae;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: top;
-  border: none;
+  border: inherit;
   color: black;
   width: 100%;
-  padding-top: 3%;
-  padding-bottom: 2%;
+  padding-top: 1.5%;
+  padding-bottom: 1%;
 }
 
+/* Parte izquierda Descarga */
 .FooterMainDescarga {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 40%;
-  margin-left: 15%;
-  border: "none";
-  gap: 0.5rem;
+  margin-left: 18%;
+  border: inherit;
+}
+
+@media (width <=900px) {
+  .FooterMainDescarga {
+    margin-left: 13%;
+  }
 }
 
 .FooterMainDescargaImagen {
-  width: 100%;
-  align-items: center;
+  display: flex;
+  margin-right: 25%;
+  width: 70%;
+  scale: 1;
+  align-items: right;
+  justify-content: right;
+  border: inherit;
 }
 
 .FooterMainDescargaTexto {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: none;
-  gap: 3rem;
+  border: inherit;
   height: 100%;
 }
 
 .FooterMainDescargaTextoTitulo {
   font-size: 17px;
+  border: inherit;
 }
 
 @media (width <=900px) {
@@ -57,16 +68,14 @@
 
 .FooterMainDescargaTextoTexto {
   font-size: 15px;
+  border: inherit;
 }
 
 @media (width <=900px) {
   .FooterMainDescargaTextoTexto {
-    font-size: 10px;
-    /*display:'none';*/
+    font-size: 8px;
   }
 }
-
-
 
 .FooterMainDescargaBoton {
   background-color: #31464e;
@@ -82,23 +91,23 @@
   text-decoration: "none";
   color: #cfbfae;
   font-size: 15px;
+  border: none;
 }
+
 @media (width <=900px) {
   .LinkBoton {
-    font-size: 9px;
+    font-size: 5px;
   }
 }
+
+/* Parte derecha Siguenos */
 .FooterMainSiguenos {
   display: flex;
   flex-direction: column;
   align-items: top;
   justify-content: space-between;
-  width: 40%;
-  margin-right: 10%;
-  border: "none";
-  gap: 1rem;
-  margin-top: 0;
-  padding-top: 0;
+  width: 30%;
+  border: inherit;
 }
 
 @media (width <=900px) {
@@ -112,12 +121,13 @@
   justify-content: center;
   gap: 1rem;
   border: inherit;
-  scale: 0.7;
+  height: 20%;
+  scale:0.7;
 }
 
 @media (width <=900px) {
   .FooterMainSiguenosIcono {
-    scale: 0.4;
+    scale: 0.35;
   }
 }
 
@@ -134,7 +144,7 @@
 
 @media (width <=900px) {
   .FooterMainSiguenosTextoTitulo {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
@@ -148,7 +158,7 @@
 
 @media (width <=900px) {
   .FooterMainSiguenosTextoTexto {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 
@@ -165,10 +175,10 @@
 
 @media (width <=900px) {
   .FooterBotonReservar {
-    font-size: 8px;
+    font-size: 5px;
   }
 }
-
+/* Parte creacion 2023 */
 .FooterCreacion {
   background-color: #cfbfae;
   display: flex;
@@ -186,15 +196,15 @@
     font-size: 10px;
   }
 }
-
+/* Parte legal del footer color flojo */
 .FooterLegalidad {
   display: flex;
   justify-content: left;
   width: 100%;
   border: none;
   color: #cfbfae;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
   padding-left: 1%;
   padding-right: 1%;
 }
@@ -207,7 +217,7 @@
 
 @media (width <=900px) {
   .FooterLegalidadTexto {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 
@@ -222,6 +232,6 @@
 
 @media (width <=900px) {
   .FooterLegalidadBotonArriba {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
