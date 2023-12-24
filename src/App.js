@@ -28,7 +28,7 @@ function App() {
   useEffect (()=>{setTimeout(() => {SetTimePopUp(true);},3000);},[])
   const location = useLocation();
   useEffect(() => {ReactGA.pageview(location.pathname + location.search); }, [location]); 
-  return (false) ? (
+  return (true) ? (
     <div>
       <img src={Logo} className="LogoMain" alt="logo" />
       <Popup Trigger={TimePopUp} SetTrigger={SetTimePopUp}></Popup>
