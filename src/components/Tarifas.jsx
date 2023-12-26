@@ -12,7 +12,7 @@ const Tarifas = () => {
                 <div className='TarifasPaquetesCuadro'>
                     <div className='PaqueteTitulo'>
                         <a >PAQUETE PLATINIUM </a>
-                        <a className='PaqueteTituloTachado'> 120€</a>
+                        <a className='PaqueteTituloTachado'> 230€</a>
                         <a> 100€</a>
                     </div>
                     <a className='PaqueteTexto'>¿Qué incluye?</a>
@@ -32,7 +32,7 @@ const Tarifas = () => {
                 <div className='TarifasPaquetesCuadro'>
                     <a className='PaqueteTitulo'>
                         <a> PAQUETE GOLD </a>
-                        <a className='PaqueteTituloTachado'> 75€</a>
+                        <a className='PaqueteTituloTachado'> 80€</a>
                         <a> 60€</a>
                     </a>
                     <a className='PaqueteTexto'>¿Qué incluye?</a>

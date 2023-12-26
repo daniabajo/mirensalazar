@@ -1,7 +1,7 @@
 import { InlineWidget } from "react-calendly";
 import Consulta from './../images/Consulta.png';
 import './../App.css';
-import Tarifas from './../components/Tarifas';
+import Tarifas from '../components/Tarifas';
 export default function Reserva() {
     return (
         <div className="AppClassOscuro">
