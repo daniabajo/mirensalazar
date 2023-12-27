@@ -1,5 +1,5 @@
 import './Navigationbar.css'
-import Logo from './../images/Logo.svg'
+import Logo from './../images/Logo3.svg'
 
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 export default function Navbar() {

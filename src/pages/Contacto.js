@@ -2,9 +2,11 @@ import Consulta from './../images/Consulta.png';
 import DondeEstamos from './../components/DondeEstamos';
 import Formulario from '../components/Formulario';
 
+
+
 export default function Contacto() {
     return (
-        <div className="AppClass">
+        <div className="AppClassOscuro">
             <img src={Consulta} className="ImageTransversal" alt="Consulta" />
             <DondeEstamos />
             <Formulario />

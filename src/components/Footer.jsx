@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="FooterMain">
                 <div className="FooterMainDescarga">
                     <div >
-                        <img className="FooterMainDescargaImagen" src={LeadMagnet} alt="Direccion" />
+                        <img className="FooterMainDescargaImagen" src={LeadMagnet} alt="LeadMagnet" />
                     </div>
                     <div className="FooterMainDescargaTexto">
                         <a className="FooterMainDescargaTextoTitulo"> Las 10 claves del éxito a largo plazo. </a>
@@ -32,7 +32,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="FooterCreacion">
-                <a > Anna Vehí . Centre de nutrició 2023 </a>
+                <a > Anna Vehí · Centre de nutrició 2023 </a>
             </div>
             <div className="FooterLegalidad" >
                 <div className="FooterLegalidad">

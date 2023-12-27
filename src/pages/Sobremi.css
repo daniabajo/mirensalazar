@@ -1,0 +1,69 @@
+.SobremiBase{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Josefin Sans';
+    width:60%;
+    margin-left: 20%;
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 4%;
+    border:none;
+}
+@media (900px <=width <=1400px) {
+    .SobremiBase {
+        margin-left: 10%;
+        width: 80%;
+        font-size: 20px;
+        
+    }
+}
+@media (width <=900px) {
+    .SobremiBase {
+        margin-left: 5%;
+        width: 90%;
+        flex-direction: column;
+        font-size: 15px;
+
+    }
+}
+.SobremiFilofia{
+    display: flex;
+    flex-direction: column;
+    border: inherit;
+}
+
+.SobremiFilofiaFila{
+    display: flex;
+    flex-direction: row;
+    border: inherit;
+}
+
+@media (width <=900px) {
+    .SobremiFilofiaFila {
+        flex-direction: column;
+
+    }
+}
+
+.SobremiFilosfiaFoto{
+    border: inherit;
+}
+@media (900px <=width <=1400px) {
+    .SobremiFilosfiaFoto {
+        display:flex;
+    }
+}
+@media (width <=900px) {
+    .SobremiFilosfiaFoto {
+        display:flex;
+
+    }
+}
+
+.SobremiHistoria{
+    border: inherit;
+}
+.SobremiTrayectoria{
+    border: inherit;
+}
