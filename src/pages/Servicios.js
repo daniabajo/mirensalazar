@@ -5,7 +5,6 @@ import Consulta from './../images/Consulta.png';
 
 export default function Servicios() {
     return (
-
         <div className="AppClass">
             <img src={Consulta} className="ImageTransversal" alt="Consulta" />
             <h className="TituloDorado">  <a> Servicios</a> </h>
