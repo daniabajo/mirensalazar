@@ -30,7 +30,7 @@ const ClavesDelExito = () => {
                     <input className="DescargableInputs" id="EMAIL" name='email' autoFocus type="email" value={fields.EMAIL} onChange={handleFieldChange} placeholder='Email*' required />
                     <div className='DescargablePolitica'>
                         <input className="DescargableCheckPolitica" type="checkbox" {...register('acepto', { required: true })} required name="acepto" />
-                        <a className="DescargableTextoPolitica" to="/politicaprivacidad"> Acepto la  <Link to="/politicaprivacidad">  politica de privacidad </Link>y la subscripción a la newsletter.</a>
+                        <a className="DescargableTextoPolitica" to="/politicaprivacidad"> Acepto la  <Link to="/politicaprivacidad">  politica de privacidad </Link>y la suscripción a la newsletter.</a>
                     </div>
                     <div className='DescargableBotonContainer'>
                         <input className="DescargableBoton" type="submit" value="¡LO QUIERO!" />

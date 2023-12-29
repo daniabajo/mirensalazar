@@ -28,7 +28,7 @@ const Footer = () => {
                     </div>
                     <a className="FooterMainSiguenosTextoTexto"> info@annavehi.com </a>
                     <a className="FooterMainSiguenosTextoTexto"> +34 623003020 </a>
-                    <PopupButton className="FooterBotonReservar" url="https://calendly.com/annavehi/primera_visita_presencial" rootElement={document.getElementById("root")} text="RESERVA CITA" />
+                    <PopupButton className="FooterBotonReservar" url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")} text="RESERVA CITA" />
                 </div>
             </div>
             <div className="FooterCreacion">
