@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.edb216be.css",
+    "main.js": "/static/js/main.ffaca581.js",
+    "static/media/Consulta.png": "/static/media/Consulta.e39fb613f7b6dca1493c.png",
+    "static/media/ClavesDelExito.png": "/static/media/ClavesDelExito.97bb1f4bf3610cdad508.png",
+    "static/media/LeadMagnet.png": "/static/media/LeadMagnet.97bb1f4bf3610cdad508.png",
+    "static/media/Logo3.svg": "/static/media/Logo3.3685be103aa5671fb41a2e6f3d2de26c.svg",
+    "static/media/Logo.svg": "/static/media/Logo.25534f5c3ce380237574b58736668061.svg",
+    "static/media/Coax.otf": "/static/media/Coax.3a4bf6491642495bdd42.otf",
+    "static/media/Telefono.svg": "/static/media/Telefono.55fdf14362fac2be5a94b7b76b46daf3.svg",
+    "static/media/Direccion.svg": "/static/media/Direccion.4a8b4b8f888a086792a1d69e2226b44b.svg",
+    "static/media/Correo.svg": "/static/media/Correo.ec6bdc345dc6ad579962a304192df6a7.svg",
+    "static/media/Horario.svg": "/static/media/Horario.713a7260f71bda9015ac17874edf91e8.svg",
+    "index.html": "/index.html",
+    "main.edb216be.css.map": "/static/css/main.edb216be.css.map",
+    "main.ffaca581.js.map": "/static/js/main.ffaca581.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.edb216be.css",
+    "static/js/main.ffaca581.js"
+  ]
+}
