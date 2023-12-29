@@ -81,7 +81,8 @@
   background-color: #31464e;
   color: #cfbfae;
   border: inherit;
-  border: 1px solid black;
+  width:45%;
+  margin-left: 27%;
 }
 
 .LinkBoton {
@@ -90,13 +91,15 @@
   justify-content: center;
   text-decoration: "none";
   color: #cfbfae;
-  font-size: 15px;
+  font-size: 17px;
   border: none;
+  width:30%;
+  border-radius: 40%;
 }
 
 @media (width <=900px) {
   .LinkBoton {
-    font-size: 5px;
+    font-size: 10px;
   }
 }
 
