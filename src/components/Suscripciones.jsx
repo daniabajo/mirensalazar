@@ -4,17 +4,17 @@ import StripeContainer from './StripeContainer';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import "./Subscripciones.css"
+import "./Suscripciones.css"
 
 
-const Subscripciones = () => {
+const Suscripciones = () => {
     const [showItemPlatinium,setShowItemPlatinium] = useState (false);
     const [showItemGold,setShowItemGold] = useState (false);
     function DescargaButton() {  window.location.href = "https://buy.stripe.com/14k5mv7W65IN2JO4gh";}
     return <div className="TarifasBase">
-        <h className="TarifasTitulo"> <a> Subscripciones</a> </h>
+        <h className="TarifasTitulo"> <a> Suscripciones</a> </h>
         <div className='TarifasPaquetesContenedor'>
-        <div className="TarifasTextoContenedor"><h className="TarifasTexto"> <p> Elige la subscripción que mejor se adapte a tu objetivo:</p> </h></div>
+        <div className="TarifasTextoContenedor"><h className="TarifasTexto"> <p> Elige la suscripción que mejor se adapte a tu objetivo:</p> </h></div>
             <div className='TarifasPaquetesFila'>
                 <div className='TarifasPaquetesCuadro'>
                     <div className='PaqueteTitulo'>
@@ -61,4 +61,4 @@ const Subscripciones = () => {
         
     </div>
 }
-export default Subscripciones;
+export default Suscripciones;

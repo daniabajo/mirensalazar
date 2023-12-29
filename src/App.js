@@ -46,10 +46,10 @@ function App() {
         <Route path="/politicacookies" element={<PoliticaCookies />} />
         <Route path="/condicionescontratacion" element={<CondicionesContratacion />} />
         <Route path="/descargas" element={<Descargas />} />
-        <Route path="/subscripciones" element={<Pagos />} />
+        <Route path="/suscripciones" element={<Pagos />} />
 
       </Routes>
-      {/*<PopupWidget url="https://calendly.com/annavehi/primera_visita_presencial" rootElement={document.getElementById("root")}text="Reserva tu cita"textColor="white"color="#31464e" side="left" />*/}
+      {/*<PopupWidget url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")}text="Reserva tu cita"textColor="white"color="#31464e" side="left" />*/}
       <FloatingWhatsApp className="a" phoneNumber="+34623003020" accountName="Centre de nutrició Anna Vehí" chatMessage="Hola, en qué podemos ayudarte?"  statusMessage='Responde antes de 48h'
         avatar="https://annavehi.com/favicon.png" />
       <CookieConsent buttonText="Permitir" style={{ background: "#31464e", fontFamily:'Josefin Sans'}} buttonStyle={{ color: "black", fontSize: "13px", location: "left", fontFamily: 'Josefin Sans' }}

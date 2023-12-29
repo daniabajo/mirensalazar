@@ -9,7 +9,7 @@ export default function Servicios() {
             <img src={Consulta} className="ImageTransversal" alt="Consulta" />
             <h className="TituloDorado">  <a> Servicios</a> </h>
             <ServiciosPanel />
-            <PopupButton className="ServiciosBotonReservar" url="https://calendly.com/annavehi/primera_visita_presencial" rootElement={document.getElementById("root")} text="RESERVA CITA" />
+            <PopupButton className="ServiciosBotonReservar" url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")} text="RESERVA CITA" />
         </div>
     )
 }

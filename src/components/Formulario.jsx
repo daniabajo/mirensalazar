@@ -46,7 +46,7 @@ const Formulario = () => {
                         Marcando esta casilla manifiestas que has leído y aceptas el
                         <Link to="/avisolegal"> Aviso Legal </Link>, la
                         <Link to="/politicaprivacidad"> Política de privacidad </Link> y la
-                        subscripción a la newsletter. </a>
+                        suscripción a la newsletter. </a>
                 </div>
                 <input className="EnvioBoton" type="submit" value="ENVIAR" />
                 {loading && "Enviando..."}
