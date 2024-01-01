@@ -2,7 +2,7 @@ import { InlineWidget } from "react-calendly";
 import Consulta from './../images/Consulta.png';
 import Telefono from './../images/Telefono.svg';
 import Correo from './../images/Correo.svg';
-import Tarifas2 from '../components/Tarifas2';
+import SuscripcionTablas from '../components/SuscripcionTablas';
 import SuscripcionExplicacion from '../components/SuscripcionExplicacion';
 import './../App.css';
 import "./Reserva.css"
@@ -10,9 +10,9 @@ export default function Reserva() {
     return (
         <div>
             <div className="ReservaBaseCalendly">
-                <h className="TituloDorado"> <a> Reserva tu cita</a> </h>
+                <h className="ReservaTitulo"> <a> Reserva tu cita</a> </h>
                 <a className="TextoBasicoEncabezado"> A continuación puedes hacer la reserva de tu visita y el pago de tu suscripción la cual podrás cambiar o cancelar en cualquier momento:</a>
-                <InlineWidget url="https://calendly.com/annavehi" styles={{ height: '850px', width: '100%' }} />
+                <InlineWidget url="https://calendly.com/annavehi" styles={{ height: '800px', width: '100%', marginBottom:'5%', marginTop:'5%'}} />
                 <a className="TextoBasicoEncabezado"> Si ningún horario se adapta a ti, puedes ponerte en contacto con nosotros a través de:</a>
                 <div className="ReservaDondeEstamos">
                     <div className="DondeEstamosDivisionIcono">
@@ -26,15 +26,15 @@ export default function Reserva() {
                 </div>
             </div>
             <div className="FondoOscuro">
-                <div className='FondoOScuroCentrar'>
+                <div className='FondoOscuroCentrar'>
                     <a className="TextoBasicoEncabezadoBeige">¿Tienes dudas sobre nuestro sistema de suscripciones?</a>
                     <div className="FondoOscuro">
                         <a className="TextoBasicoEncabezadoBeige">Consulta la sección <strong> Preguntas frecuentes </strong> más abajo o ponte en contacto con nosotros y te ayudaremos a resolverlas.</a>
                     </div>
                 </div>
             </div>
-            <Tarifas2 />
-            <SuscripcionExplicacion />
+            <SuscripcionTablas/>
+            <SuscripcionExplicacion/>
             <div className="FondoOscuro">
                 <div className='FondoOScuroCentrar'>
                     <a className="TextoBasicoEncabezadoBeige">¿Tienes dudas sobre nuestro sistema de suscripciones?</a>

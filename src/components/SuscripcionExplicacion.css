@@ -13,9 +13,17 @@
     font-weight: 300;
 }
 
+@media (width <=1100px) {
+    .FondoClaro {
+        width:95%;
+        margin-left: 2.5%;
+    }
+}
+
 .TituloContainer {
     display: flex;
     border: inherit;
+
 }
 
 .Titulo {
@@ -79,4 +87,10 @@ ul.UnorderListDerecha {
 .BotonReservar {
     border: none;
     width: 10%;
+}
+
+@media (width <=1100px) {
+    .BotonReservar {
+        width:30%;
+    }
 }
