@@ -12,18 +12,23 @@
   border: none;
 }
 
-.AppClassOscuro {
+.FondoMedio {
+  background-color: #cfbfae;
+  padding-bottom: 3%;
+}
+
+.FondoOscuro {
+  background-color: #b69f8e;
   display: flex;
   flex-direction: column;
-  background-color: #e2dcd9;
-  text-align: center;
-  font-size: calc(40px + 2vmin);
-  color: black;
-  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
   font-family: 'Josefin Sans';
-  justify-content: 'center';
-  padding-bottom: 0%;
+  color: #e2dcd9;;
   border: none;
+  font-weight:300;
+  padding-bottom: 3%;
+  padding-top: 3%;
 }
 
 .Descargas {
@@ -71,11 +76,9 @@
   font-family: 'coax';
   border: inherit;
   align-items: center;
-  margin-top: 6%;
-  margin-bottom: 3%;
-  padding: 0;
+  margin-top: 3%;
+  margin-bottom: 5%;
   border: none;
-
 }
 
 @media (width <=1100px) {
@@ -83,6 +86,23 @@
     font-size: calc(30px);
     min-height: 60px;
   }
+}
+
+.TextoBasicoEncabezado {
+  color: black;
+  font-family: 'Josefin Sans';
+  font-weight: 300;
+  font-size: 30px;
+  border: inherit;
+  display: flex;
+}
+
+.TextoBasicoEncabezadoBeige {
+  color: #e2dcd9;
+  font-family: 'Josefin Sans';
+  font-weight: 300;
+  font-size: 30px;
+  border: inherit;
 }
 
 .TextoBasico {
@@ -143,6 +163,6 @@
   font-size: 18px;
 }
 
-.StripeContainer{
+.StripeContainer {
   padding-top: 3%;
 }

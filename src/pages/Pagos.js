@@ -3,7 +3,7 @@ import './../App.css';
 import Suscripciones from '../components/Suscripciones';
 export default function Pagos() {
     return (
-        <div className="AppClassOscuro">
+        <div>
             <Suscripciones />
         </div>
     )

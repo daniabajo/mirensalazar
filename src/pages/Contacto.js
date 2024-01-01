@@ -6,7 +6,7 @@ import Formulario from '../components/Formulario';
 
 export default function Contacto() {
     return (
-        <div className="AppClassOscuro">
+        <div >
             <img src={Consulta} className="ImageTransversal" alt="Consulta" />
             <DondeEstamos />
             <Formulario />
