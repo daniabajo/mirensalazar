@@ -8,7 +8,7 @@ const Tablas = () => {
       <div className='TablasTituloContainer'>
         <h className="TablasTitulo"> <strong> ¿Qué incluyen las suscripciones?</strong> </h>
       </div>
-      <div className="TablasTablaContainer" style ={{gap:'2rem'}}>
+      <div className="TablasTablaContainer">
         <table>
           <thead >
             <tr>
