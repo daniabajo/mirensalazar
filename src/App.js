@@ -50,8 +50,8 @@ function App() {
 
       </Routes>
       {/*<PopupWidget url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")}text="Reserva tu cita"textColor="white"color="#31464e" side="left" />*/}
-      <FloatingWhatsApp className="a" phoneNumber="+34623003020" accountName="Centre de nutrició Anna Vehí" chatMessage="Hola, en qué podemos ayudarte?"  statusMessage='Responde antes de 48h'
-        avatar="https://annavehi.com/favicon.png" />
+      <FloatingWhatsApp className="a" phoneNumber="+34623003020" accountName="Anna Vehí · Centre de nutrició" chatMessage="Hola, en qué podemos ayudarte?"  statusMessage='Responde antes de 48h'
+        avatar="https://annavehi.com/IconoWhatsapp.png" />
       <CookieConsent buttonText="Permitir" style={{ background: "#31464e", fontFamily:'Josefin Sans'}} buttonStyle={{ color: "black", fontSize: "13px", location: "left", fontFamily: 'Josefin Sans' }}
       >This website uses <Link className='TextoLinkConsentCookies' to="/politicacookies"> cookies</Link> to enhance the user experience.</CookieConsent>
 <Footer/>

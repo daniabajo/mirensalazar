@@ -1,0 +1,38 @@
+.ReservaBaseCalendly {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    font-weight: 300;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 4%;
+    border: none;
+}
+
+.ReservaDondeEstamosContainer {
+    display: flex;
+    flex-direction: column;
+}
+.ReservaDondeEstamos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 5%;
+    border: inherit;
+
+}
+
+.FondoOScuroCentrar{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.TarifasExplicacion{
+    margin-top:3%;
+    margin-bottom:3%;
+    width: 60%;
+    margin-left: 20%;
+}

@@ -1,0 +1,192 @@
+.TarifasBase {
+    background-color: #cfbfae;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Sans';
+    color: black;
+    border: none;
+    font-weight:300;
+    padding-bottom: 3%;
+}
+
+
+.TarifasTextoContenedor {
+    display: flex;
+    border: none;
+    width: 100%;
+    align-items: left;
+    justify-content: left;
+    margin-top:3%;
+}
+
+
+
+.TarifasTexto {
+    font-size: 25px;
+    font-family: 'Josefin Sans';
+    border: none;
+}
+@media (1000px <=width <=1400px) {
+    .TarifasTexto {
+        font-size: 20px;
+    }
+}
+@media (width <=1000px) {
+    .TarifasTexto {
+        font-size: 18px;
+    }
+}
+
+.TarifasPaquetesContenedor {
+    display:flex;
+    flex-direction: column;
+    gap:3rem;
+    border:inherit;
+    width:60%;
+}
+@media (1000px<= width <=1400px) {
+    .TarifasPaquetesContenedor {
+        width:75%;
+        gap:2rem;
+    }
+}
+@media (width <=1000px) {
+    .TarifasPaquetesContenedor {
+        width:90%;
+        gap:1rem;
+    }
+}
+
+
+.TarifasPaquetesFila {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: inherit;
+}
+
+@media (width <=1100px) {
+    .TarifasPaquetesFila {
+        gap:2rem
+    }
+}
+
+.TarifasPaquetesCuadro {
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    border: 3px solid black;
+    border-radius: 10%;
+    justify-content: space-between;
+    padding: 3%;
+    width: 60%;
+    gap:0rem;
+}
+
+
+@media (width <=1000px) {
+    .TarifasPaquetesCuadro {
+        width:100%;
+        gap:2rem;
+    }
+}
+
+.PaqueteTitulo {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+    color: #e2dcd9;
+    font-family: 'Montserrat';
+    font-size: 25px;
+}
+@media (1100px <=width <=1400px) {
+    .PaqueteTitulo {
+        font-size: 20px;
+    }
+}
+@media (width <=1100px) {
+    .PaqueteTitulo {
+        font-size: 15px;
+    }
+}
+
+.PaqueteTituloTachado {
+    text-decoration:line-through;
+}
+
+.PaqueteTexto {
+    display:flex;
+    align-items: start;
+    border: none;
+    justify-content: right;
+    font-size: 25px;
+}
+@media (1100px <=width <=1400px) {
+    .PaqueteTexto {
+        font-size: 20px;
+    }
+}
+@media (width <=1100px) {
+    .PaqueteTexto {
+        font-size: 20px;
+    }
+}
+
+ul.PaqueteLista{
+    display: flex;
+    flex-direction: column;
+    list-style: '✓';
+    margin:0;
+    padding:0;
+    padding-left: 5%;
+    align-items: start;
+    border: none;
+    justify-content: left;
+    font-size: 25px;
+}
+@media (1100px <=width <=1400px) {
+    ul.PaqueteLista {
+        font-size: 20px;
+    }
+}
+@media (width <=1100px) {
+    ul.PaqueteLista {
+        font-size: 17px;
+    }
+}
+
+.PaqueteListaItem {
+    border: none;
+}
+
+.PaqueteCondicionesContainer {
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    border: none;
+    text-align: left;
+}
+
+.PaqueteCondiciones {
+    display:flex;
+    align-items: start;
+    justify-content: center;
+    border: none;
+    font-size: 15px;
+    text-align: left;
+}
+@media (width <=1000px) {
+    .PaqueteCondiciones {
+        font-size: 10px;
+    }
+}
+@media (width <=800px) {
+.TarifasPaquetesFoto{
+display:none;
+}
+}
