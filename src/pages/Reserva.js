@@ -33,8 +33,8 @@ export default function Reserva() {
                     </div>
                 </div>
             </div>
-            <Tarifas2 />
-            <SuscripcionExplicacion />
+            <Tarifas2/>
+            <SuscripcionExplicacion/>
             <div className="FondoOscuro">
                 <div className='FondoOScuroCentrar'>
                     <a className="TextoBasicoEncabezadoBeige">¿Tienes dudas sobre nuestro sistema de suscripciones?</a>
