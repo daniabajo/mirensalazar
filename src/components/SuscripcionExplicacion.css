@@ -59,7 +59,7 @@ ul.UnorderListIzquierda {
     display: flex;
     gap: 1rem;
     flex-direction: column;
-    list-style: '🗸 ';
+    list-style: '✔ ';
 
 }
 
