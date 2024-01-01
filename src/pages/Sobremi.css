@@ -67,3 +67,30 @@
 .SobremiTrayectoria{
     border: inherit;
 }
+
+.SobremiDivisionTexto {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  border: inherit;
+}
+.SobremiTextoMayus {
+  display: flex;
+  justify-content: left;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  border: inherit;
+  font-weight: 600;
+}
+.SobremiBienvenidosTexto{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Josefin Sans';
+    width:60%;
+    margin-left: 20%;
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 4%;
+    border:none;
+}
