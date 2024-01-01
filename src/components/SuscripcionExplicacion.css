@@ -16,6 +16,7 @@
 .TituloContainer {
     display: flex;
     border: inherit;
+
 }
 
 .Titulo {
