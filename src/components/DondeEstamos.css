@@ -6,11 +6,14 @@
   margin-left: 17.5%;
   width: 65%;
   border: none;
+  margin-bottom: 3%;
 }
 
-@media (width <=1100px) {
+@media (width <=1200px) {
   .DondeEstamos {
     flex-direction: column;
+    margin-left: 15%;
+    width: 70%;
   }
 }
 
@@ -29,7 +32,7 @@
   gap:4rem;
 
 }
-@media (width <=1100px) {
+@media (width <=1300px) {
 .DondeEstamosDivisionLeft {
   gap:2rem;
   margin-bottom: 10%;
@@ -63,16 +66,6 @@
   font-size: 18px;
   border: inherit;
 }
-@media (1100px <= width <= 1300px){
-  .DondeEstamosTextoMayus {
-    font-size: calc(14px);
-  }
-}
-@media ( width <= 1100px){
-  .DondeEstamosTextoMayus {
-    font-size: calc(12px);
-  }
-}
 
 .DondeEstamosTexto {
   display: flex;
@@ -83,38 +76,21 @@
   font-size: 18px;
   border: none
 }
-@media (1100px <= width <= 1300px){
-  .DondeEstamosTexto {
-    font-size: calc(14px);
-  }
-}
-@media (width <= 1100px){
-  .DondeEstamosTexto {
-    font-size: calc(11px);
-  }
-}
 
 .DondeEstamosBotonReservar{
   background-color: #31464e;
   display: flex;
   color: #e2dcd9;
   justify-content: center;
+  align-items: center;
   font-family: 'Montserrat';
   font-size: 18px;
   margin-left: 25%;
   width: 50%;
   border: inherit;
 }
-@media ( 1100px <= width <= 1300px){
-  .DondeEstamosBotonReservar {
-    font-size: calc(14px);
-  }
-}
-@media ( width <= 1100px){
-  .DondeEstamosBotonReservar {
-    font-size: calc(12px);
-  }
-}
+
+
 
 .DondeEstamosMap{
   width:500px;
@@ -122,16 +98,9 @@
    margin:0;
 }
 
-@media (1100px <= width <= 1300px){
-  .DondeEstamosMap {
-    width:350px;
 
-  }
-}
-
-@media (width <= 1100px){
+@media (width <= 1300px){
   .DondeEstamosMap {
     width:300px;
-
   }
 }

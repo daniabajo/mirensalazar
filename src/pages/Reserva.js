@@ -1,5 +1,4 @@
 import { InlineWidget } from "react-calendly";
-import Consulta from './../images/Consulta.png';
 import Telefono from './../images/Telefono.svg';
 import Correo from './../images/Correo.svg';
 import SuscripcionTablas from '../components/SuscripcionTablas';
