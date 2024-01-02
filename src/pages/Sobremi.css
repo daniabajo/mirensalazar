@@ -16,7 +16,7 @@
         width: 80%;       
     }
 }  
-/* Bienvenidois */
+/* Bienvenidos */
 
 .SobremiFilosofia{
     display: flex;
@@ -36,6 +36,28 @@
         flex-direction: column;
     }
 }
+
+.TituloDoradoBienvenidos{
+  rotate: 0deg;
+  color: #a78b6c;
+  font-size: 60px;
+  font-family: 'coax';
+  border: inherit;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  border: none;
+}
+
+@media (width <=1200px) {
+  .TituloDoradoBienvenidos {
+    font-size: 50px;
+    margin-top: 3%;
+    padding-top: 3%;
+  }
+}
+
+
 .SobremiBienvenidosTexto{
     width:60%;
     font-size: 25px;

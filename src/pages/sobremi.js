@@ -10,7 +10,7 @@ export default function Sobremi() {
             <div className='SobremiBase'>
                 {/* Bienvenidos */}
                 <div className='SobremiFilosofia'>
-                    <h className="TituloDorado">  <a>¡Bienvenidos! </a> </h>
+                    <h className="TituloDoradoBienvenidos">  <a>¡Bienvenidos! </a> </h>
                     <div className='SobremiFilosofiaFila'>
                         <div className='SobremiBienvenidosTexto'>
                             <a>Soy Anna Vehí y me apasiona ayudar a las personas a mejorar su salud y calidad de vida, guiándoles y acompañándoles en la consecución de sus distintos objetivos nutricionales y de hábitos saludables. </a>
