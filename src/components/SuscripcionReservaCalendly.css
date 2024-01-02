@@ -1,0 +1,86 @@
+.ReservaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    font-weight: 300;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 4%;
+    border: none;
+}
+
+@media (width <=1200px) {
+    .ReservaContainer {
+        width: 80%;
+        margin-left: 10%;
+  
+    }
+  }
+
+.ReservaTitulo {
+    color: #a78b6c;
+    font-size: 60px;
+    font-family: 'coax';
+    border: inherit;
+    align-items: center;
+    margin-top: 3%;
+    padding-bottom: 3%;
+
+    border: none;
+}
+
+@media (width <=1200px) {
+    .ReservaTitulo {
+      font-size: 35px;
+
+    }
+  }
+
+.ReservaTexto {
+    font-size:25px;
+}
+
+@media (width <=900px) {
+    .ReservaTexto {
+      padding-top:10%;
+      padding-bottom:10%;
+    }
+  }
+
+.ReservaDondeEstamosContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top:4%;
+    gap:2rem;
+}
+
+.ReservaDondeEstamosContainerRow {
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+}
+
+.ReservaDondeEstamosIcono {
+    justify-content: left;
+    width: 35px;
+    border: inherit;
+}
+
+.ReservaDondeEstamosContainerTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border: inherit;
+}
+
+.ReservaDondeEstamosTextoMayus {
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+.ReservaDondeEstamosTexto {
+    font-size: 20px;
+}
+
