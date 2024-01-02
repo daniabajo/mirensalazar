@@ -17,3 +17,11 @@
         padding-right: 10%;
     }
   }
+
+  .TextoBasicoEncabezadoBeige {
+    color: #e2dcd9;
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    font-size: 30px;
+    border: inherit;
+  }

@@ -1,9 +1,13 @@
 import React from 'react';
-import "./SuscripcionExplicacion.css"
+import { useState, useEffect } from 'react';
 import { PopupButton } from "react-calendly";
+import "./SuscripcionExplicacion.css"
 
 
-const SuscripcionExplicacion = () => {
+const SuscripcionExplicacion = ({Type}) => {
+    function DescargaButtonPlatinium() {  window.location.href = "https://buy.stripe.com/3cs4irb8i1sxgAEfYY";}
+    function DescargaButtonGold() {  window.location.href = "https://buy.stripe.com/14k5mv7W65IN2JO4gh";}
+    const [isLogged, setLog] = useState(0);
     return (
         <div className='FondoClaro'>
             {/*Titulo */}
@@ -40,7 +44,8 @@ const SuscripcionExplicacion = () => {
                         </ul>
                     </div>
                 </div>
-                <PopupButton className="BotonReservar" url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")} text="RESERVA CITA" />
+                {Type === "Reserva" ?  ( <PopupButton className="BotonReservar" url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")} text="RESERVA CITA" />) : 
+                (<button className='BotonReservar' onClick={DescargaButtonPlatinium}>  SUSCRIBIRME  </button> )}
             </div>
             {/* Gold */}
             <div className='ListaContainer'>
@@ -73,7 +78,8 @@ const SuscripcionExplicacion = () => {
                         </ul>
                     </div>
                 </div>
-                <PopupButton className="BotonReservar" url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")} text="RESERVA CITA" />
+                {Type === "Reserva" ? ( <PopupButton className="BotonReservar" url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")} text="RESERVA CITA" />) : 
+                (<button className='BotonReservar' onClick={DescargaButtonGold}>  SUSCRIBIRME  </button> )}
             </div>
         </div>
     )

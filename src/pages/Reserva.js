@@ -10,9 +10,9 @@ export default function Reserva() {
         <div>
             <SuscripcionReservaCalendly/>
             <SuscripcionPreguntas1/>
-            <SuscripcionTablas/>
-            <SuscripcionExplicacion/>
-            <SuscripcionPreguntas1/>
+            <SuscripcionTablas Type="Reserva"/>
+            <SuscripcionExplicacion Type="Reserva"/>
+            <SuscripcionPreguntas2/>
         </div>
     )
 }

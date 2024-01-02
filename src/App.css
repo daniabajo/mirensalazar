@@ -12,34 +12,6 @@
   border: none;
 }
 
-.FondoMedio {
-  background-color: #cfbfae;
-  padding-bottom: 3%;
-}
-
-.FondoOscuro {
-  background-color: #b69f8e;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Josefin Sans';
-  color: #e2dcd9;;
-  border: none;
-  font-weight:300;
-  padding-bottom: 3%;
-  padding-top: 3%;
-  width: 100%;
-}
-
-
-.FondoOscuroCentrar{
-  display: flex;
-  flex-direction: column;
-  width: 65%;
-  border: inherit;
-}
-
 .Descargas {
   display: flex;
   flex-direction: column;
@@ -50,7 +22,6 @@
   width: 70%;
   margin-left: 15%;
   margin-bottom: 5%;
-
 }
 
 .LogoMan {
@@ -79,54 +50,37 @@
 
 .TituloDorado {
   color: #a78b6c;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(70px);
+  font-size: 60px;
   font-family: 'coax';
   border: inherit;
   align-items: center;
-  margin-top: 3%;
-  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-bottom: 3%;
   border: none;
+
 }
 
 @media (width <=1200px) {
   .TituloDorado {
-    font-size: 30px;
-    min-height: 60px;
+    font-size: 50px;
+    margin-top: 3%;
+    padding-top: 3%;
   }
 }
 
-.TextoBasicoEncabezado {
-  color: black;
-  font-family: 'Josefin Sans';
-  font-weight: 300;
-  font-size: 30px;
-  border: inherit;
-  display: flex;
-}
-
-.TextoBasicoEncabezadoBeige {
-  color: #e2dcd9;
-  font-family: 'Josefin Sans';
-  font-weight: 300;
-  font-size: 30px;
-  border: inherit;
-}
-
-.TextoBasico {
-  color: black;
-  display: flex;
-  font-family: 'Josefin Sans';
-  justify-content: 'left';
-  align-items: center;
-  font-size: 30px;
+@media (width <=900px) {
+  .TituloDorado {
+    font-size: 40px;
+    padding-top: 3%;
+    border:inherit;
+  }
 }
 
 .ImageTransversal {
   align-items: left;
   margin: 0;
   width: 100%;
+  padding-bottom: 4%;
 }
 
 .TextoLinkConsentCookies {

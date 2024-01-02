@@ -87,10 +87,13 @@ ul.UnorderListDerecha {
 .BotonReservar {
     border: none;
     width: 15%;
+    background-color:#31464e ;
+    color: #e2dcd9;
+    height: 30px;
 }
 
 @media (width <=1200px) {
     .BotonReservar {
-        width:45%;
+        width:40%;
     }
 }

@@ -3,7 +3,7 @@ import './App.css';
 import Logo from './images/Logo.svg';
 import Navigationbar from './components/Navigationbar';
 import Footer from './components/Footer';
-import Pagos from './pages/Pagos';
+import Suscripciones from './pages/Suscripciones';
 import Sobremi from './pages/Sobremi';
 import Servicios from './pages/Servicios';
 import Reserva from './pages/Reserva';
@@ -46,7 +46,7 @@ function App() {
         <Route path="/politicacookies" element={<PoliticaCookies />} />
         <Route path="/condicionescontratacion" element={<CondicionesContratacion />} />
         <Route path="/descargas" element={<Descargas />} />
-        <Route path="/suscripciones" element={<Pagos />} />
+        <Route path="/suscripciones" element={<Suscripciones />} />
       </Routes>
       {/*<PopupWidget url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")}text="Reserva tu cita"textColor="white"color="#31464e" side="left" />*/}
       <FloatingWhatsApp className="a" phoneNumber="+34623003020" accountName="Anna Vehí · Centre de nutrició" chatMessage="Hola, en qué podemos ayudarte?"  statusMessage='Responde antes de 48h'

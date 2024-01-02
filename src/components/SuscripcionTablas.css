@@ -6,7 +6,7 @@
     justify-content: center;
     align-content: center;
     font-family: 'Josefin Sans';
-    padding-top:3%;
+    padding-top: 3%;
     padding-bottom: 3%;
     width: 100%;
     border: none;
@@ -15,90 +15,150 @@
 }
 
 .TablasTituloContainer {
-    border:inherit;
-    width:60%;
+    border: inherit;
+    width: 60%;
     margin-left: 20%;
     padding-bottom: 3%;
 }
+
 @media (width <=1200px) {
     .TablasTituloContainer {
-        width:80%;
+        width: 80%;
         margin-left: 10%;
     }
 }
 
 .TablasTitulo {
-    border:inherit;
+    border: inherit;
     font-size: 30px;
 }
 
 .TablasTablaContainer {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: space-between;
-    border:inherit;
-    width:60%;
+    border: inherit;
+    width: 60%;
     margin-left: 20%;
     padding-bottom: 1%;
 }
 
 @media (width <=1200px) {
     .TablasTablaContainer {
-        width:80%;
+        width: 80%;
         margin-left: 10%;
     }
 }
 
-.TablasPrecioTachado{
-    text-decoration:line-through;
+.TablasPrecioTachado {
+    text-decoration: line-through;
 }
-.TablasCondicionesContainer {
+
+/* Condiciones y botones suscribir*/
+
+.TablasCondicionesBotonesBase {
     display: flex;
-    flex-direction: column;
-    border:inherit;
-    width:60%;
+    flex-direction: row;
+    justify-content: space-between;
+    border: inherit;
+    width: 60%;
     margin-left: 20%;
     margin-bottom: 2%;
 }
 
 @media (width <=1200px) {
-    .TablasCondicionesContainer {
-        width:80%;
+    .TablasCondicionesBotonesBase {
+        width: 80%;
         margin-left: 10%;
     }
 }
 
-.TablasCondiciones {
-    border:inherit;
-    font-size:20px;
-
+/* Condiciones texto */
+.TablasCondicionesContainer {
+    display: flex;
+    flex-direction: column;
+    border: inherit;
+    padding-bottom: 3%;
+    width: 70%;
 }
+
+@media (width <=900px) {
+    .TablasCondicionesContainer {
+        display: none;
+    }
+}
+
+.TablasCondicionesTexto {
+    border: inherit;
+    font-size: 15px;
+}
+
+/* Botones suscribirme */
+.TablasBotonesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: inherit;
+    gap: 0rem;
+    width: 30%
+}
+
+@media (width <=900px) {
+    .TablasBotonesContainer {
+        align-items: right;
+        width: 50%;
+        margin-left: 50%;
+    }
+}
+
+.TablasBotonesSuscribirme {
+    font-size: 12px;
+    border: inherit;
+    width: 47%;
+    background-color: #31464e;
+    color: #cfbfae;
+    height: 30px;
+}
+
+@media (width <=900px) {
+    .TablasBotonesSuscribirme {
+        font-size: 10px;
+    }
+}
+
+/* Boton Rerservar */
 
 .TablasBotonContainer {
     display: flex;
     justify-content: center;
-    border:inherit;
-    width:70%;
+    border: inherit;
+    width: 70%;
     margin-left: 15%;
 }
 
+
+/* Boton reservar */
 .TablasBotonReservar {
-    border:inherit;
-    width:15%;
+    border: inherit;
+    width: 15%;
+    background-color: #31464e;
+    color: #cfbfae;
+    height: 30px;
 }
 
 @media (width <=1200px) {
     .TablasBotonReservar {
-        width:45%;
+        width: 45%;
     }
 }
 
 th {
     border: 1px solid #e2dcd9;
     font-weight: 300;
-    padding:1.5%;
+    padding: 1.5%;
 }
+
 .TableHeader {
     font-weight: 400;
 

@@ -14,9 +14,9 @@
     flex-direction: column;
     margin-left: 15%;
     width: 70%;
+    margin-top:5%;
   }
 }
-
 
 .DondeEstamosDivisionRigth {
   border: inherit;
@@ -90,15 +90,11 @@
   border: inherit;
 }
 
-
-
 .DondeEstamosMap{
   width:500px;
    height:400px ;
    margin:0;
 }
-
-
 @media (width <= 1300px){
   .DondeEstamosMap {
     width:300px;
