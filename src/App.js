@@ -32,7 +32,7 @@ function App() {
   return (true) ? (
     <div>
       <img src={Logo} className="LogoMain" alt="logo" />
-      {/*<Popup Trigger={TimePopUp} SetTrigger={SetTimePopUp}></Popup>*/}
+      <Popup Trigger={TimePopUp} SetTrigger={SetTimePopUp}></Popup>
       <Navigationbar />
       <ScrollToTop/>
       <Routes>
