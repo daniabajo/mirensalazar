@@ -2,7 +2,9 @@ import React from 'react';
 import { PopupButton } from "react-calendly";
 import "./SuscripcionTablas.css"
 
-const Tablas = () => {
+const Tablas = ({ Type }) => {
+  function DescargaButtonPlatinium() { window.location.href = "https://buy.stripe.com/3cs4irb8i1sxgAEfYY"; }
+  function DescargaButtonGold() { window.location.href = "https://buy.stripe.com/14k5mv7W65IN2JO4gh"; }
   return (
     <div className='TablasContainer'>
       <div className='TablasTituloContainer'>
@@ -18,7 +20,7 @@ const Tablas = () => {
             </tr>
           </thead>
           <tbody>
-            <tr> 
+            <tr>
               <th>Número de visitas mensuales</th>
               <th>Ilimitadas</th>
               <th>1 visita</th>
@@ -61,12 +63,20 @@ const Tablas = () => {
           </tbody>
         </table>
       </div>
-      <div className='TablasCondicionesContainer'>
-        <a className="TablasCondiciones">*con un máximo de una visita </a>
-        <a className="TablasCondiciones"> ** respuestas en un maximo de 48h hábiles </a>
+      {/* Condiciones y boton suscribirme */}
+      <div className='TablasCondicionesBotonesBase'>
+        <div className='TablasCondicionesContainer'>
+          <a className="TablasCondicionesTexto">*con un máximo de una visita </a>
+          <a className="TablasCondicionesTexto"> ** respuestas en un maximo de 48h hábiles </a>
+        </div>
+        <div className='TablasBotonesContainer'>
+          {Type === "Suscripciones" ? (<button className='TablasBotonesSuscribirme' onClick={DescargaButtonPlatinium}>  SUSCRIBIRME  </button> ) : ('')}
+          {Type === "Suscripciones" ? (<button className='TablasBotonesSuscribirme' onClick={DescargaButtonGold}>  SUSCRIBIRME  </button> ) : ('')}
+        </div>
       </div>
+      {/* Boton reservar */}
       <div className='TablasBotonContainer'>
-        <PopupButton className="TablasBotonReservar" url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")} text="RESERVA CITA" />
+        {Type === "Reserva" ? (<PopupButton className="TablasBotonReservar" url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")} text="RESERVA CITA" />) : ('')}
       </div>
     </div>
   )

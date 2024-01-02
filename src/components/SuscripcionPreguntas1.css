@@ -1,0 +1,27 @@
+.PreguntasContainer {
+    background-color: #b69f8e;
+    display: flex;
+    flex-direction: column;
+    padding-top:3%;
+    padding-bottom:3%;
+    padding-left: 20%;
+    padding-right: 20%;
+    gap:2rem;
+}
+
+@media (width <=1200px) {
+    .PreguntasContainer {
+        padding-top:6%;
+        padding-bottom:6%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+  }
+
+  .TextoBasicoEncabezadoBeige {
+    color: #e2dcd9;
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    font-size: 30px;
+    border: inherit;
+  }

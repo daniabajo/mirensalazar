@@ -17,7 +17,7 @@ const Footer = () => {
                     <div className="FooterMainDescargaTexto">
                         <a className="FooterMainDescargaTextoTitulo"> Las 10 claves del éxito a largo plazo. </a>
                         <a className="FooterMainDescargaTextoTexto"> ¡Descubre los consejos que te llevarán a obtener resultados permanentes de una vez por todas! </a>
-                        <button className="FooterMainDescargaBoton" onClick={DescargaButton} > <Link to="/descargas" className="LinkBoton" style={{textDecoration:"none", width:'100%'}}> DESCARGA</Link> </button>
+                        <button className="FooterMainDescargaBoton" onClick={DescargaButton} > <Link to="/descargas" className="LinkBoton" style={{ textDecoration: "none", width: '100%' }}> DESCARGA</Link> </button>
                     </div>
                 </div>
                 <div className="FooterMainSiguenos">
@@ -35,13 +35,12 @@ const Footer = () => {
                 <a > Anna Vehí · Centre de nutrició 2023 </a>
             </div>
             <div className="FooterLegalidad" >
-                <div className="FooterLegalidad">
-                    <a><
-                        Link className="FooterLegalidadTexto" to="/avisolegal"> Aviso Legal </Link> | <Link className="FooterLegalidadTexto" to="/politicaprivacidad"> Política de privacidad </Link> |
-                        <Link className="FooterLegalidadTexto" to="/politicacookies"> Política de cookies</Link> | <Link className="FooterLegalidadTexto" to="/condicionescontratacion"> Condiciones de contratación</Link>
-                    </a>
-                </div>
+                <a className="FooterLegalidadTexto" >
+                    <Link className="FooterLegalidadTexto" to="/avisolegal"> Aviso Legal </Link> | <Link className="FooterLegalidadTexto" to="/politicaprivacidad"> Política de privacidad </Link> |
+                    <Link className="FooterLegalidadTexto" to="/politicacookies"> Política de cookies</Link> | <Link className="FooterLegalidadTexto" to="/condicionescontratacion"> Condiciones de contratación</Link>
+                </a>
                 <button className="FooterLegalidadBotonArriba" onClick={DescargaButton}>Volver arriba</button>
+                <button className="FooterLegalidadBotonArribaMobile" onClick={DescargaButton}>🡁</button>
             </div>
         </div>
     )
