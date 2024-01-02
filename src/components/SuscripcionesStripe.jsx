@@ -2,7 +2,7 @@ import React from 'react';
 import "./SuscripcionesStripe.css"
 
 
-const SuscripcionesStripe = () => {
+export default function SuscripcionesStripe() {
     function DescargaButtonPlatinium() {  window.location.href = "https://buy.stripe.com/3cs4irb8i1sxgAEfYY";}
     function DescargaButtonGold() {  window.location.href = "https://buy.stripe.com/14k5mv7W65IN2JO4gh";}
 
@@ -29,4 +29,3 @@ const SuscripcionesStripe = () => {
         </div>
     )
 }
-export default SuscripcionesStripe;

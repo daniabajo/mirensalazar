@@ -7,7 +7,7 @@ import { PopupButton } from "react-calendly";
 
 const DondeEstamos = () => {
     return (
-        <div >
+        <div className="DondeEstamosBase">
             <a className="TituloDorado"> Dónde estamos </a>
             <div className="DondeEstamos">
                 <div className="DondeEstamosDivisionLeft">

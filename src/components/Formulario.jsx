@@ -20,7 +20,8 @@ const Formulario = () => {
     const { loading, error, success, message, handleSubmit } = useMailChimpForm(url);
     const { fields, handleFieldChange } = useFormFields({ EMAIL: "",NAME:"" });
     const onSubmit = (data) => { console.log(data); sendEmail(data); }
-    return <div className="FormularioBase">
+    return  (
+    <div className="FormularioBase">
         <h className="FormularioTitulo"> <a> ¿Hablamos?</a> </h>
         <h className="FormularioTexto"> <p> Cuéntanos cómo podemos ayudarte y nos pondremos en contacto lo antes posible.</p> </h>
         <form className="FormularioInputs" ref={form} onSubmit={event => { event.preventDefault(); handleSubmit(fields); sendEmail(event)}}>
@@ -56,5 +57,6 @@ const Formulario = () => {
             </div>
         </form>
     </div>
+    ) 
 }
 export default Formulario;
