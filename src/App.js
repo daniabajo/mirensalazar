@@ -47,7 +47,6 @@ function App() {
         <Route path="/condicionescontratacion" element={<CondicionesContratacion />} />
         <Route path="/descargas" element={<Descargas />} />
         <Route path="/suscripciones" element={<Pagos />} />
-
       </Routes>
       {/*<PopupWidget url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")}text="Reserva tu cita"textColor="white"color="#31464e" side="left" />*/}
       <FloatingWhatsApp className="a" phoneNumber="+34623003020" accountName="Anna Vehí · Centre de nutrició" chatMessage="Hola, en qué podemos ayudarte?"  statusMessage='Responde antes de 48h'
