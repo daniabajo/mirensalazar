@@ -22,6 +22,7 @@
     display: flex;
     flex-direction: column;
     border: inherit;
+    margin-top:200px;
 }
 
 .SobremiFilosofiaFila{
@@ -38,15 +39,16 @@
 }
 
 .TituloDoradoBienvenidos{
-  rotate: 0deg;
+    left: 200px;
+    position:absolute;
+  rotate: -20deg;
   color: #a78b6c;
   font-size: 60px;
-  font-family: 'coax';
-  border: inherit;
-  align-items: center;
-  margin-top: 5%;
-  margin-bottom: 3%;
+  font-family: 'Brittany';
   border: none;
+  align-items: center;
+  width:30%;
+  margin-bottom: 6%;
 }
 
 @media (width <=1200px) {
