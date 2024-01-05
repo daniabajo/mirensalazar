@@ -18,45 +18,47 @@ const Formulario = () => {
         Event.target.reset();
     }
     const { loading, error, success, message, handleSubmit } = useMailChimpForm(url);
-    const { fields, handleFieldChange } = useFormFields({ EMAIL: "",NAME:"" });
+    const { fields, handleFieldChange } = useFormFields({ EMAIL: "", NAME: "" });
     const onSubmit = (data) => { console.log(data); sendEmail(data); }
-    return  (
-    <div className="FormularioBase">
-        <h className="FormularioTitulo"> <a> ¿Hablamos?</a> </h>
-        <h className="FormularioTexto"> <p> Cuéntanos cómo podemos ayudarte y nos pondremos en contacto lo antes posible.</p> </h>
-        <form className="FormularioInputs" ref={form} onSubmit={event => { event.preventDefault(); handleSubmit(fields); sendEmail(event)}}>
-            <div className="InputsEtiquetas"> <label> Nombre* </label> <label> Apellidos </label> </div>
-            <div className="InputsDivision" >
-                <input className="InputsTexto" type="text"  name="nombre" id="NAME" value={fields.NAME} onChange={handleFieldChange} required placeholder='Nombre*' />
-                <input className="InputsTexto" type="text"  name="apellidos" placeholder='Apellidos' />
-            </div>
-            <div className="InputsEtiquetas"> <label> Email* </label> <label> Teléfono </label> </div>
-            <div className="InputsDivision">
-                <input className="InputsTexto" type="email" name="email" id="EMAIL" autoFocus  value={fields.EMAIL} onChange={handleFieldChange}  required placeholder='Email*' />
-                <input className="InputsTexto" type="text" {...register('telefono')} name="telefono" placeholder='Teléfono' />
-            </div>
-            <div className="InputsEtiquetas"><label> ¿Cómo podemos ayudarte? Cuéntanos un poco más. </label></div>
-            <div className="ExplicacionDivision">
-                <textarea className="ExplicacionTexto" type="text" {...register('mensaje')} aria-multiline name='mensaje'
-                    placeholder='¿Cómo podemos ayudarte? Cuéntanos un poco más.' />
-            </div >
-            <div className="EnvioDivision">
-                <div className="PoliticaDivision" >
-                    <input className="EnvioCheckPolitica" type="checkbox" {...register('acepto', { required: true })} name="acepto" required />
-                    <a className="EnvioTextoPolitica" to="/politicaprivacidad"  >
-                        Marcando esta casilla manifiestas que has leído y aceptas el
-                        <Link to="/avisolegal"> Aviso Legal </Link>, la
-                        <Link to="/politicaprivacidad"> Política de privacidad </Link> y la
-                        suscripción a la newsletter. </a>
+    return (
+        <div className="FormularioBase">
+            <h className="FormularioTitulo"> <a> ¿Hablamos?</a> </h>
+            <h className="FormularioTexto"> <p> Cuéntanos cómo podemos ayudarte y nos pondremos en contacto lo antes posible.</p> </h>
+            <form className="FormularioInputs" ref={form} onSubmit={event => { event.preventDefault(); handleSubmit(fields); sendEmail(event) }}>
+                <div className="InputsEtiquetas"> <label> Nombre* </label> <label> Apellidos </label> </div>
+                <div className="InputsDivision" >
+                    <input className="InputsTexto" type="text" name="nombre" id="NAME" value={fields.NAME} onChange={handleFieldChange} required placeholder='Nombre*' />
+                    <input className="InputsTexto" type="text" name="apellidos" placeholder='Apellidos' />
                 </div>
-                <input className="EnvioBoton" type="submit" value="ENVIAR" />
-                {loading && "Enviando..."}
-                {error && "Error"}
-                {success && "Mensaje enviado"}
-                {errors.nombre?.type === 'required' && <span className="FormularioValidacion">*Nombre Requerido</span>}
-            </div>
-        </form>
-    </div>
-    ) 
+                <div className="InputsEtiquetas"> <label> Email* </label> <label> Teléfono </label> </div>
+                <div className="InputsDivision">
+                    <input className="InputsTexto" type="email" name="email" id="EMAIL" autoFocus value={fields.EMAIL} onChange={handleFieldChange} required placeholder='Email*' />
+                    <input className="InputsTexto" type="text" {...register('telefono')} name="telefono" placeholder='Teléfono' />
+                </div>
+                <div className="InputsEtiquetas"><label> ¿Cómo podemos ayudarte? Cuéntanos un poco más. </label></div>
+                <div className="ExplicacionDivision">
+                    <textarea className="ExplicacionTexto" type="text" {...register('mensaje')} aria-multiline name='mensaje'
+                        placeholder='¿Cómo podemos ayudarte? Cuéntanos un poco más.' />
+                </div >
+                <div className="EnvioDivision">
+                    <div className="PoliticaDivision" >
+                        <input className="EnvioCheckPolitica" type="checkbox" {...register('acepto', { required: true })} name="acepto" required />
+                        <a className="EnvioTextoPolitica" to="/politicaprivacidad"  >
+                            Marcando esta casilla manifiestas que has leído y aceptas el
+                            <Link to="/avisolegal"> Aviso Legal </Link>, la
+                            <Link to="/politicaprivacidad"> Política de privacidad </Link> y la
+                            suscripción a la newsletter. </a>
+                    </div>
+                    <div className='EnvioBotonContainer'>
+                        <input className="EnvioBoton" type="submit" value="ENVIAR" />
+                    </div>
+                    {loading && "Enviando..."}
+                    {error && "Error"}
+                    {success && "Mensaje enviado"}
+                    {errors.nombre?.type === 'required' && <span className="FormularioValidacion">*Nombre Requerido</span>}
+                </div>
+            </form>
+        </div>
+    )
 }
 export default Formulario;

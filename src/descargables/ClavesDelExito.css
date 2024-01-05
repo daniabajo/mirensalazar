@@ -22,12 +22,14 @@
     border: inherit;
     padding-right: 5%;
     width: 30%;
+    scale:0.8;
     height: 100%;
 }
 @media (width <=1100px) {
     .DescargableImagen {
         scale:  0.3;
         padding-right: 0%;
+        padding-left: 13%;
     }
 }
 /* Texto */
@@ -118,9 +120,9 @@
     align-items: center;
     justify-content: center;
     font-family: 'Montserrat';
-    font-size: 17px;
+    font-size: 18px;
     color: #e2dcd9;
-    width: 120px;
+    width: 150px;
     min-height: 40px;
     border: inherit;
     border-radius: 0%;
@@ -128,7 +130,7 @@
 
 @media (width <=1100px) {
     .DescargableBoton {
-        font-size: 12px;
+        width: 160px;
     }
 }
 

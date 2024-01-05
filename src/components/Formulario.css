@@ -112,23 +112,27 @@
     align-items: center;
 }
 
+.EnvioBotonContainer{
+    display: flex;
+    justify-content: right;
+    border: inherit;
+}
 .EnvioBoton {
+    background-color: #e2dcd9;
+    color:black;
     align-items: center;
     justify-content: center;
     font-family: 'Montserrat';
-    font-size: 16px;
-    margin-left: 90%;
-    width: 10%;
-    min-height: 40px;
+    font-size: 18px;
+    width: 120px;
+    height: 40px;
     margin-top: 2%;
     border: inherit;
     font-weight:300;
+    border-radius: 0;
 }
 @media (width <=1200px) {
     .EnvioBoton {
-        width: 30%;
-        margin-left: 70%;
-        min-height: 20px;
     }
 }
 

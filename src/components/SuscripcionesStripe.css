@@ -27,6 +27,7 @@
 
 .TarifasTexto {
     border: inherit;
+    padding-top:30px;
     margin-bottom: 5%;
 }
 
@@ -34,19 +35,31 @@
     display: flex;
     flex-direction: row;
     border: inherit;
+    padding-top: 30px;
 }
 
+@media (width <=1200px) {
+    .TarifasPaquetesContenedorFila {
+        flex-direction: column;
+        gap:4rem;
+    }
+}
 .TarifasPaqueteContenedorColumna {
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: space-between;
     border: inherit;
-    padding-left: 7%;
-    padding-right: 7%;
+    padding-left: 6%;
+    padding-right: 6%;
     gap: 2rem;
 }
-
+@media (width <=1200px) {
+    .TarifasPaqueteContenedorColumna {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
 .PaqueteTitulo {
     border: inherit;
     font-size: 25px;
@@ -88,8 +101,13 @@
 }
 
 .PaqueteBoton {
-    background-color:#31464e ;
+    font-family: 'Montserrat';
     color: #e2dcd9;
+    border: inherit;
+    font-size: 18px;
     width: 100%;
-    height: 30px;
+    background-color: #31464e;
+    height: 40px;
+    border-radius: 0;
+
 }

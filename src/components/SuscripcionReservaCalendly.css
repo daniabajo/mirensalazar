@@ -7,7 +7,7 @@
     font-weight: 300;
     width: 60%;
     margin-left: 20%;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
     border: none;
 }
 
@@ -17,6 +17,11 @@
         margin-left: 10%;
   
     }
+  }
+
+  .ReservaCalendlyContainer{
+    margin-left: 10%;
+    width:80%
   }
 
 .ReservaTitulo {
@@ -37,6 +42,10 @@
 
     }
   }
+
+.ReservaTextoContainer{
+    width: 80%;
+}
 
 .ReservaTexto {
     font-size:25px;

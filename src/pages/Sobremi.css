@@ -1,31 +1,41 @@
-.SobremiBase{
-    display:flex;
+.SobremiBase {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-family: 'Josefin Sans';
-    width:60%;
+    width: 60%;
     margin-left: 20%;
     font-size: 20px;
     font-weight: 300;
     padding-bottom: 4%;
-    border:none;
+    border: none;
 }
+
 @media (width <=1200px) {
     .SobremiBase {
         margin-left: 10%;
-        width: 80%;       
+        width: 80%;
     }
-}  
+}
+
 /* Bienvenidos */
 
-.SobremiFilosofia{
+.SobremiFilosofia {
     display: flex;
     flex-direction: column;
     border: inherit;
-    margin-top:200px;
+    padding-top: 70px;
 }
 
-.SobremiFilosofiaFila{
+.SobremiCentrado {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: inherit;
+    margin-top: 0px;
+}
+
+.SobremiFilosofiaFila {
     display: flex;
     flex-direction: row;
     border: inherit;
@@ -38,60 +48,69 @@
     }
 }
 
-.TituloDoradoBienvenidos{
+.TituloDoradoBienvenidos {
     left: 200px;
-    position:absolute;
-  rotate: -20deg;
-  color: #a78b6c;
-  font-size: 60px;
-  font-family: 'Brittany';
-  border: none;
-  align-items: center;
-  width:30%;
-  margin-bottom: 6%;
+    color: #a78b6c;
+    font-size: 60px;
+    font-family: 'Brittany';
+    border: none;
+    align-items: center;
+    width: 30%;
 }
 
 @media (width <=1200px) {
-  .TituloDoradoBienvenidos {
-    font-size: 50px;
-    margin-top: 3%;
-    padding-top: 3%;
-  }
+    .TituloDoradoBienvenidos {
+        font-size: 50px;
+        margin-top: 3%;
+        padding-top: 3%;
+    }
 }
 
 
-.SobremiBienvenidosTexto{
-    width:60%;
-    font-size: 25px;
+.SobremiBienvenidosTexto {
+    display: flex;
+    align-items: center;
+    width: 60%;
     font-weight: 400;
-    padding-bottom: 4%;
-    border:inherit;
-}
-
-
-.SobremiFilosfiaFoto{
     border: inherit;
 }
 
-.SobremiHistoria{
+@media (width <=900px) {
+    .SobremiBienvenidosTexto {
+        width: 100%;
+    }
+}
+.SobremiFilosfiaFoto {
     border: inherit;
 }
-.SobremiTrayectoria{
+
+.SobremiHistoria {
+    border: inherit;
+}
+
+.SobremiTrayectoria {
     border: inherit;
 }
 
 .SobremiDivisionTexto {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  border: inherit;
-}
-.SobremiTextoMayus {
-  display: flex;
-  justify-content: left;
-  font-family: 'Montserrat';
-  font-size: 18px;
-  border: inherit;
-  font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border: inherit;
 }
 
+.SobremiTextoMayus {
+    display: flex;
+    justify-content: left;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    border: inherit;
+    font-weight: 600;
+}
+
+.TextoJustificado {
+    text-align: justify;
+    text-justify: distribute;
+    font-size: inherit;
+    line-height: 1.5;
+}

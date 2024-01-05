@@ -15,14 +15,14 @@ const Tablas = ({ Type }) => {
           <thead >
             <tr>
               <th className="TableHeader" >SUSCRIPCIÓN</th>
-              <th className="TableHeader">PLATINIUM</th>
-              <th className="TableHeader">GOLD</th>
+              <th className="TableData1">PLATINUM</th>
+              <th className="TableData2">GOLD</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th>Número de visitas mensuales</th>
-              <th>Ilimitadas</th>
+              <th>Ilimitadas*</th>
               <th>1 visita</th>
             </tr>
             <tr >
@@ -60,19 +60,18 @@ const Tablas = ({ Type }) => {
               <th> <a className='TablasPrecioTachado'> 230€</a> 100€</th>
               <th>  <a className='TablasPrecioTachado'> 80€</a> 60€</th>
             </tr>
+            <tr>
+              <th className='TableCondiciones' >
+                <div className='TablasCondicionesContainer'>
+                  <a className="TablasCondicionesTexto">*con un máximo de una visita </a>
+                  <a className="TablasCondicionesTexto"> ** respuestas en un maximo de 48h hábiles </a>
+                </div>
+              </th>
+              <th className='TableBoton'> {Type === "Suscripciones" ? (<button className='TablasBotonesSuscribirme' onClick={DescargaButtonPlatinium}>  SUSCRIBIRME  </button>) : ('')}</th>
+              <th className='TableBoton'>  {Type === "Suscripciones" ? (<button className='TablasBotonesSuscribirme' onClick={DescargaButtonGold}>  SUSCRIBIRME  </button>) : ('')}</th>
+            </tr>
           </tbody>
         </table>
-      </div>
-      {/* Condiciones y boton suscribirme */}
-      <div className='TablasCondicionesBotonesBase'>
-        <div className='TablasCondicionesContainer'>
-          <a className="TablasCondicionesTexto">*con un máximo de una visita </a>
-          <a className="TablasCondicionesTexto"> ** respuestas en un maximo de 48h hábiles </a>
-        </div>
-        <div className='TablasBotonesContainer'>
-          {Type === "Suscripciones" ? (<button className='TablasBotonesSuscribirme' onClick={DescargaButtonPlatinium}>  SUSCRIBIRME  </button> ) : ('')}
-          {Type === "Suscripciones" ? (<button className='TablasBotonesSuscribirme' onClick={DescargaButtonGold}>  SUSCRIBIRME  </button> ) : ('')}
-        </div>
       </div>
       {/* Boton reservar */}
       <div className='TablasBotonContainer'>
