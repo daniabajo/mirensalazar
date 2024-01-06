@@ -25,24 +25,27 @@
 
 .PreguntasTitulo {
     display:flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
-    margin-left: 30%;
     border: inherit;
     font-weight: 400;
-font-size:35px;
-margin-bottom:30px;
-
+    font-size: 40px;
+    font-family: 'coax';
+    margin-bottom:30px;
 }
 
 .PreguntasPregunta {
     border: inherit;
     margin-top: 35px;
     font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .PreguntasRespuesta {
     border: inherit;
+    text-align: justify;
+    line-height: 1.5;
+
 
 
 }

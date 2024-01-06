@@ -24,8 +24,9 @@
     flex-direction: row;
     border: inherit;
     width: 100%;
-    gap: 0.5rem;
+    gap: 1.2rem;
     justify-content: left;
+    margin-bottom: 4%;
 }
 
 @media (width <=900px) {
@@ -51,9 +52,9 @@
 }
 
 .ServiciosIcono{
-    margin-left: 5%;
+    margin-left: 0%;
     width: 90%;
-    padding-bottom: 6%;
+    padding-bottom: 15%;
 }
 
 .ServiciosTitulo {
@@ -61,7 +62,9 @@
     justify-content: left;
     font-family: 'Montserrat';
     font-size: 20px;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
+    text-align: left;
+    margin-left: 7%;
 }
 
 
@@ -86,6 +89,8 @@ ul.ServiciosLista{
 .ServiciosListaItem{
     font-family: 'Josefin Sans';
     font-size: 20px;
+    text-align: left;
+    margin-left: 7%;
 }
 
 /* Boton reserva */

@@ -51,17 +51,18 @@
 .TituloDoradoBienvenidos {
     left: 200px;
     color: #a78b6c;
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'Brittany';
     border: none;
     align-items: center;
     width: 30%;
+    margin-top: 10%;
 }
 
 @media (width <=1200px) {
     .TituloDoradoBienvenidos {
         font-size: 50px;
-        margin-top: 3%;
+        margin-top: 10%;
         padding-top: 3%;
     }
 }
@@ -86,10 +87,20 @@
 
 .SobremiHistoria {
     border: inherit;
+    margin-top: 10%;
+}
+
+.SobremiMetodo {
+    background-color: #e2dcde;
+    border: inherit;
+    margin-top: 8%;
+    width: 100%;
 }
 
 .SobremiTrayectoria {
     border: inherit;
+    margin-top: 8%;
+    margin-bottom: 8%;
 }
 
 .SobremiDivisionTexto {
@@ -103,9 +114,10 @@
     display: flex;
     justify-content: left;
     font-family: 'Montserrat';
-    font-size: 18px;
+    font-size: 19px;
     border: inherit;
     font-weight: 600;
+    margin-top: 2%;
 }
 
 .TextoJustificado {
@@ -113,4 +125,5 @@
     text-justify: distribute;
     font-size: inherit;
     line-height: 1.5;
+    margin-top: 2%;
 }

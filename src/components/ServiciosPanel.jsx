@@ -23,7 +23,7 @@ const ServiciosPanel = () => {
             <div className="ServiciosFila">
                 <div className="ServiciosItem">
                     <img className='ServiciosIcono' src={Icono1} alt="Icono" />
-                    <strong className="ServiciosTitulo">NUTRICION SALUDABLE</strong>
+                    <strong className="ServiciosTitulo">NUTRICIÓN SALUDABLE</strong>
                     <ul className="ServiciosLista">
                         <li className="ServiciosListaItem">Alimentación saludable</li>
                         <li className="ServiciosListaItem">Educación alimentaria</li>
@@ -58,7 +58,7 @@ const ServiciosPanel = () => {
                     <strong className="ServiciosTitulo">PATOLOGÍA DIGESTIVA</strong>
                     <ul className="ServiciosLista">
                         <li className="ServiciosListaItem">Celiaquía</li>
-                        <li className="ServiciosListaItem">Reflujo gástrico</li>
+                        <li className="ServiciosListaItem">Reflujo gastroesofágico</li>
                         <li className="ServiciosListaItem">Hernia de hiato</li>
                         <li className="ServiciosListaItem">Helicobacter pylori</li>
                         <li className="ServiciosListaItem">Gastritis</li>
@@ -136,7 +136,7 @@ const ServiciosPanel = () => {
                     <strong className="ServiciosTitulo">PATOLOGÍA ÓSEA</strong>
                     <ul className="ServiciosLista">
                         <li className="ServiciosListaItem">Osteoporosis</li>
-                        <li className="ServiciosListaItem">Osteopernia</li>
+                        <li className="ServiciosListaItem">Osteopenia</li>
                     </ul>
                 </div>
                 <div className="ServiciosItem">
@@ -161,16 +161,16 @@ const ServiciosPanel = () => {
             <div className='ServiciosFila'>
                 <div className="ServiciosItem">
                     <img className='ServiciosIcono' src={Icono13} alt="Icono" />
-                    <strong className="ServiciosTitulo"> HÁBIT TABÁQUICO</strong>
+                    <strong className="ServiciosTitulo"> HÁBITO TABÁQUICO</strong>
                     <ul className="ServiciosLista">
                         <li className="ServiciosListaItem">Cesación tabáquica</li>
                     </ul>
                 </div>
                 <div className="ServiciosItem">
                     <img className='ServiciosIcono' src={Icono14} alt="Icono" />
-                    <strong className="ServiciosTitulo"> NUTRICIÓN I FÁRMACOS</strong>
+                    <strong className="ServiciosTitulo"> NUTRICIÓN Y FÁRMACOS</strong>
                     <ul className="ServiciosLista">
-                        <li className="ServiciosListaItem">Interacción fármaco-nutriente nutricionals</li>
+                        <li className="ServiciosListaItem">Interacción fármaco-nutriente</li>
                         <li className="ServiciosListaItem">Implicaciones nutricionales</li>
                     </ul>
                 </div>

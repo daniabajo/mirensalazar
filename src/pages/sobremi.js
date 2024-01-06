@@ -25,19 +25,19 @@ export default function Sobremi() {
                     </div>
                     <p className='TextoJustificado'>Hija de médico y nieta y sobrina de farmacéuticos, casi se podría decir que las ciencias de la salud forman parte de mi ADN. Trabajando como farmacéutica en Barcelona y en el Reino Unido, me di cuenta de que mi respuesta natural ante el paciente consistía en indagar acerca de sus hábitos de vida para descubrir si alguna modificación de éstos pudiera mejorar sus dolencias de forma más permanente. La voluntad de querer proporcionar una educación nutricional más extensa y detallada a los pacientes me llevó a estudiar el Grado en Nutrición Humana y Dietética, aunque el cometido de transmitir mis conocimientos a la población era difícil de alcanzar en un contexto de farmacia comunitaria, dado que desafortunadamente no se suele gozar de un tiempo de calidad con los pacientes. Es por este motivo que finalmente decidí emprender mi propio proyecto, y a día de hoy me emociona enormemente poder realizar mi propósito en mi centro de nutrición.</p>
                 </div>
-                <div className='SobremiHistoria'>
+                <div className='SobremiMetodo'>
                     <div className='SobremiCentrado'>
                         <h className="TituloDorado">  <a> Mi método</a> </h>
                     </div>
-                    <p className='TextoJustificado'>Como farmacéutica y dietista-nutricionista, ambas siendo profesiones sanitarias, entiendo que el pilar más importante alrededor del cual toda intervención nutricional debe gravitar es la promoción de la salud. Por este motivo, mi método de trabajo se basa en:</p>
+                    <p className='TextoJustificado'>Como farmacéutica y dietista-nutricionista, ambas siendo profesiones sanitarias, entiendo que el pilar más importante alrededor del cual toda intervención nutricional debe gravitar es la promoción de la <strong>salud</strong>. Por este motivo, mi método de trabajo se basa en:</p>
                     <ul className='TextoJustificado'>
                         <li>  el consumo de <strong>alimentos</strong>, sin hacer uso de productos artificiales</li>
-                        <li>una educación alimentaria que capacite al paciente para poder entender sus necesidades y llegar a ser autónomo</li>
-                        <li>un cambio de hábitos progresivo y permanente, evitando así el efecto rebote y garantizando unos resultados que se mantienen a largo plazo</li>
-                        <li>evitar sensaciones nocivas que suelen ser contraproducentes, tales como la restricción, el esfuerzo, el sufrimiento o pasar hambre</li>
-                        <li>un alto grado de individualización, dado que todos somos diferentes y cada individuo se beneficiará de unas herramientas o estrategias distintas</li>
-                        <li>un ambiente agradable, distendido, empático y de confianza donde trabajamos conjuntamente con el paciente para ayudarle en la consecución de todos sus objetivos</li>
-                        <li>el compromiso de mi formación continua para poder proporcionar una atención nutricional cada vez mejor</li>
+                        <li>una <strong>educación alimentaria</strong> que capacite al paciente para poder entender sus necesidades y llegar a ser autónomo</li>
+                        <li>un <strong>cambio de hábitos</strong> progresivo y permanente, evitando así el efecto rebote y garantizando unos resultados que se mantienen a largo plazo</li>
+                        <li><strong>evitar sensaciones nocivas</strong> que suelen ser contraproducentes, tales como la restricción, el esfuerzo, el sufrimiento o pasar hambre</li>
+                        <li>un alto grado de <strong>individualización</strong>, dado que todos somos diferentes y cada individuo se beneficiará de unas herramientas o estrategias distintas</li>
+                        <li>un <strong>ambiente agradable</strong>, distendido, empático y de confianza donde trabajamos conjuntamente con el paciente para ayudarle en la consecución de todos sus objetivos</li>
+                        <li>el compromiso de mi <strong>formación continua</strong> para poder proporcionar una atención nutricional cada vez mejor</li>
                     </ul>
                 </div>
                 <div className='SobremiTrayectoria'>
@@ -53,7 +53,7 @@ export default function Sobremi() {
                             <li>Erasmus: Royal National Orthopaedic Hospital (Reino Unido) adherida al Departamento de Farmacia</li>
                         </ul>
                         <li>Grado en Nutrición Humana y Dietética (Universidad Europea de Madrid)</li>
-                        <ul className='TextoJustificado'> 
+                        <ul> 
                             <li>Prácticas curriculares: consulta de nutrición de la Farmacia Les Arenes</li>
                             <li>Prácticas curriculares: nutrición deportiva en Club de Tennis Sant Gervasi</li>
                             <li>Prácticas curriculares: nutrición deportiva en CAR Sant Cugat</li>

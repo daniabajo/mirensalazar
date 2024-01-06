@@ -13,7 +13,7 @@ const SuscripcionReservaCalendly = () => {
             <div className="ReservaCalendlyContainer">
                 <InlineWidget url="https://calendly.com/annavehi" styles={{ height: '900px', width: '100%' }} />
             </div>
-            <div className="ReservaContainer">
+            <div className="ReservaContainer2">
 
                 <a className="ReservaTexto"> Si ningún horario se adapta a ti, puedes ponerte en contacto con nosotros a través de:</a>
                 <div className="ReservaDondeEstamosContainer">
