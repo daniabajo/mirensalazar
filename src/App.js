@@ -16,7 +16,7 @@ import Prueba from './pages/Prueba.js';
 import { Route, Routes } from "react-router-dom";
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import CookieConsent from "react-cookie-consent";
-import { Link ,useLocation} from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop'
 import Popup from './components/Popup';
 import { useState, useEffect } from 'react';
@@ -25,17 +25,17 @@ import ReactGA from 'react-ga';
 ReactGA.initialize('G-F9DZ724DR7');
 
 function App() {
-  const [ButtonPopUp,SetButtonPopUp]=useState(false);
-  const [TimePopUp,SetTimePopUp]=useState(false);
-  useEffect (()=>{setTimeout(() => {SetTimePopUp(true);},3000);},[])
+  const [ButtonPopUp, SetButtonPopUp] = useState(false);
+  const [TimePopUp, SetTimePopUp] = useState(false);
+  useEffect(() => { setTimeout(() => { SetTimePopUp(true); }, 3000); }, [])
   const location = useLocation();
-  useEffect(() => {ReactGA.pageview(location.pathname + location.search); }, [location]); 
+  useEffect(() => { ReactGA.pageview(location.pathname + location.search); }, [location]);
   return (true) ? (
     <div>
       <img src={Logo} className="LogoMain" alt="logo" />
       <Popup Trigger={TimePopUp} SetTrigger={SetTimePopUp}></Popup>
       <Navigationbar />
-      <ScrollToTop/>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Sobremi />} />
         <Route path="/sobremi" element={<Sobremi />} />
@@ -51,13 +51,13 @@ function App() {
         <Route path="/prueba" element={<Prueba />} />
       </Routes>
       {/*<PopupWidget url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")}text="Reserva tu cita"textColor="white"color="#31464e" side="left" />*/}
-      <FloatingWhatsApp className="a" phoneNumber="+34623003020" accountName="Anna Vehí · Centre de nutrició" chatMessage="Hola, en qué podemos ayudarte?"  statusMessage='Responde antes de 48h'
+      <FloatingWhatsApp phoneNumber="+34623003020" accountName="Anna Vehí · Centre de nutrició" chatMessage="Hola, en qué podemos ayudarte?" statusMessage='Responde antes de 48h'
         avatar="https://annavehi.com/IconoWhatsapp.png" />
-      <CookieConsent buttonText="Permitir" style={{ background: "#31464e", fontFamily:'Josefin Sans'}} buttonStyle={{ color: "black", fontSize: "13px", location: "left", fontFamily: 'Josefin Sans' }}
+      <CookieConsent buttonText="Permitir" style={{ background: "#31464e", fontFamily: 'Josefin Sans' }} buttonStyle={{ color: "black", fontSize: "13px", location: "left", fontFamily: 'Josefin Sans' }}
       >This website uses <Link className='TextoLinkConsentCookies' to="/politicacookies"> cookies</Link> to enhance the user experience.</CookieConsent>
-<Footer/>
+      <Footer />
     </div>
-  ) :  <div><img src={Logo} className="LogoMan" alt="logo" />  <a className='TituloDorado'>PRÓXIMAMENTE...</a></div>     
- 
+  ) : <div><img src={Logo} className="LogoMan" alt="logo" />  <a className='TituloDorado'>PRÓXIMAMENTE...</a></div>
+
 }
 export default App;

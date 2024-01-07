@@ -91,7 +91,7 @@
 }
 
 .SobremiMetodo {
-    background-color: #e2dcde;
+    background-color: inherit;
     border: inherit;
     margin-top: 8%;
     width: 100%;
@@ -116,7 +116,7 @@
     font-family: 'Montserrat';
     font-size: 19px;
     border: inherit;
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 2%;
 }
 

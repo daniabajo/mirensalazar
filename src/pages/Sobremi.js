@@ -25,6 +25,7 @@ export default function Sobremi() {
                     </div>
                     <p className='TextoJustificado'>Hija de médico y nieta y sobrina de farmacéuticos, casi se podría decir que las ciencias de la salud forman parte de mi ADN. Trabajando como farmacéutica en Barcelona y en el Reino Unido, me di cuenta de que mi respuesta natural ante el paciente consistía en indagar acerca de sus hábitos de vida para descubrir si alguna modificación de éstos pudiera mejorar sus dolencias de forma más permanente. La voluntad de querer proporcionar una educación nutricional más extensa y detallada a los pacientes me llevó a estudiar el Grado en Nutrición Humana y Dietética, aunque el cometido de transmitir mis conocimientos a la población era difícil de alcanzar en un contexto de farmacia comunitaria, dado que desafortunadamente no se suele gozar de un tiempo de calidad con los pacientes. Es por este motivo que finalmente decidí emprender mi propio proyecto, y a día de hoy me emociona enormemente poder realizar mi propósito en mi centro de nutrición.</p>
                 </div>
+                {/* Mi metodo */}
                 <div className='SobremiMetodo'>
                     <div className='SobremiCentrado'>
                         <h className="TituloDorado">  <a> Mi método</a> </h>
@@ -40,6 +41,7 @@ export default function Sobremi() {
                         <li>el compromiso de mi <strong>formación continua</strong> para poder proporcionar una atención nutricional cada vez mejor</li>
                     </ul>
                 </div>
+                {/* Formacion */}
                 <div className='SobremiTrayectoria'>
                     <div className='SobremiCentrado'>
                         <h className="TituloDorado">  <a> Formación</a> </h>
