@@ -15,7 +15,7 @@ const Footer = () => {
                         <img className="FooterMainDescargaImagen" src={LeadMagnet} alt="LeadMagnet" />
                     </div>
                     <div className="FooterMainDescargaTexto">
-                        <a className="FooterMainDescargaTextoTitulo"> Las 10 claves del éxito a largo plazo. </a>
+                        <a className="FooterMainDescargaTextoTitulo"> Guía práctica hacia una vida saludable </a>
                         <a className="FooterMainDescargaTextoTexto"> ¡Descubre los consejos que te llevarán a obtener resultados permanentes de una vez por todas! </a>
                         <button className="FooterMainDescargaBoton" onClick={DescargaButton} > <Link to="/descargas" className="LinkBoton" style={{ textDecoration: "none", width: '100%' }}> DESCARGA</Link> </button>
                     </div>

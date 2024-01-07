@@ -20,10 +20,11 @@ const ClavesDelExito = () => {
     const onSubmit = (data) => { console.log(data); sendEmail(); }
     return (
         <div className="DescargableBase">
-            <div className="DescargableImagen"><img src={ClavesDelExitoFoto} alt="ClavesDelExitoFoto" /></div>
+            <div className="DescargableImagen"><img className="DescargableImagenImg" src={ClavesDelExitoFoto} alt="ClavesDelExitoFoto" /></div>
             <div className="DescargableTexto">
                 <a className="DescargableTextoTitulo"> ¿Quieres saber las claves para tener una vida más saludable? </a>
                 <a className="DescargableTextoTexto"> ¡Descarga nuestra guía y descubre los consejos que te llevarán a obtener resultados permanentes de una vez por todas! </a>
+                <a className="DescargableTextoTextoMobile"> ¡Descarga nuestra guía! </a>
                 <form className="DescargableForm" ref={form} onSubmit={event => { event.preventDefault(); handleSubmit(fields); }}>
                     <input className="DescargableInputs" type="text" {...register('nombre', { required: true })} name="nombre" required placeholder='Nombre*' />
                     {errors.nombre?.type === 'required' && <p>Nombre requerido</p>}

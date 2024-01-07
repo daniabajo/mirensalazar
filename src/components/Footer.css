@@ -22,7 +22,7 @@
 }
 @media (width <=1200px) {
   .FooterMain {
-    padding-top: 30px;
+    padding-top: 20px;
   }
 }
 /* Parte izquierda Descarga */
@@ -30,33 +30,51 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 40%;
-  margin-left: 18%;
+  width: 45%;
+  margin-left: 15%;
   border: inherit;
 }
 
 @media (width <=1200px) {
   .FooterMainDescarga {
-    margin-left: 10%;
+    margin-left: 2.5%;
     width: 50%;
   }
 }
 
 .FooterMainDescargaImagen {
   display: flex;
-  margin-right: 25%;
-  width: 70%;
+  height: 200px;
   align-items: right;
   justify-content: right;
   border: inherit;
 }
 
+@media (width <=1200px) {
+  .FooterMainDescargaImagen {
+    display:none;
+  }
+}
+
+
 .FooterMainDescargaTexto {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   border: inherit;
   height: 100%;
+  padding-top:5%;
+  padding-bottom:5%;
+  line-height: 1.5rem;
+  gap:1rem;
+}
+
+@media (width <=1200px) {
+  .FooterMainDescargaTexto {
+    padding-top:0%;
+    padding-bottom:0%;
+  }
 }
 
 .FooterMainDescargaTextoTitulo {
@@ -67,6 +85,14 @@
 .FooterMainDescargaTextoTexto {
   font-size: 15px;
   border: inherit;
+  width:80%;
+  text-align: center;
+}
+
+@media (width <=1200px) {
+  .FooterMainDescargaTextoTexto {
+    width:100%;
+  }
 }
 
 .FooterMainDescargaBoton {
@@ -77,7 +103,7 @@
   color: #e2dcd9;
   border: inherit;
   width:130px;
-  margin-left: 20%;
+  margin-left: 0%;
   height: 30px;
   font-size: 15px;
 }

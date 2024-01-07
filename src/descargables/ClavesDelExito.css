@@ -8,38 +8,62 @@
     color: black;
     font-family: 'Josefin Sans';
     font-weight:300;
-    border: 2px solid black;
+    border: none;
     gap: 0rem;
     width:100%;
+    border:none;
 }
 
+@media (width <=1100px) {
+    .DescargableBase {
+        flex-direction: column;
+
+    }
+}
 /* Imagen */
 
 .DescargableImagen {
     display: flex;
-    justify-content: right;
-    border: 2px solid red;
-    padding-right: 5%;
-    width: 30%;
-    scale:0.3;
-    height: 40%;
+    justify-content: center;
+    border: inherit;
+    margin-right: 5%;
+    width: 40%;
 }
-@media (width <=1100px) {
+@media (width <=1200px) {
     .DescargableImagen {
-        scale:  0.3;
-        padding-right: 0%;
-        padding-left: 13%;
+        display:flex;
     }
 }
+
+.DescargableImagenImg{
+    height:420px;
+}
+
+@media (width <=1200px) {
+    .DescargableImagenImg {
+        height:200px;
+    }
+}
+
 /* Texto */
 .DescargableTexto {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
     border: none;
     width: 60%;
-    gap: 3rem;
+    gap: 2rem;
 }
+
+@media (width <=1200px) {
+    .DescargableTexto {
+        width: 80%;
+        gap: 2rem;
+    }
+}
+
 
 .DescargableTextoTitulo {
     display: flex;
@@ -68,6 +92,16 @@
 @media (width <=1000px) {
     .DescargableTextoTexto {
         font-size: 15px;
+        display: none;
+    }
+}
+
+.DescargableTextoTextoMobile{
+    display: none;
+}
+@media (width <=1000px) {
+    .DescargableTextoTextoMobile {
+        display: flex;
     }
 }
 
@@ -124,6 +158,7 @@
     align-items: center;
     justify-content: center;
     font-family: 'Montserrat';
+    font-weight: 350;
     font-size: 18px;
     color: #e2dcd9;
     width: 150px;
