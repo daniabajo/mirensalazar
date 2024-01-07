@@ -146,10 +146,7 @@
     font-weight:300;
     border-radius: 0;
 }
-@media (width <=1200px) {
-    .EnvioBoton {
-    }
-}
+
 
 .InputsEtiquetas {
     display: flex;

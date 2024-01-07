@@ -23,9 +23,9 @@ const SuscripcionExplicacion = ({Type}) => {
                     <div className='ListaIzquierda'>
                         <a>Es para ti si...</a>
                         <ul className="UnorderListIzquierda">
-                            <li> Quieres hacer dos o más visitas mensuales </li>
-                            <li> Estás en etapas iniciales de la intervención </li>
-                            <li> Necesitas un seguimiento más continuo </li>
+                            <li className="ListItemIzquierda"> Quieres hacer dos o más visitas mensuales </li>
+                            <li className="ListItemIzquierda"> Estás en etapas iniciales de la intervención </li>
+                            <li className="ListItemIzquierda"> Necesitas un seguimiento más continuo </li>
                             <li> Aún te cuesta implementar las recomendaciones nutricionales y de hábitos de vida trabajados </li>
                             <li> Sientes que aún no tienes suficiente conocimiento </li>
                             <li> Aún tienes sensación de pérdida de control sobre tu situación nutricional </li>

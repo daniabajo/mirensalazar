@@ -74,8 +74,20 @@ ul.UnorderListIzquierda {
     gap: 1rem;
     flex-direction: column;
     list-style: '✔ ';
-
+    list-style-image:  url('../images/Tick40x40.png');
+    height: 1100px;
 }
+
+li.ListItemIzquierda {
+	margin: 0;
+	padding: 36px 0 36px 84px;
+	list-style: none;
+	background-image:url('../images/Tick100x100.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+}
+
 
 .ListaDerecha {
     border: none;
@@ -90,8 +102,18 @@ ul.UnorderListDerecha {
     gap: 1rem;
     flex-direction: column;
     list-style: '\2716  ';
-    list-style-image: none;
 
+}
+
+
+li.ListItemDerecha {
+	margin: 0;
+	padding: 36px 0 36px 84px;
+	list-style: none;
+	background-image:url('../images/Tick100x100.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
 }
 
 .BotonReservar {
