@@ -28,7 +28,7 @@ const ClavesDelExito = () => {
                 <form className="DescargableForm" ref={form} onSubmit={event => { event.preventDefault(); handleSubmit(fields); }}>
                     <input className="DescargableInputs" type="text" {...register('nombre', { required: true })} name="nombre" required placeholder='Nombre*' />
                     {errors.nombre?.type === 'required' && <p>Nombre requerido</p>}
-                    <input className="DescargableInputs" id="EMAIL" name='email' autoFocus type="email" value={fields.EMAIL} onChange={handleFieldChange} placeholder='Email*' required />
+                    <input className="DescargableInputs" id="EMAIL" name='email' type="email" value={fields.EMAIL} onChange={handleFieldChange} placeholder='Email*' required />
                     <div className='DescargablePolitica'>
                         <input className="DescargableCheckPolitica" type="checkbox" {...register('acepto', { required: true })} required name="acepto" />
                         <a className="DescargableTextoPolitica" to="/politicaprivacidad"> Acepto la  <Link to="/politicaprivacidad">  politica de privacidad </Link>y la suscripción a la newsletter.</a>

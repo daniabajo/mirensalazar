@@ -89,7 +89,8 @@ ul.UnorderListDerecha {
     display: flex;
     gap: 1rem;
     flex-direction: column;
-    list-style: '✖ ';
+    list-style: '\2716  ';
+    list-style-image: none;
 
 }
 

@@ -25,21 +25,38 @@ const Formulario = () => {
             <h className="FormularioTitulo"> <a> ¿Hablamos?</a> </h>
             <h className="FormularioTexto"> <p> Cuéntanos cómo podemos ayudarte y nos pondremos en contacto lo antes posible.</p> </h>
             <form className="FormularioInputs" ref={form} onSubmit={event => { event.preventDefault(); handleSubmit(fields); sendEmail(event) }}>
-                <div className="InputsEtiquetas"> <label> Nombre* </label> <label> Apellidos </label> </div>
+                {/*Name and surname*/}
                 <div className="InputsDivision" >
-                    <input className="InputsTexto" type="text" name="nombre" id="NAME" value={fields.NAME} onChange={handleFieldChange} required placeholder='Nombre*' />
-                    <input className="InputsTexto" type="text" name="apellidos" placeholder='Apellidos' />
+                    <div className='FormularioBloque'>
+                        <label> Nombre* </label>
+                        <input className="InputsTexto" type="text" name="nombre" id="NAME" value={fields.NAME} onChange={handleFieldChange} required placeholder='' />
+                    </div>
+                    <div className='FormularioBloque'>
+                        <label> Apellidos </label>
+                        <input className="InputsTexto" type="text" name="apellidos" placeholder='' />
+                    </div>
                 </div>
-                <div className="InputsEtiquetas"> <label> Email* </label> <label> Teléfono </label> </div>
+                {/*Email and mvl*/}
                 <div className="InputsDivision">
-                    <input className="InputsTexto" type="email" name="email" id="EMAIL" autoFocus value={fields.EMAIL} onChange={handleFieldChange} required placeholder='Email*' />
-                    <input className="InputsTexto" type="text" {...register('telefono')} name="telefono" placeholder='Teléfono' />
+                    <div className='FormularioBloque'>
+                        <label> Email* </label>
+                        <input className="InputsTexto" type="email" name="email" id="EMAIL" value={fields.EMAIL} onChange={handleFieldChange} required placeholder='' />
+                    </div>
+                    <div className='FormularioBloque'>
+                        <label> Teléfono </label>
+                        <input className="InputsTexto" type="text" {...register('telefono')} name="telefono" placeholder='' />
+                    </div>
                 </div>
-                <div className="InputsEtiquetas"><label> ¿Cómo podemos ayudarte? Cuéntanos un poco más. </label></div>
-                <div className="ExplicacionDivision">
-                    <textarea className="ExplicacionTexto" type="text" {...register('mensaje')} aria-multiline name='mensaje'
-                        placeholder='¿Cómo podemos ayudarte? Cuéntanos un poco más.' />
-                </div >
+                {/*Email and mvl*/}
+                <div className="InputsDivision">
+                    <div className='FormularioBloque'>
+                        <div className="InputsEtiquetas"><label> ¿Cómo podemos ayudarte? Cuéntanos un poco más. </label></div>
+                        <div className="ExplicacionDivision">
+                            <textarea className="ExplicacionTexto" type="text" {...register('mensaje')} aria-multiline name='mensaje'/>
+                        </div >
+                    </div>
+                </div>
+                {/*Send*/}
                 <div className="EnvioDivision">
                     <div className="PoliticaDivision" >
                         <input className="EnvioCheckPolitica" type="checkbox" {...register('acepto', { required: true })} name="acepto" required />
