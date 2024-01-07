@@ -27,10 +27,13 @@ const DondeEstamos = () => {
                         <img src={Correo} className="DondeEstamosIcono" alt="Correo" />
                         <div className="DondeEstamosDivisionTexto"><a className="DondeEstamosTextoMayus"> CORREO ELECTRÓNICO </a> <a className="DondeEstamosTexto">  info@annavehi.com</a></div>
                     </div>
-                    <PopupButton className="DondeEstamosBotonReservar" url="https://calendly.com/annavehi/"  rootElement={document.getElementById("root")} text="RESERVA CITA" />
+                    <div className="LineVertical"> </div>
+                    <div className="DondeEstamosBotonReservarContainer">
+                        <PopupButton className="DondeEstamosBotonReservar" url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")} text="RESERVA CITA" />
+                    </div>
                 </div>
                 <div className="DondeEstamosDivisionRigth">
-                    <iframe className="DondeEstamosMap"  src="https://maps.google.com/maps?width=1200&amp;height=1020&amp;hl=en&amp;q=C.%20de%20Aribau,%20114,%20Entl%204%C2%AA,%2008036%20Barcelona+(Anna%20Veh%C3%AD%20Centre%20Nutrici%C3%B3)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Calculate population in area</a></iframe>
+                    <iframe className="DondeEstamosMap" src="https://maps.google.com/maps?width=1200&amp;height=1020&amp;hl=en&amp;q=C.%20de%20Aribau,%20114,%20Entl%204%C2%AA,%2008036%20Barcelona+(Anna%20Veh%C3%AD%20Centre%20Nutrici%C3%B3)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Calculate population in area</a></iframe>
                 </div>
             </div>
         </div >

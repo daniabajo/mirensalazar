@@ -6,8 +6,8 @@
     justify-content: center;
     align-content: center;
     font-family: 'Josefin Sans';
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 30px;
+    padding-bottom: 50px;
     width: 100%;
     border: none;
     font-size: 20px;
@@ -18,7 +18,8 @@
     border: inherit;
     width: 60%;
     margin-left: 20%;
-    padding-bottom: 3%;
+    padding-top:30px;
+    padding-bottom:50px;
 }
 
 @media (width <=1200px) {
@@ -183,4 +184,11 @@ th {
     display:flex;
     flex-direction: column;
     border:none;
+}
+
+.TickTable{
+	background-image:url('../images/Tick100x100.png');
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: 20px;
 }

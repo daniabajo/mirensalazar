@@ -26,24 +26,25 @@ const SuscripcionExplicacion = ({Type}) => {
                             <li className="ListItemIzquierda"> Quieres hacer dos o más visitas mensuales </li>
                             <li className="ListItemIzquierda"> Estás en etapas iniciales de la intervención </li>
                             <li className="ListItemIzquierda"> Necesitas un seguimiento más continuo </li>
-                            <li> Aún te cuesta implementar las recomendaciones nutricionales y de hábitos de vida trabajados </li>
-                            <li> Sientes que aún no tienes suficiente conocimiento </li>
-                            <li> Aún tienes sensación de pérdida de control sobre tu situación nutricional </li>
-                            <li> Tu patología o condición requiere visitas semanales o quincenales</li>
+                            <li className="ListItemIzquierda"> Aún te cuesta implementar las recomendaciones nutricionales y de hábitos de vida trabajados </li>
+                            <li className="ListItemIzquierda"> Sientes que aún no tienes suficiente conocimiento </li>
+                            <li className="ListItemIzquierda"> Aún tienes sensación de pérdida de control sobre tu situación nutricional </li>
+                            <li className="ListItemIzquierda"> Tu patología o condición requiere visitas semanales o quincenales</li>
                         </ul>
                     </div>
                     <div className='ListaDerecha'>
                         <a>No es para ti si...</a>
                         <ul className="UnorderListDerecha">
-                            <li> Quieres hacer solamente una visita mensual </li>
-                            <li> Estás en etapas finales de la intervención </li>
-                            <li> Has comprendido la nutrición y estilo de vida adecuados para tu situación concreta </li>
-                            <li> No tienes por delante grandes cambios, sino solo detalles por trabajar </li>
-                            <li> Quieres hacer una monitorización periódica de tu composición corporal </li>
-                            <li> Tu patología o condición no necesita un seguimiento tan continuo </li>
+                            <li className="ListItemDerecha"> Quieres hacer solamente una visita mensual </li>
+                            <li className="ListItemDerecha"> Estás en etapas finales de la intervención </li>
+                            <li className="ListItemDerecha"> Has comprendido la nutrición y estilo de vida adecuados para tu situación concreta </li>
+                            <li className="ListItemDerecha"> No tienes por delante grandes cambios, sino solo detalles por trabajar </li>
+                            <li className="ListItemDerecha"> Quieres hacer una monitorización periódica de tu composición corporal </li>
+                            <li className="ListItemDerecha"> Tu patología o condición no necesita un seguimiento tan continuo </li>
                         </ul>
                     </div>
                 </div>
+                <div className="SuscripcionesLineVertical"> </div>
                 {Type === "Reserva" ?  ( <PopupButton className="BotonReservar" url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")} text="RESERVA CITA" />) : 
                 (<button className='BotonReservar' onClick={DescargaButtonPlatinium}>  SUSCRIBIRME  </button> )}
             </div>
@@ -57,27 +58,28 @@ const SuscripcionExplicacion = ({Type}) => {
                     <div className='ListaIzquierda'>
                     <a>Es para ti si...</a>
                     <ul className="UnorderListIzquierda">
-                            <li> Quieres hacer solamente una visita mensual </li>
-                            <li> Estás en etapas finales de la intervención </li>
-                            <li> Has comprendido la nutrición y estilo de vida adecuados para tu situación concreta </li>
-                            <li> No tienes por delante grandes cambios, sino solo detalles por trabajar </li>
-                            <li> Quieres hacer una monitorización periódica de tu composición corporal </li>
-                            <li> Tu patología o condición no necesita un seguimiento tan continuo </li>
+                            <li className="ListItemIzquierda"> Quieres hacer solamente una visita mensual </li>
+                            <li className="ListItemIzquierda"> Estás en etapas finales de la intervención </li>
+                            <li className="ListItemIzquierda"> Has comprendido la nutrición y estilo de vida adecuados para tu situación concreta </li>
+                            <li className="ListItemIzquierda"> No tienes por delante grandes cambios, sino solo detalles por trabajar </li>
+                            <li className="ListItemIzquierda"> Quieres hacer una monitorización periódica de tu composición corporal </li>
+                            <li className="ListItemIzquierda"> Tu patología o condición no necesita un seguimiento tan continuo </li>
                         </ul>
                     </div>
                     <div className='ListaDerecha'>
                     <a>No es para ti si...</a>
                     <ul className="UnorderListDerecha">
-                            <li className="ListItem"> Quieres hacer dos o más visitas mensuales </li>
-                            <li> Estás en etapas iniciales de la intervención </li>
-                            <li> Necesitas un seguimiento más continuo </li>
-                            <li> Aún te cuesta implementar las recomendaciones nutricionales y de hábitos de vida trabajados </li>
-                            <li> Sientes que aún no tienes suficiente conocimiento</li>
-                            <li> Aún tienes sensación de pérdida de control sobre tu situación nutricional </li>
-                            <li> Tu patología o condición requiere visitas semanales o quincenales </li>
+                            <li className="ListItemDerecha"> Quieres hacer dos o más visitas mensuales </li>
+                            <li className="ListItemDerecha"> Estás en etapas iniciales de la intervención </li>
+                            <li className="ListItemDerecha"> Necesitas un seguimiento más continuo </li>
+                            <li className="ListItemDerecha"> Aún te cuesta implementar las recomendaciones nutricionales y de hábitos de vida trabajados </li>
+                            <li className="ListItemDerecha"> Sientes que aún no tienes suficiente conocimiento</li>
+                            <li className="ListItemDerecha"> Aún tienes sensación de pérdida de control sobre tu situación nutricional </li>
+                            <li className="ListItemDerecha"> Tu patología o condición requiere visitas semanales o quincenales </li>
                         </ul>
                     </div>
                 </div>
+                <div className="SuscripcionesLineVertical"> </div>
                 {Type === "Reserva" ? ( <PopupButton className="BotonReservar" url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")} text="RESERVA CITA" />) : 
                 (<button className='BotonReservar' onClick={DescargaButtonGold}>  SUSCRIBIRME  </button> )}
             </div>

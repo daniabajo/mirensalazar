@@ -4,15 +4,14 @@ import emailjs from '@emailjs/browser';
 import { Link } from 'react-router-dom';
 import "./Formulario.css"
 import { useFormFields, useMailChimpForm } from "use-mailchimp-form";
-const url = "https://annavehi.us21.list-manage.com/subscribe/post?u=2330425f14048447c80289c70&amp;id=6374ceb387&amp;f_id=0006f7e6f0";
+const url = "https://annavehi.us11.list-manage.com/subscribe/post?u=f9df3ef7bce01603e71b5e28e&amp;id=763ad69f56&amp;f_id=0060b3e0f0";
 
 const Formulario = () => {
     const form = useRef();
     const { register, formState: { errors } } = useForm();
     const sendEmail = (Event) => {
         Event.preventDefault();
-        /*emailjs.sendForm('service_ukvacln', 'template_wzrelji', form.current, 'QmE0uEOoCqxBr68I4')  .then(*/
-        emailjs.sendForm('service_n364x7p', 'template_2ws4tf9', form.current, 'rnnXAMH44fAkT7iCB').then(
+        emailjs.sendForm('service_ukvacln', 'template_wzrelji', form.current, 'QmE0uEOoCqxBr68I4')  .then(
             (result) => { console.log(result.text); console.log("message sent") },
             (error) => { console.log(error.text); });
         Event.target.reset();
@@ -71,7 +70,7 @@ const Formulario = () => {
                     </div>
                     {loading && "Enviando..."}
                     {error && "Error"}
-                    {success && "Mensaje enviado"}
+                    {success && "Hemos recibido correctamente tu mensaje."}
                     {errors.nombre?.type === 'required' && <span className="FormularioValidacion">*Nombre Requerido</span>}
                 </div>
             </form>

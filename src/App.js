@@ -27,7 +27,7 @@ ReactGA.initialize('G-F9DZ724DR7');
 function App() {
   const [ButtonPopUp, SetButtonPopUp] = useState(false);
   const [TimePopUp, SetTimePopUp] = useState(false);
-  useEffect(() => { setTimeout(() => { SetTimePopUp(true); }, 3000); }, [])
+  useEffect(() => {  if (location.pathname != "/suscripciones") { setTimeout(() => { SetTimePopUp(true); }, 3000); }}, [])
   const location = useLocation();
   useEffect(() => { ReactGA.pageview(location.pathname + location.search); }, [location]);
   return (true) ? (

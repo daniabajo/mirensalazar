@@ -15,7 +15,9 @@ export default function Sobremi() {
                         <div className='SobremiBienvenidosTexto'>
                             <a className='TextoJustificado'>Soy Anna Vehí y me apasiona ayudar a las personas a mejorar su salud y calidad de vida, guiándoles y acompañándoles en la consecución de sus distintos objetivos nutricionales y de hábitos saludables. </a>
                         </div>
+                        <div className='SobremiFilosfiaFotoContainer'>
                         <img className='SobremiFilosfiaFoto' src={LeadMagnet} alt="LeadMagnet" />
+                        </div>
                     </div>
                 </div>
                 {/* Historia */}

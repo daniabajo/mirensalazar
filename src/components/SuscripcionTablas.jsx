@@ -27,33 +27,33 @@ const Tablas = ({ Type }) => {
             </tr>
             <tr >
               <th>Duración de las visitas</th>
-              <th>30 minutos</th>
-              <th>30 minutos</th>
+              <th>30minutos</th>
+              <th>30minutos</th>
             </tr>
             <tr>
               <th>Seguimiento ilimitado vía WhatsApp**</th>
-              <th>✔</th>
-              <th>✔</th>
+              <th className='TickTable'></th>
+              <th className='TickTable'></th>
             </tr>
             <tr>
               <th>Estudios de composición corporal con bioimpedancia</th>
-              <th>✔</th>
-              <th>✔</th>
+              <th className='TickTable'></th>
+              <th className='TickTable'></th>
             </tr>
             <tr>
               <th>Estudios antropométricos y de somatotipo</th>
-              <th>✔</th>
-              <th>✔</th>
+              <th className='TickTable'></th>
+              <th className='TickTable'></th>
             </tr>
             <tr>
               <th>Informe inicial con hoja de ruta</th>
-              <th>✔</th>
-              <th>✔</th>
+              <th className='TickTable'></th>
+              <th className='TickTable'></th>
             </tr>
             <tr>
               <th>Módulos formativos personalizados</th>
-              <th>✔</th>
-              <th>✔</th>
+              <th className='TickTable'></th>
+              <th className='TickTable'></th>
             </tr>
             <tr>
               <th>Precio mensual</th>

@@ -19,10 +19,12 @@
   width: 100%;
   padding-top: 1.5%;
   padding-bottom: 1%;
+  gap:8rem;
 }
 @media (width <=1200px) {
   .FooterMain {
     padding-top: 20px;
+    gap:0rem;
   }
 }
 /* Parte izquierda Descarga */
@@ -30,8 +32,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 45%;
-  margin-left: 15%;
+  width: 25%;
+  margin-left: 20%;
   border: inherit;
 }
 
@@ -64,8 +66,7 @@
   align-items: center;
   border: inherit;
   height: 100%;
-  padding-top:5%;
-  padding-bottom:5%;
+
   line-height: 1.5rem;
   gap:1rem;
 }
@@ -154,6 +155,8 @@
   border: inherit;
   height: 20%;
   scale:0.7;
+  border-radius: 0;
+
 }
 
 @media (width <=1200px) {
@@ -164,6 +167,7 @@
 
 .FooterMainSiguenosIconoIcono {
   border: inherit;
+  border-radius: 0;
 }
 
 .FooterMainSiguenosTextoTitulo {

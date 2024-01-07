@@ -10,8 +10,8 @@
     font-weight:300;
     border: none;
     gap: 0rem;
-    width:100%;
-    border:none;
+    margin-left: 5%;
+    width:90%;
 }
 
 @media (width <=1100px) {
@@ -170,6 +170,7 @@
 @media (width <=1100px) {
     .DescargableBoton {
         width: 160px;
+        background-color: #31464e;
     }
 }
 

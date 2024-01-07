@@ -14,7 +14,8 @@
     flex-direction: column;
     margin-left: 10%;
     width: 80%;
-    margin-top:5%;
+    margin-top: 5%;
+    margin-bottom: 12%;
   }
 }
 
@@ -22,45 +23,58 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: top;
   border: inherit;
-  width:100%;
+  width: 100%;
 }
 
 @media (width <=1200px) {
   .DondeEstamos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    margin-top:5%;
-    width:100%;
+    margin-top: 5%;
+    width: 100%;
+    gap:1rem;
   }
 }
 
 .DondeEstamosDivisionRigth {
   border: inherit;
-  margin-top:5%;
-  margin-bottom:10%;
+  width: 50%;
+}
+
+@media (width <=1200px) {
+  .DondeEstamosDivisionRigth {
+    width: 100%;
+    height: 300px;
+
+  }
 }
 
 .DondeEstamosDivisionLeft {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  border: none;
-  gap:4rem;
+  border: inherit;
+  gap: 2.5rem;
 
 }
-@media (width <=1300px) {
-.DondeEstamosDivisionLeft {
-  gap:2rem;
-  margin-bottom: 10%;
-}
+
+@media (width <=1200px) {
+  .DondeEstamosDivisionLeft {
+    gap: 2rem;
+    margin-bottom: 10%;
+    width:50%;
+  }
 }
 
 .DondeEstamosDivisionIcono {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  border: none;
+  border: inherit;
   gap: 2rem;
 }
 
@@ -76,6 +90,7 @@
   justify-content: left;
   border: inherit;
 }
+
 .DondeEstamosTextoMayus {
   display: flex;
   justify-content: left;
@@ -89,12 +104,18 @@
   float: left;
   justify-content: left;
   font-family: 'Josefin Sans';
-  font-weight:300;
+  font-weight: 300;
   font-size: 18px;
   border: none
 }
 
-.DondeEstamosBotonReservar{
+.DondeEstamosBotonReservarContainer{
+  display:flex;
+  border: inherit;
+  justify-content: center;
+}
+
+.DondeEstamosBotonReservar {
   background-color: #31464e;
   display: flex;
   color: #e2dcd9;
@@ -103,19 +124,19 @@
   font-family: 'Montserrat';
   border-radius: 0;
   height: 40px;
-  margin-left: 25%;
+  margin-left: 0;
   width: 180px;
   border: inherit;
   font-size: 18px;
 }
 
-.DondeEstamosMap{
-  width:500px;
-   height:400px ;
-   margin:0;
+.DondeEstamosMap {
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
-@media (width <= 1300px){
-  .DondeEstamosMap {
-    width:300px;
-  }
+.LineVertical {
+  margin-left: 50%;
+  border-left: 1.5px solid black;
+  min-height: 60px;
 }

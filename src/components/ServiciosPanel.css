@@ -12,8 +12,8 @@
 }
 @media (width <=1200px) {
     .ServiciosContainer {
-        margin-left: 10%;
-        width: 80%;
+        margin-left: 15%;
+        width: 70%;
         flex-direction: column;
     }
 }
@@ -52,8 +52,8 @@
 }
 
 .ServiciosIcono{
-    margin-left: 0%;
-    width: 90%;
+    margin-left: 5%;
+    width: 200px;
     padding-bottom: 15%;
 }
 
@@ -69,6 +69,9 @@
 
 
 .ServiciosLista{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Josefin Sans';
     gap:1rem;
     padding:5%
