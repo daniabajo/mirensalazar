@@ -80,6 +80,8 @@
 .FooterMainDescargaTextoTitulo {
   font-size: 17px;
   border: inherit;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .FooterMainDescargaTextoTexto {
