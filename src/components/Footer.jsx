@@ -1,5 +1,5 @@
 import "./Footer.css"
-import LeadMagnet from './../images/LeadMagnet.png';
+import LeadMagnet from './../images/LeadMagnetSinFondo.png';
 import { PopupButton } from "react-calendly";
 import { Link } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons'

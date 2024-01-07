@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import { useFormFields, useMailChimpForm } from "use-mailchimp-form";
 import { Link } from 'react-router-dom';
-import ClavesDelExitoFoto from './../images/ClavesDelExito.png';
+import ClavesDelExitoFoto from './../images/LeadMagnetSinFondo.png';
 import "./ClavesDelExito.css"
 const url = "https://annavehi.us21.list-manage.com/subscribe/post?u=2330425f14048447c80289c70&amp;id=6374ceb387&amp;f_id=0006f7e6f0";
 
