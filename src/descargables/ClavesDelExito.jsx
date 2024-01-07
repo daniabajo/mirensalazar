@@ -22,8 +22,8 @@ const ClavesDelExito = () => {
         <div className="DescargableBase">
             <div className="DescargableImagen"><img src={ClavesDelExitoFoto} alt="ClavesDelExitoFoto" /></div>
             <div className="DescargableTexto">
-                <a className="DescargableTextoTitulo"> ¿Quieres saber las 10 claves del éxito a largo plazo? </a>
-                <a className="DescargableTextoTexto"> ¡Descubre los consejos que te llevarán a obtener resultados permanentes de una vez por todas! </a>
+                <a className="DescargableTextoTitulo"> ¿Quieres saber las claves para tener una vida más saludable? </a>
+                <a className="DescargableTextoTexto"> ¡Descarga nuestra guía y descubre los consejos que te llevarán a obtener resultados permanentes de una vez por todas! </a>
                 <form className="DescargableForm" ref={form} onSubmit={event => { event.preventDefault(); handleSubmit(fields); }}>
                     <input className="DescargableInputs" type="text" {...register('nombre', { required: true })} name="nombre" required placeholder='Nombre*' />
                     {errors.nombre?.type === 'required' && <p>Nombre requerido</p>}
@@ -33,7 +33,7 @@ const ClavesDelExito = () => {
                         <a className="DescargableTextoPolitica" to="/politicaprivacidad"> Acepto la  <Link to="/politicaprivacidad">  politica de privacidad </Link>y la suscripción a la newsletter.</a>
                     </div>
                     <div className='DescargableBotonContainer'>
-                        <input className="DescargableBoton" type="submit" value="¡LO QUIERO!" />
+                        <input className="DescargableBoton" type="submit" value="¡LA QUIERO!" />
                         <a className="DescargableTextoTexto">
                         {loading && "Enviando..."}
                         {error && "Error"}

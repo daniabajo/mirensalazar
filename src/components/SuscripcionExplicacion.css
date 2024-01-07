@@ -38,10 +38,12 @@
     justify-content: center;
     align-items: center;
     border: 2px solid black;
-    margin-top: 3%;
-    padding-top: 2%;
+    margin-top: 5%;
+    padding-top: 4%;
     margin-bottom: 4%;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .ListaTitulo {
@@ -50,7 +52,7 @@
     font-size: 25px;
     font-weight: 400;
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 }
 
 .ListasContainer {
@@ -61,6 +63,10 @@
 
 .ListaIzquierda {
     border: none;
+    padding-right: 5%;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 3%;
 }
 
 ul.UnorderListIzquierda {
@@ -73,6 +79,9 @@ ul.UnorderListIzquierda {
 
 .ListaDerecha {
     border: none;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 3%;
 
 }
 
