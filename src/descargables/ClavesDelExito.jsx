@@ -5,14 +5,15 @@ import { useFormFields, useMailChimpForm } from "use-mailchimp-form";
 import { Link } from 'react-router-dom';
 import ClavesDelExitoFoto from './../images/LeadMagnetSinFondo.png';
 import "./ClavesDelExito.css"
-const url = "https://annavehi.us21.list-manage.com/subscribe/post?u=2330425f14048447c80289c70&amp;id=6374ceb387&amp;f_id=0006f7e6f0";
+const url = "https://annavehi.us11.list-manage.com/subscribe/post?u=f9df3ef7bce01603e71b5e28e&amp;id=763ad69f56&amp;f_id=0060b3e0f0";
 
 const ClavesDelExito = () => {
     const form = useRef();
     const { register, handleSubmit2, formState: { errors } } = useForm();
     const sendEmail = (Event) => {
         Event.preventDefault();
-        emailjs.sendForm('service_n364x7p', 'template_t8qrrpl', form.current, 'rnnXAMH44fAkT7iCB').then((result) => { console.log(result.text); console.log("message sent") }, (error) => { console.log(error.text); });
+        emailjs.sendForm('service_ukvacln', 'template_wzrelji', form.current, 'QmE0uEOoCqxBr68I4') (
+            (result) => { console.log(result.text); console.log("message sent") }, (error) => { console.log(error.text); });
         Event.target.reset();
     }
     const { loading, error, success, message, handleSubmit } = useMailChimpForm(url);
