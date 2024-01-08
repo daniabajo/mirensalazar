@@ -21,7 +21,7 @@ const ClavesDelExito = () => {
         Event.target.reset();
     }
     const { loading, error, success, message, handleSubmit } = useMailChimpForm(url);
-    const { fields, handleFieldChange } = useFormFields({ EMAIL: "", MERGE1:"",MERGE2:"LeadMagnet"});
+    const { fields, handleFieldChange } = useFormFields({ EMAIL: "", MERGE1:"",MERGE7:"LeadMagnet"});
     const onSubmit = (data) => { console.log(data); sendEmail(); }
     return (
         <div className="DescargableBase">

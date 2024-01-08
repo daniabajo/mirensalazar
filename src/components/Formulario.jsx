@@ -20,7 +20,7 @@ const Formulario = () => {
         Event.target.reset();
     }
     const { loading, error, success, message, handleSubmit } = useMailChimpForm(url);
-    const { fields, handleFieldChange } = useFormFields({ EMAIL: "", MERGE1: "" ,MERGE2:"",MERGE6:"",group_1:"1"});
+    const { fields, handleFieldChange } = useFormFields({ EMAIL: "", MERGE1: "" ,MERGE2:"",MERGE6:"",MERGE7:"Formulario"});
     const onSubmit = (data) => { console.log(data); sendEmail(data); }
     return (
         <div className="FormularioBase">
@@ -46,7 +46,7 @@ const Formulario = () => {
                     </div>
                     <div className='FormularioBloque'>
                         <label> Teléfono </label>
-                        <input className="InputsTexto" type="text" name="phone"  id="MERGE6" value={fields.MERGE6} onChange={handleFieldChange}placeholder='' />
+                        <input className="InputsTexto" type="text" name="phone"  id="MERGE6" value={fields.MERGE6} onChange={handleFieldChange} placeholder='' />
                     </div>
                 </div>
                 {/*Email and mvl*/}
