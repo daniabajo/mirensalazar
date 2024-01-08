@@ -5,7 +5,11 @@ import { useFormFields, useMailChimpForm } from "use-mailchimp-form";
 import { Link } from 'react-router-dom';
 import ClavesDelExitoFoto from './../images/LeadMagnetSinFondo.png';
 import "./ClavesDelExito.css"
-const url = "https://annavehi.us11.list-manage.com/subscribe/post?u=f9df3ef7bce01603e71b5e28e&amp;id=763ad69f56&amp;f_id=0060b3e0f0";
+/*Anna */
+const url = "https://annavehi.us11.list-manage.com/subscribe/post?u=f9df3ef7bce01603e71b5e28e&amp;id=763ad69f56&amp;f_id=0060b3e0f0"; 
+/*Dani */
+/*const url = "https://annavehi.us21.list-manage.com/subscribe/post?u=2330425f14048447c80289c70&amp;id=6374ceb387&amp;f_id=0006f7e6f0"; */
+
 
 const ClavesDelExito = () => {
     const form = useRef();
@@ -17,7 +21,7 @@ const ClavesDelExito = () => {
         Event.target.reset();
     }
     const { loading, error, success, message, handleSubmit } = useMailChimpForm(url);
-    const { fields, handleFieldChange } = useFormFields({ EMAIL: "", });
+    const { fields, handleFieldChange } = useFormFields({ EMAIL: "", MERGE1:"",MERGE2:"LeadMagnet"});
     const onSubmit = (data) => { console.log(data); sendEmail(); }
     return (
         <div className="DescargableBase">
@@ -27,8 +31,7 @@ const ClavesDelExito = () => {
                 <a className="DescargableTextoTexto"> ¡Descarga nuestra guía y descubre los consejos que te llevarán a obtener resultados permanentes de una vez por todas! </a>
                 <a className="DescargableTextoTextoMobile"> ¡Descarga nuestra guía! </a>
                 <form className="DescargableForm" ref={form} onSubmit={event => { event.preventDefault(); handleSubmit(fields); }}>
-                    <input className="DescargableInputs" type="text" {...register('nombre', { required: true })} name="nombre" required placeholder='Nombre*' />
-                    {errors.nombre?.type === 'required' && <p>Nombre requerido</p>}
+                    <input className="DescargableInputs" type="text" id="MERGE1" value={fields.MERGE1} onChange={handleFieldChange}  name="nombre" required placeholder='Nombre*' />
                     <input className="DescargableInputs" id="EMAIL" name='email' type="email" value={fields.EMAIL} onChange={handleFieldChange} placeholder='Email*' required />
                     <div className='DescargablePolitica'>
                         <input className="DescargableCheckPolitica" type="checkbox" {...register('acepto', { required: true })} required name="acepto" />

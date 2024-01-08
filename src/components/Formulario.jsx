@@ -4,7 +4,10 @@ import emailjs from '@emailjs/browser';
 import { Link } from 'react-router-dom';
 import "./Formulario.css"
 import { useFormFields, useMailChimpForm } from "use-mailchimp-form";
+/* Anna */
 const url = "https://annavehi.us11.list-manage.com/subscribe/post?u=f9df3ef7bce01603e71b5e28e&amp;id=763ad69f56&amp;f_id=0060b3e0f0";
+/*Dani */
+/*const url = "https://annavehi.us21.list-manage.com/subscribe/post?u=2330425f14048447c80289c70&amp;id=6374ceb387&amp;f_id=0006f7e6f0";*/
 
 const Formulario = () => {
     const form = useRef();
@@ -17,7 +20,7 @@ const Formulario = () => {
         Event.target.reset();
     }
     const { loading, error, success, message, handleSubmit } = useMailChimpForm(url);
-    const { fields, handleFieldChange } = useFormFields({ EMAIL: "", NAME: "" });
+    const { fields, handleFieldChange } = useFormFields({ EMAIL: "", MERGE1: "" ,MERGE2:"",MERGE6:"",group_1:"1"});
     const onSubmit = (data) => { console.log(data); sendEmail(data); }
     return (
         <div className="FormularioBase">
@@ -28,11 +31,11 @@ const Formulario = () => {
                 <div className="InputsDivision" >
                     <div className='FormularioBloque'>
                         <label> Nombre* </label>
-                        <input className="InputsTexto" type="text" name="nombre" id="NAME" value={fields.NAME} onChange={handleFieldChange} required placeholder='' />
+                        <input className="InputsTexto" type="text" name="nombre" id="MERGE1" value={fields.MERGE1} onChange={handleFieldChange} required placeholder='' />
                     </div>
                     <div className='FormularioBloque'>
                         <label> Apellidos </label>
-                        <input className="InputsTexto" type="text" name="apellidos" placeholder='' />
+                        <input className="InputsTexto" type="text" name="apellidos" id="MERGE2" value={fields.MERGE2} onChange={handleFieldChange} placeholder='' />
                     </div>
                 </div>
                 {/*Email and mvl*/}
@@ -43,7 +46,7 @@ const Formulario = () => {
                     </div>
                     <div className='FormularioBloque'>
                         <label> Teléfono </label>
-                        <input className="InputsTexto" type="text" {...register('telefono')} name="telefono" placeholder='' />
+                        <input className="InputsTexto" type="text" name="phone"  id="MERGE6" value={fields.MERGE6} onChange={handleFieldChange}placeholder='' />
                     </div>
                 </div>
                 {/*Email and mvl*/}
