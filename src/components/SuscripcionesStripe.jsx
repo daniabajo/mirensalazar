@@ -12,7 +12,7 @@ export default function SuscripcionesStripe() {
             <h className="TarifasTexto"> Selecciona la suscripción que más se adapte a tus necesidades: </h>
             <div className='TarifasPaquetesContenedorFila'>
                 <div className='TarifasPaqueteContenedorColumna'>
-                        <a className='PaqueteTitulo' >Suscripción PLATINIUM </a>
+                        <a className='PaqueteTitulo' >Suscripción PLATINUM </a>
                         <a className='PaqueteTexto'>Suscripcion mensual a Anna Vehí · Centre de nutrició</a>
                         <div className='PaquetePrecioContainer'>  <a className="PaquetePrecio"> 100€</a> <div className="PaquetePrecioFrecuenciaContainer"> <a className="PaquetePrecioFrecuenciaTexto"> por</a> <a className="PaquetePrecioFrecuenciaTexto"> mes</a> </div> </div>
                         <button className='PaqueteBoton' onClick={DescargaButtonPlatinium}>  SUSCRIBIRME  </button> 

@@ -38,7 +38,7 @@ const ClavesDelExito = () => {
                         <a className="DescargableTextoTexto">
                         {loading && "Enviando..."}
                         {error && "Error"}
-                        {success && "Te acabamos de enviar un regalo a tu correo!"}
+                        {success && "¡Nuestra guía está en camino!"}
                         </a>
                     </div>
                 </form>

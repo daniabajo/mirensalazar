@@ -70,7 +70,7 @@ const Formulario = () => {
                     </div>
                     {loading && "Enviando..."}
                     {error && "Error"}
-                    {success && "Hemos recibido correctamente tu mensaje."}
+                    {success && "¡Hemos recibido correctamente tu mensaje!"}
                     {errors.nombre?.type === 'required' && <span className="FormularioValidacion">*Nombre Requerido</span>}
                 </div>
             </form>

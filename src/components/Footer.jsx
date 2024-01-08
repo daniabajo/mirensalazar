@@ -27,7 +27,7 @@ const Footer = () => {
                         <SocialIcon className="FooterMainSiguenosIconoIcono" network="facebook" url="https://facebook.com/annavehi.nutricionista/" bgColor="#b69f8e" fgColor="#e2dcd9" />
                     </div>
                     <a className="FooterMainSiguenosTextoTexto"> info@annavehi.com </a>
-                    <a className="FooterMainSiguenosTextoTexto"> +34 623003020 </a>
+                    <a className="FooterMainSiguenosTextoTexto"> +34 623 003 020 </a>
                     <PopupButton className="FooterBotonReservar" url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")} text="RESERVA CITA" />
                 </div>
             </div>
