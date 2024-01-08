@@ -1,11 +1,13 @@
-import Consulta from './../images/Consulta.png';
-import LeadMagnet from './../images/LeadMagnet.png';
+import FotoSobreMi1 from './../images/FotoSobreMi1.png';
+import FotoSobreMi2 from './../images/FotoSobreMi2.png';
+import FotoSobreMi3 from './../images/FotoSobreMi3.png';
+
 import './Sobremi.css'
 
 export default function Sobremi() {
     return (
         <div className="Sobremi">
-            <img src={Consulta} className="ImageTransversal" alt="Consulta" />
+            <img src={FotoSobreMi1} className="ImageTransversal" alt="FotoSobreMi1" />
             {/* Sobre mi entero */}
             <div className='SobremiBase'>
                 {/* Bienvenidos */}
@@ -16,7 +18,7 @@ export default function Sobremi() {
                             <a className='TextoJustificado'>Soy Anna Vehí y me apasiona ayudar a las personas a mejorar su salud y calidad de vida, guiándoles y acompañándoles en la consecución de sus distintos objetivos nutricionales y de hábitos saludables. </a>
                         </div>
                         <div className='SobremiFilosfiaFotoContainer'>
-                        <img className='SobremiFilosfiaFoto' src={LeadMagnet} alt="LeadMagnet" />
+                            <img className='SobremiFilosfiaFoto' src={FotoSobreMi2} alt="FotoSobreMi2" />
                         </div>
                     </div>
                 </div>
@@ -33,15 +35,22 @@ export default function Sobremi() {
                         <h className="TituloDorado">  <a> Mi método</a> </h>
                     </div>
                     <p className='TextoJustificado'>Como farmacéutica y dietista-nutricionista, ambas siendo profesiones sanitarias, entiendo que el pilar más importante alrededor del cual toda intervención nutricional debe gravitar es la promoción de la <strong>salud</strong>. Por este motivo, mi método de trabajo se basa en:</p>
-                    <ul className='TextoJustificado'>
-                        <li>  el consumo de <strong>alimentos</strong>, sin hacer uso de productos artificiales</li>
-                        <li>una <strong>educación alimentaria</strong> que capacite al paciente para poder entender sus necesidades y llegar a ser autónomo</li>
-                        <li>un <strong>cambio de hábitos</strong> progresivo y permanente, evitando así el efecto rebote y garantizando unos resultados que se mantienen a largo plazo</li>
-                        <li><strong>evitar sensaciones nocivas</strong> que suelen ser contraproducentes, tales como la restricción, el esfuerzo, el sufrimiento o pasar hambre</li>
-                        <li>un alto grado de <strong>individualización</strong>, dado que todos somos diferentes y cada individuo se beneficiará de unas herramientas o estrategias distintas</li>
-                        <li>un <strong>ambiente agradable</strong>, distendido, empático y de confianza donde trabajamos conjuntamente con el paciente para ayudarle en la consecución de todos sus objetivos</li>
-                        <li>el compromiso de mi <strong>formación continua</strong> para poder proporcionar una atención nutricional cada vez mejor</li>
-                    </ul>
+                    <div className='SobremiMetodoFotoListaFila'>
+                        <div className='SobremiMetodoFotoContainer'>
+                            <img className='SobremiMetodoFoto' src={FotoSobreMi3} alt="FotoSobreMi3" />
+                        </div>
+                        <div className='TextoJustificadoGap'>
+                            <ul className='TextoJustificadoGap'>
+                                <li>  el consumo de <strong>alimentos</strong>, sin hacer uso de productos artificiales</li>
+                                <li>una <strong>educación alimentaria</strong> que capacite al paciente para poder entender sus necesidades y llegar a ser autónomo</li>
+                                <li>un <strong>cambio de hábitos</strong> progresivo y permanente, evitando así el efecto rebote y garantizando unos resultados que se mantienen a largo plazo</li>
+                                <li><strong>evitar sensaciones nocivas</strong> que suelen ser contraproducentes, tales como la restricción, el esfuerzo, el sufrimiento o pasar hambre</li>
+                                <li>un alto grado de <strong>individualización</strong>, dado que todos somos diferentes y cada individuo se beneficiará de unas herramientas o estrategias distintas</li>
+                                <li>un <strong>ambiente agradable</strong>, distendido, empático y de confianza donde trabajamos conjuntamente con el paciente para ayudarle en la consecución de todos sus objetivos</li>
+                                <li>el compromiso de mi <strong>formación continua</strong> para poder proporcionar una atención nutricional cada vez mejor</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 {/* Formacion */}
                 <div className='SobremiTrayectoria'>
@@ -57,7 +66,7 @@ export default function Sobremi() {
                             <li>Erasmus: Royal National Orthopaedic Hospital (Reino Unido) adherida al Departamento de Farmacia</li>
                         </ul>
                         <li>Grado en Nutrición Humana y Dietética (Universidad Europea de Madrid)</li>
-                        <ul> 
+                        <ul>
                             <li>Prácticas curriculares: consulta de nutrición de la Farmacia Les Arenes</li>
                             <li>Prácticas curriculares: nutrición deportiva en Club de Tennis Sant Gervasi</li>
                             <li>Prácticas curriculares: nutrición deportiva en CAR Sant Cugat</li>

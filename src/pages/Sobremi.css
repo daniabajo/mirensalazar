@@ -44,7 +44,7 @@
 
 @media (width <=900px) {
     .SobremiFilosofiaFila {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap:2rem;
     }
 }
@@ -98,7 +98,7 @@
     border: inherit;
     margin-top: 10%;
 }
-
+/* Metodo */
 .SobremiMetodo {
     background-color: inherit;
     border: inherit;
@@ -106,6 +106,50 @@
     width: 100%;
 }
 
+.SobremiMetodoFotoListaFila{
+display:flex;
+flex-direction: row;;
+border: inherit;
+justify-content: center;
+align-items: center;
+}
+
+@media (width <=900px) {
+    .SobremiMetodoFotoListaFila {
+        flex-direction: column-reverse;
+        gap:2rem;
+    }
+}
+
+.SobremiMetodoFotoContainer{
+    border: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 391px;
+}
+
+.SobremiMetodoFoto{
+    border: inherit;
+    width: 300px;
+    height: 391px;
+}
+
+@media (width <=900px) {
+    .SobremiMetodoFoto {
+        width: 100%;
+    }
+}
+.TextoJustificadoGap {
+    text-align: justify;
+    text-justify: distribute;
+    font-size: inherit;
+    line-height: 1.5;
+    margin-top: 2%;
+}
+
+/* Trayectoria */
 .SobremiTrayectoria {
     border: inherit;
     margin-top: 8%;
