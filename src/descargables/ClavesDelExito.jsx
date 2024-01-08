@@ -11,14 +11,15 @@ const url = "https://annavehi.us11.list-manage.com/subscribe/post?u=f9df3ef7bce0
 /*const url = "https://annavehi.us21.list-manage.com/subscribe/post?u=2330425f14048447c80289c70&amp;id=6374ceb387&amp;f_id=0006f7e6f0"; */
 
 
-const ClavesDelExito = () => {
+function ClavesDelExito(props)  {
     const form = useRef();
     const { register, handleSubmit2, formState: { errors } } = useForm();
     const sendEmail = (Event) => {
         Event.preventDefault();
-        emailjs.sendForm('service_ukvacln', 'template_wzrelji', form.current, 'QmE0uEOoCqxBr68I4') (
-            (result) => { console.log(result.text); console.log("message sent") }, (error) => { console.log(error.text); });
+        /*emailjs.sendForm('service_ukvacln', 'template_wzrelji', form.current, 'QmE0uEOoCqxBr68I4') ((result) => { console.log(result.text); console.log("message sent") }, (error) => { console.log(error.text); });*/
         Event.target.reset();
+        fields.EMAIL=""; fields.MERGE1=""; 
+        /*props.SetTrigger(false);*/
     }
     const { loading, error, success, message, handleSubmit } = useMailChimpForm(url);
     const { fields, handleFieldChange } = useFormFields({ EMAIL: "", MERGE1:"",MERGE7:"LeadMagnet"});
@@ -30,7 +31,7 @@ const ClavesDelExito = () => {
                 <a className="DescargableTextoTitulo"> ¿Quieres saber las claves para tener una vida más saludable? </a>
                 <a className="DescargableTextoTexto"> ¡Descarga nuestra guía y descubre los consejos que te llevarán a obtener resultados permanentes de una vez por todas! </a>
                 <a className="DescargableTextoTextoMobile"> ¡Descarga nuestra guía! </a>
-                <form className="DescargableForm" ref={form} onSubmit={event => { event.preventDefault(); handleSubmit(fields); }}>
+                <form className="DescargableForm" ref={form} onSubmit={event => { event.preventDefault(); handleSubmit(fields);sendEmail(event,props)  }}>
                     <input className="DescargableInputs" type="text" id="MERGE1" value={fields.MERGE1} onChange={handleFieldChange}  name="nombre" required placeholder='Nombre*' />
                     <input className="DescargableInputs" id="EMAIL" name='email' type="email" value={fields.EMAIL} onChange={handleFieldChange} placeholder='Email*' required />
                     <div className='DescargablePolitica'>

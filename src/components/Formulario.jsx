@@ -17,6 +17,7 @@ const Formulario = () => {
         emailjs.sendForm('service_ukvacln', 'template_wzrelji', form.current, 'QmE0uEOoCqxBr68I4')  .then(
             (result) => { console.log(result.text); console.log("message sent") },
             (error) => { console.log(error.text); });
+            fields.EMAIL=""; fields.MERGE1=""; fields.MERGE2=""; fields.MERGE6="";
         Event.target.reset();
     }
     const { loading, error, success, message, handleSubmit } = useMailChimpForm(url);
@@ -46,7 +47,7 @@ const Formulario = () => {
                     </div>
                     <div className='FormularioBloque'>
                         <label> Teléfono </label>
-                        <input className="InputsTexto" type="text" name="telefono"  id="MERGE6" value={fields.MERGE6} onChange={handleFieldChange} placeholder='' />
+                        <input className="InputsTexto" type="text" name="telefono" id="MERGE6" value={fields.MERGE6} onChange={handleFieldChange} placeholder='' />
                     </div>
                 </div>
                 {/*Explicacion*/}
