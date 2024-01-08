@@ -46,10 +46,10 @@ const Formulario = () => {
                     </div>
                     <div className='FormularioBloque'>
                         <label> Teléfono </label>
-                        <input className="InputsTexto" type="text" name="phone"  id="MERGE6" value={fields.MERGE6} onChange={handleFieldChange} placeholder='' />
+                        <input className="InputsTexto" type="text" name="telefono"  id="MERGE6" value={fields.MERGE6} onChange={handleFieldChange} placeholder='' />
                     </div>
                 </div>
-                {/*Email and mvl*/}
+                {/*Explicacion*/}
                 <div className="InputsDivision">
                     <div className='FormularioBloque'>
                         <div className="InputsEtiquetas"><label> ¿Cómo podemos ayudarte? Cuéntanos un poco más. </label></div>
