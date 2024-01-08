@@ -17,10 +17,11 @@ const Formulario = () => {
         emailjs.sendForm('service_ukvacln', 'template_wzrelji', form.current, 'QmE0uEOoCqxBr68I4')  .then(
             (result) => { console.log(result.text); console.log("message sent") },
             (error) => { console.log(error.text); });
+            fields.EMAIL=""; fields.MERGE1=""; fields.MERGE2=""; fields.MERGE6="";
         Event.target.reset();
     }
     const { loading, error, success, message, handleSubmit } = useMailChimpForm(url);
-    const { fields, handleFieldChange } = useFormFields({ EMAIL: "", MERGE1: "" ,MERGE2:"",MERGE6:"",group_1:"1"});
+    const { fields, handleFieldChange } = useFormFields({ EMAIL: "", MERGE1: "" ,MERGE2:"",MERGE6:"",MERGE7:"Formulario"});
     const onSubmit = (data) => { console.log(data); sendEmail(data); }
     return (
         <div className="FormularioBase">
@@ -46,10 +47,10 @@ const Formulario = () => {
                     </div>
                     <div className='FormularioBloque'>
                         <label> Teléfono </label>
-                        <input className="InputsTexto" type="text" name="phone"  id="MERGE6" value={fields.MERGE6} onChange={handleFieldChange}placeholder='' />
+                        <input className="InputsTexto" type="text" name="telefono" id="MERGE6" value={fields.MERGE6} onChange={handleFieldChange} placeholder='' />
                     </div>
                 </div>
-                {/*Email and mvl*/}
+                {/*Explicacion*/}
                 <div className="InputsDivision">
                     <div className='FormularioBloque'>
                         <div className="InputsEtiquetas"><label> ¿Cómo podemos ayudarte? Cuéntanos un poco más. </label></div>

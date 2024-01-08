@@ -6,7 +6,7 @@ function Popup(props) {
         <div className="Popup">
             <div className='PopupInner'>
             <button className='BotonPopup' onClick={()=> props.SetTrigger(false)}>X</button>
-            <ClavesDelExito/>
+            <ClavesDelExito props/>
             {props.children}
             </div>
         </div>
