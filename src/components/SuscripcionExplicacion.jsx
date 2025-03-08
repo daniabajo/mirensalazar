@@ -37,7 +37,7 @@ const SuscripcionExplicacion = ({Type}) => {
                         <ul className="UnorderListDerecha">
                             <li className="ListItemDerecha"> Quieres hacer solamente una visita mensual </li>
                             <li className="ListItemDerecha"> Estás en etapas finales de la intervención </li>
-                            <li className="ListItemDerecha"> Has comprendido la nutrición y estilo de vida adecuados para tu situación concreta </li>
+                            <li className="ListItemDerecha"> Has comprendido la nutriciónn y estilo de vida adecuados para tu situación concreta </li>
                             <li className="ListItemDerecha"> No tienes por delante grandes cambios, sino solo detalles por trabajar </li>
                             <li className="ListItemDerecha"> Quieres hacer una monitorización periódica de tu composición corporal </li>
                             <li className="ListItemDerecha"> Tu patología o condición no necesita un seguimiento tan continuo </li>
@@ -45,7 +45,7 @@ const SuscripcionExplicacion = ({Type}) => {
                     </div>
                 </div>
                 <div className="SuscripcionesLineVertical"> </div>
-                {Type === "Reserva" ?  ( <PopupButton className="BotonReservar" url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")} text="RESERVA CITA" />) : 
+                {Type === "Reserva" ?  ( <PopupButton className="BotonReservar" url="https://calendly.com/mirensalazar/" rootElement={document.getElementById("root")} text="RESERVA CITA" />) : 
                 (<button className='BotonReservar' onClick={DescargaButtonPlatinium}>  SUSCRIBIRME  </button> )}
             </div>
             {/* Gold */}
@@ -60,7 +60,7 @@ const SuscripcionExplicacion = ({Type}) => {
                     <ul className="UnorderListIzquierda">
                             <li className="ListItemIzquierda"> Quieres hacer solamente una visita mensual </li>
                             <li className="ListItemIzquierda"> Estás en etapas finales de la intervención </li>
-                            <li className="ListItemIzquierda"> Has comprendido la nutrición y estilo de vida adecuados para tu situación concreta </li>
+                            <li className="ListItemIzquierda"> Has comprendido la nutriciónn y estilo de vida adecuados para tu situación concreta </li>
                             <li className="ListItemIzquierda"> No tienes por delante grandes cambios, sino solo detalles por trabajar </li>
                             <li className="ListItemIzquierda"> Quieres hacer una monitorización periódica de tu composición corporal </li>
                             <li className="ListItemIzquierda"> Tu patología o condición no necesita un seguimiento tan continuo </li>
@@ -80,7 +80,7 @@ const SuscripcionExplicacion = ({Type}) => {
                     </div>
                 </div>
                 <div className="SuscripcionesLineVertical"> </div>
-                {Type === "Reserva" ? ( <PopupButton className="BotonReservar" url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")} text="RESERVA CITA" />) : 
+                {Type === "Reserva" ? ( <PopupButton className="BotonReservar" url="https://calendly.com/mirensalazar/" rootElement={document.getElementById("root")} text="RESERVA CITA" />) : 
                 (<button className='BotonReservar' onClick={DescargaButtonGold}>  SUSCRIBIRME  </button> )}
             </div>
         </div>

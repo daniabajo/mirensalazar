@@ -15,7 +15,7 @@ export default function Sobremi() {
                 <div className='SobremiFilosofia'>
                     <div className='SobremiFilosofiaFila'>
                         <div className='SobremiBienvenidosTexto'>
-                            <a className='TextoJustificado'>Soy Anna Vehí y me apasiona ayudar a las personas a mejorar su salud y calidad de vida, guiándoles y acompañándoles en la consecución de sus distintos objetivos nutricionales y de hábitos saludables. </a>
+                            <a className='TextoJustificado'>Soy Miren Salazar y me apasiona ayudar a las personas a mejorar su salud y calidad de vida, guiándoles y acompañándoles en la consecución de sus distintos objetivos nutricionales y de hábitos saludables. </a>
                         </div>
                         <div className='SobremiFilosfiaFotoContainer'>
                             <img className='SobremiFilosfiaFoto' src={FotoSobreMi2} alt="FotoSobreMi2" />
@@ -27,7 +27,7 @@ export default function Sobremi() {
                     <div className='SobremiCentrado'>
                         <h className="TituloDorado">  <a> Mi historia</a> </h>
                     </div>
-                    <p className='TextoJustificado'>Hija de médico y nieta y sobrina de farmacéuticos, casi se podría decir que las ciencias de la salud forman parte de mi ADN. Trabajando como farmacéutica en Barcelona y en el Reino Unido, me di cuenta de que mi respuesta natural ante el paciente consistía en indagar acerca de sus hábitos de vida para descubrir si alguna modificación de éstos pudiera mejorar sus dolencias de forma más permanente. La voluntad de querer proporcionar una educación nutricional más extensa y detallada a los pacientes me llevó a estudiar el Grado en Nutrición Humana y Dietética, aunque el cometido de transmitir mis conocimientos a la población era difícil de alcanzar en un contexto de farmacia comunitaria, dado que desafortunadamente no se suele gozar de un tiempo de calidad con los pacientes. Es por este motivo que finalmente decidí emprender mi propio proyecto, y a día de hoy me emociona enormemente poder realizar mi propósito en mi centro de nutrición.</p>
+                    <p className='TextoJustificado'>Hija de médico y nieta y sobrina de farmacéuticos, casi se podría decir que las ciencias de la salud forman parte de mi ADN. Trabajando como farmacéutica en Barcelona y en el Reino Unido, me di cuenta de que mi respuesta natural ante el paciente consistía en indagar acerca de sus hábitos de vida para descubrir si alguna modificación de éstos pudiera mejorar sus dolencias de forma más permanente. La voluntad de querer proporcionar una educación nutricional más extensa y detallada a los pacientes me llevó a estudiar el Grado en Nutrición Humana y Dietética, aunque el cometido de transmitir mis conocimientos a la población era difícil de alcanzar en un contexto de farmacia comunitaria, dado que desafortunadamente no se suele gozar de un tiempo de calidad con los pacientes. Es por este motivo que finalmente decidí emprender mi propio proyecto, y a día de hoy me emociona enormemente poder realizar mi propósito en mi centro de nutriciónn.</p>
                 </div>
                 {/* Mi metodo */}
                 <div className='SobremiMetodo'>
@@ -67,10 +67,10 @@ export default function Sobremi() {
                         </ul>
                         <li>Grado en Nutrición Humana y Dietética (Universidad Europea de Madrid)</li>
                         <ul>
-                            <li>Prácticas curriculares: consulta de nutrición de la Farmacia Les Arenes</li>
-                            <li>Prácticas curriculares: nutrición deportiva en Club de Tennis Sant Gervasi</li>
-                            <li>Prácticas curriculares: nutrición deportiva en CAR Sant Cugat</li>
-                            <li>Prácticas curriculares: consulta de nutrición de Neus Elcacho</li>
+                            <li>Prácticas curriculares: consulta de nutriciónn de la Farmacia Les Arenes</li>
+                            <li>Prácticas curriculares: nutriciónn deportiva en Club de Tennis Sant Gervasi</li>
+                            <li>Prácticas curriculares: nutriciónn deportiva en CAR Sant Cugat</li>
+                            <li>Prácticas curriculares: consulta de nutriciónn de Neus Elcacho</li>
                         </ul>
                     </ul>
                     <div className="SobremiDivisionTexto"> <a className="SobremiTextoMayus"> ACREDITACIONES </a> </div>
@@ -80,14 +80,14 @@ export default function Sobremi() {
                     <div className="SobremiDivisionTexto"> <a className="SobremiTextoMayus"> POSTGRADOS </a> </div>
                     <ul className='TextoJustificado'>
                         <li>Entrevista motivacional en la práctica clínico-nutricional (Academia Española de Nutrición y Dietética)</li>
-                        <li>Curso avanzado en nutrición para la optimización de la composición corporal en deportistas y población general (Academia Española de Nutrición y Dietética)</li>
+                        <li>Curso avanzado en nutriciónn para la optimización de la composición corporal en deportistas y población general (Academia Española de Nutrición y Dietética)</li>
                         <li>Ayudas ergogénicas en el ámbito deportivo y de salud (Academia Española de Nutrición y Dietética)</li>
                         <li>Vegetarianismo y planificación dietética en alimentación vegetariana (Universitat de les Illes Balears)</li>
                     </ul>
                     <div className="SobremiDivisionTexto"> <a className="SobremiTextoMayus"> CURSOS </a> </div>
                     <ul className='TextoJustificado'>
                         <li>Binomio sueño y alimentación: una nueva herramienta en la práctica profesional del dietista-nutricionista (Academia Española de Nutrición y Dietética)</li>
-                        <li>I Workshop sobre obesidad y nutrición: una visión integral de la obesidad más allá de la báscula (Academia Española de Nutrición y Dietética)</li>
+                        <li>I Workshop sobre obesidad y nutriciónn: una visión integral de la obesidad más allá de la báscula (Academia Española de Nutrición y Dietética)</li>
                         <li>I Workshop sobre microbiota, probióticos y prebióticos (Academia Española de Nutrición y Dietética)</li>
                         <li>Toma ConCiencia (Academia Española de Nutrición y Dietética)</li>
                         <li>Abordaje dietético en la enfermedad cardiovascular: nuevas evidencias (Academia Española de Nutrición y Dietética)</li>

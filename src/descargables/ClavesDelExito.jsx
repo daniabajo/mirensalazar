@@ -5,10 +5,10 @@ import { useFormFields, useMailChimpForm } from "use-mailchimp-form";
 import { Link } from 'react-router-dom';
 import ClavesDelExitoFoto from './../images/LeadMagnetSinFondo.png';
 import "./ClavesDelExito.css"
-/*Anna */
-const url = "https://annavehi.us11.list-manage.com/subscribe/post?u=f9df3ef7bce01603e71b5e28e&amp;id=763ad69f56&amp;f_id=0060b3e0f0"; 
+/*Miren */
+const url = "https://mirensalazar.us11.list-manage.com/subscribe/post?u=f9df3ef7bce01603e71b5e28e&amp;id=763ad69f56&amp;f_id=0060b3e0f0"; 
 /*Dani */
-/*const url = "https://annavehi.us21.list-manage.com/subscribe/post?u=2330425f14048447c80289c70&amp;id=6374ceb387&amp;f_id=0006f7e6f0"; */
+/*const url = "https://mirensalazar.us21.list-manage.com/subscribe/post?u=2330425f14048447c80289c70&amp;id=6374ceb387&amp;f_id=0006f7e6f0"; */
 
 
 function ClavesDelExito(props)  {

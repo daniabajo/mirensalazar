@@ -50,9 +50,9 @@ function App() {
         <Route path="/suscripciones" element={<Suscripciones />} />
         <Route path="/prueba" element={<Prueba />} />
       </Routes>
-      {/*<PopupWidget url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")}text="Reserva tu cita"textColor="white"color="#31464e" side="left" />*/}
-      <FloatingWhatsApp phoneNumber="+34623003020" accountName="Anna Vehí · Centre de nutrició" chatMessage="Hola, en qué podemos ayudarte?" statusMessage='Responde antes de 48h'
-        avatar="https://annavehi.com/IconoWhatsapp.png" />
+      {/*<PopupWidget url="https://calendly.com/mirensalazar/" rootElement={document.getElementById("root")}text="Reserva tu cita"textColor="white"color="#31464e" side="left" />*/}
+      <FloatingWhatsApp phoneNumber="+34623003020" accountName="Miren Salazar · Consulta de nutrición" chatMessage="Hola, en qué podemos ayudarte?" statusMessage='Responde antes de 48h'
+        avatar="https://mirensalazar.com/IconoWhatsapp.png" />
       <CookieConsent buttonText="Permitir" style={{ background: "#31464e", fontFamily: 'Josefin Sans' }} buttonStyle={{ color: "black", fontSize: "13px", location: "left", fontFamily: 'Josefin Sans' }}
       >This website uses <Link className='TextoLinkConsentCookies' to="/politicacookies"> cookies</Link> to enhance the user experience.</CookieConsent>
       <Footer />

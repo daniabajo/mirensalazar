@@ -11,7 +11,7 @@ const SuscripcionReservaCalendly = () => {
                 <a className="ReservaTexto"> A continuación puedes hacer la reserva de tu visita y el pago de tu suscripción la cual podrás cambiar o cancelar en cualquier momento:</a>
             </div>
             <div className="ReservaCalendlyContainer">
-                <InlineWidget url="https://calendly.com/annavehi" styles={{ height: '900px', width: '100%' }} />
+                <InlineWidget url="https://calendly.com/mirensalazar" styles={{ height: '900px', width: '100%' }} />
             </div>
             <div className="ReservaContainer2">
 
@@ -23,7 +23,7 @@ const SuscripcionReservaCalendly = () => {
                     </div>
                     <div className="DondeEstamosDivisionIcono">
                         <img src={Correo} className="DondeEstamosIcono" alt="Correo" />
-                        <div className="DondeEstamosDivisionTexto"><a className="DondeEstamosTextoMayus"> CORREO ELECTRÓNICO </a> <a className="DondeEstamosTexto">  info@annavehi.com</a></div>
+                        <div className="DondeEstamosDivisionTexto"><a className="DondeEstamosTextoMayus"> CORREO ELECTRÓNICO </a> <a className="DondeEstamosTexto">  info@mirensalazar.com</a></div>
                     </div>
                 </div>
             </div>

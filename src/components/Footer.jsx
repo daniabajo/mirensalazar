@@ -23,16 +23,16 @@ const Footer = () => {
                 <div className="FooterMainSiguenos">
                     <a className="FooterMainSiguenosTextoTitulo"> Síguenos </a>
                     <div className="FooterMainSiguenosIcono">
-                        <SocialIcon className="FooterMainSiguenosIconoIcono" network="instagram" url="https://instagram.com/annavehi.nutricionista/" bgColor="#b69f8e" fgColor="#e2dcd9" />
-                        <SocialIcon className="FooterMainSiguenosIconoIcono" network="facebook" url="https://facebook.com/annavehi.nutricionista/" bgColor="#b69f8e" fgColor="#e2dcd9" />
+                        <SocialIcon className="FooterMainSiguenosIconoIcono" network="instagram" url="https://instagram.com/mirensalazar.nutricionista/" bgColor="#b69f8e" fgColor="#e2dcd9" />
+                        <SocialIcon className="FooterMainSiguenosIconoIcono" network="facebook" url="https://facebook.com/mirensalazar.nutricionista/" bgColor="#b69f8e" fgColor="#e2dcd9" />
                     </div>
-                    <a className="FooterMainSiguenosTextoTexto"> info@annavehi.com </a>
+                    <a className="FooterMainSiguenosTextoTexto"> info@mirensalazar.com </a>
                     <a className="FooterMainSiguenosTextoTexto"> +34 623 003 020 </a>
-                    <PopupButton className="FooterBotonReservar" url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")} text="RESERVA CITA" />
+                    <PopupButton className="FooterBotonReservar" url="https://calendly.com/mirensalazar/" rootElement={document.getElementById("root")} text="RESERVA CITA" />
                 </div>
             </div>
             <div className="FooterCreacion">
-                <a > Anna Vehí · Centre de nutrició 2023 </a>
+                <a > Miren Salazar · Consulta de nutrición 2023 </a>
             </div>
             <div className="FooterLegalidad" >
                 <a className="FooterLegalidadTexto" >

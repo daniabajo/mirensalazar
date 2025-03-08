@@ -13,14 +13,14 @@ export default function SuscripcionesStripe() {
             <div className='TarifasPaquetesContenedorFila'>
                 <div className='TarifasPaqueteContenedorColumna'>
                         <a className='PaqueteTitulo' >Suscripción PLATINUM </a>
-                        <a className='PaqueteTexto'>Suscripcion mensual a Anna Vehí · Centre de nutrició</a>
+                        <a className='PaqueteTexto'>Suscripcion mensual a Miren Salazar · Consulta de nutrición</a>
                         <div className='PaquetePrecioContainer'>  <a className="PaquetePrecio"> 100€</a> <div className="PaquetePrecioFrecuenciaContainer"> <a className="PaquetePrecioFrecuenciaTexto"> por</a> <a className="PaquetePrecioFrecuenciaTexto"> mes</a> </div> </div>
                         <button className='PaqueteBoton' onClick={DescargaButtonPlatinium}>  SUSCRIBIRME  </button> 
 
                 </div>
                 <div className='TarifasPaqueteContenedorColumna'>
                         <a className='PaqueteTitulo' >Suscripción GOLD </a>
-                        <a className='PaqueteTexto'>Suscripcion mensual a Anna Vehí · Centre de nutrició</a>
+                        <a className='PaqueteTexto'>Suscripcion mensual a Miren Salazar · Consulta de nutrición</a>
                         <div className='PaquetePrecioContainer'> <a className="PaquetePrecio"> 60€</a> <div className="PaquetePrecioFrecuenciaContainer"> <a className="PaquetePrecioFrecuenciaTexto"> por</a> <a className="PaquetePrecioFrecuenciaTexto"> mes</a> </div> </div>
                         <button className='PaqueteBoton' onClick={DescargaButtonGold}>  SUSCRIBIRME  </button> 
 

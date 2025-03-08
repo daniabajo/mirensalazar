@@ -75,7 +75,7 @@ const Tablas = ({ Type }) => {
       </div>
       {/* Boton reservar */}
       <div className='TablasBotonContainer'>
-        {Type === "Reserva" ? (<PopupButton className="TablasBotonReservar" url="https://calendly.com/annavehi/" rootElement={document.getElementById("root")} text="RESERVA CITA" />) : ('')}
+        {Type === "Reserva" ? (<PopupButton className="TablasBotonReservar" url="https://calendly.com/mirensalazar/" rootElement={document.getElementById("root")} text="RESERVA CITA" />) : ('')}
       </div>
     </div>
   )
